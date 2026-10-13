@@ -1,0 +1,187 @@
+rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR$ source /home/rwj/anaconda3/etc/profile.d/conda.sh
+rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR$ conda activate /mnt/data300/envs/rlpr
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR$ 
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR$ cd "/media/rwj/ZX1 2TB/RLPR/src"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ 
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_MULRAN_RAW="/media/rwj/ZX1 2TB/RLPR_dataset/MulRan"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_MULRAN_DATA="/media/rwj/ZX1 2TB/RLPR/processed/mulran_sejong"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_MULRAN_TEST_SPLIT=sejong
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ python - <<'PY'
+> import os
+> import pickle
+> import numpy as np
+> from pathlib import Path
+> from dataset.MulRan.gen_info import gen_info
+> from dataset.MulRan.gen_index import process_infos_sejong
+> from dataset.MulRan.gen_bev import gen_bev
+> 
+> root = Path(os.environ["RLPR_MULRAN_DATA"])
+> (root / "info").mkdir(parents=True, exist_ok=True)
+> (root / "index").mkdir(parents=True, exist_ok=True)
+> 
+> infos = gen_info(
+>     os.environ["RLPR_MULRAN_RAW"],
+>     ["sejong01", "sejong02"],
+>     1.0,
+> )
+> info_file = root / "info/mulran_infos-sejong.pkl"
+> with info_file.open("wb") as f:
+>     pickle.dump(infos, f)
+> 
+> _, _, _, test_db, test_query = process_infos_sejong(
+>     str(info_file), "sejong02", 9.0
+> )
+> np.save(root / "index/sejong_test_db.npy", test_db)
+> np.save(root / "index/sejong_test_query.npy", test_query)
+> 
+> gen_bev(
+>     str(root / "bev/mm_bev"),
+>     str(info_file),
+>     np.concatenate([test_db, test_query], axis=0),
+> )
+> print("Sejong 评估数据预处理完成")
+> PY
+8744 samples with valid pose, 2759 rejected due to unknown pose
+8727 samples with valid pose, 2252 rejected due to unknown pose
+total frames:  17471
+database frames:  7114
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 7213/7213 [00:00<00:00, 7778.32it/s]
+train query frames:  7202
+test database frames:  1505
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1380/1380 [00:00<00:00, 7768.46it/s]
+test query frames:  1380
+  0%|                                                                                                                | 0/2885 [00:00<?, ?it/s]/mnt/data300/envs/rlpr/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+[ WARN:0@21.889] global loadsave.cpp:848 imwrite_ Unsupported depth image for selected encoder is fallbacked to CV_8U.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 2885/2885 [01:00<00:00, 47.85it/s]
+Sejong 评估数据预处理完成
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_CHECKPOINT_PATH="/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_TRAINING_ROOT="/media/rwj/ZX1 2TB/RLPR/runs/sejong_eval"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export TORCH_HOME="/media/rwj/ZX1 2TB/RLPR/cache/torch"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ 
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ python test_cross_modal.py --dataset mulran
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /media/rwj/ZX1 2TB/RLPR/cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 44.7M/44.7M [00:05<00:00, 8.04MB/s]
+Number of model parameters: 4545092
+
+Evaluating Process -------->
+
+Resuming from /media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar
+  0%|                                                                                                                | 0/2885 [00:00<?, ?it/s]/media/rwj/ZX1 2TB/RLPR/src/modules/LR_cross_hffc_225_dis.py:150: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:1008.)
+  x = F.silu(F.conv1d(input=x, weight=self.conv1d_x.weight, bias=self.conv1d_x.bias, padding='same',
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2885/2885 [00:12<00:00, 233.08it/s]
+77.32, 88.77, 92.54, 95.94, 95.94
+
+Recall@1: 77.32
+Recall@5: 88.77
+Recall@10: 92.54
+Recall@20: 95.94
+Recall@1percent: 95.94
+
+getting pr...
+100%|█| 1000/1000 [00:22<00:00, 45.16it/
+f1 score:  0.8831734960767218
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ bash "/media/rwj/ZX1 2TB/RLPR/sejong_short_train.sh"
+total frames:  17471
+database frames:  7114
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 7213/7213 [00:00<00:00, 7459.90it/s]
+train query frames:  7202
+test database frames:  1505
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1380/1380 [00:00<00:00, 7435.49it/s]
+test query frames:  1380
+
+Short train: database=1024, queries=256, epochs=2, batch_size=1
+  0%|                                                                                                                | 0/1024 [00:00<?, ?it/s]/mnt/data300/envs/rlpr/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+[ WARN:0@4.275] global loadsave.cpp:848 imwrite_ Unsupported depth image for selected encoder is fallbacked to CV_8U.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 1024/1024 [00:18<00:00, 54.43it/s]
+
+===== l_mulran: 2 epochs =====
+Number of model parameters: 2272546
+
+Training From Scratch
+
+Training Process-epoch 1-------->
+
+Generating cache mulran -------->
+  0%|                                                                                                                | 0/1280 [00:00<?, ?it/s]/media/rwj/ZX1 2TB/RLPR/src/modules/LCRFusionGCNExpLHFFC_225.py:150: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:1008.)
+  x = F.silu(F.conv1d(input=x, weight=self.conv1d_x.weight, bias=self.conv1d_x.bias, padding='same',
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 1280/1280 [00:07<00:00, 181.65it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:15<00:00, 16.65it/s]
+epoch 1 finishes
+loss [0.14391835]
+
+Training Process-epoch 2-------->
+
+Generating cache mulran -------->
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 1280/1280 [00:06<00:00, 200.01it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:15<00:00, 16.93it/s]
+epoch 2 finishes
+loss [0.05139263]
+
+===== r_mulran: 2 epochs =====
+Number of model parameters: 2272546
+
+Training From Scratch
+
+Training Process-epoch 1-------->
+
+Generating cache mulran -------->
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 1280/1280 [00:06<00:00, 183.36it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:15<00:00, 16.66it/s]
+epoch 1 finishes
+loss [0.15860988]
+
+Training Process-epoch 2-------->
+
+Generating cache mulran -------->
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 1280/1280 [00:06<00:00, 202.60it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:15<00:00, 16.74it/s]
+epoch 2 finishes
+loss [0.05707145]
+
+===== cross-modal: 2 epochs =====
+Number of model parameters: 4545092
+
+Training From Scratch
+
+Training Process-epoch 1-------->
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:20<00:00, 12.44it/s]
+epoch 1 finishes
+loss [0.62873495]
+
+Training Process-epoch 2-------->
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:20<00:00, 12.44it/s]
+epoch 2 finishes
+loss [0.3457557]
+
+Training complete. Checkpoint: /media/rwj/ZX1 2TB/RLPR/runs/sejong_short_train/r2l_mulran/weights/2.pth.tar
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_MULRAN_DATA="/media/rwj/ZX1 2TB/RLPR/processed/mulran_sejong"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_MULRAN_TEST_SPLIT=sejong
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_CHECKPOINT_PATH="/media/rwj/ZX1 2TB/RLPR/runs/sejong_short_train/r2l_mulran/weights/2.pth.tar"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export RLPR_TRAINING_ROOT="/media/rwj/ZX1 2TB/RLPR/runs/sejong_short_train/eval"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ export TORCH_HOME="/media/rwj/ZX1 2TB/RLPR/cache/torch"
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ 
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ python test_cross_modal.py --dataset mulran
+Number of model parameters: 4545092
+
+Evaluating Process -------->
+
+Resuming from /media/rwj/ZX1 2TB/RLPR/runs/sejong_short_train/r2l_mulran/weights/2.pth.tar
+  0%|                                                                                                                | 0/2885 [00:00<?, ?it/s]/media/rwj/ZX1 2TB/RLPR/src/modules/LR_cross_hffc_225_dis.py:150: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:1008.)
+  x = F.silu(F.conv1d(input=x, weight=self.conv1d_x.weight, bias=self.conv1d_x.bias, padding='same',
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2885/2885 [00:11<00:00, 247.71it/s]
+46.52, 64.13, 70.58, 77.39, 77.39
+
+Recall@1: 46.52
+Recall@5: 64.13
+Recall@10: 70.58
+Recall@20: 77.39
+Recall@1percent: 77.39
+
+getting pr...
+100%|█| 1000/1000 [00:21<00:00, 45.65it/
+/media/rwj/ZX1 2TB/RLPR/src/trainer/eval.py:120: RuntimeWarning: invalid value encountered in divide
+  f1s = 2 * precisions[order] * recalls[order] / (precisions[order] + recalls[order])
+f1 score:  nan
+(rlpr) rwj@rwj-ASUS-TUF-Gaming-A16-FA607PV-FA607PV:/media/rwj/ZX1 2TB/RLPR/src$ 

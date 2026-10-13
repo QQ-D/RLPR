@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>RLPR 工程复现阶段汇报</title>
+<style>
+@page { size: A4; margin: 18mm 17mm; }
+body { font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 10.5pt; line-height: 1.6; color: #202b36; }
+h1 { font-size: 22pt; color: #183c60; margin: 0 0 8pt; }
+h2 { font-size: 14pt; color: #183c60; margin: 18pt 0 7pt; page-break-after: avoid; }
+h3 { font-size: 11.5pt; margin: 11pt 0 5pt; page-break-after: avoid; }
+p { margin: 5pt 0; }
+.subtitle { color: #596775; font-size: 10pt; }
+.summary { background: #edf3f8; padding: 10pt; border-left: 3pt solid #315b80; margin: 12pt 0; }
+table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 9pt; }
+th, td { border: 0.5pt solid #acb9c7; padding: 5pt 6pt; vertical-align: top; }
+th { background: #eaf0f5; color: #183c60; text-align: left; font-weight: bold; }
+tr { page-break-inside: avoid; }
+code, pre { font-family: "DejaVu Sans Mono", monospace; font-size: 8.5pt; }
+pre { background: #f1f4f6; border: 0.5pt solid #ccd6df; padding: 8pt; white-space: pre-wrap; }
+li { margin: 4pt 0; }
+a { color: #245783; }
+.note { font-size: 9pt; color: #52606d; }
+.page { page-break-before: always; }
+</style>
+</head>
+<body>
+<h1>RLPR 工程复现阶段汇报</h1>
+<p class="subtitle">汇报日期：2026 年 10 月 13 日　｜　当前实验：MulRan Sejong01 / Sejong02</p>
+<div class="summary"><strong>阶段进展：</strong>已完成论文与代码结构学习、运行环境配置、MulRan 两条 Sejong 序列下载与预处理、三个训练阶段各 2 轮的小样本运行，以及官方权重和自训练权重的跨模态检索评估。官方权重的 Recall@1 为 77.32%，小样本短训权重为 46.52%。当前完成范围为 Sejong 工程流程验证，其余数据集、MulRan 其他序列和论文主表性能对照仍需继续补齐。</div>
+
+<h2>一、任务要求与当前完成情况</h2>
+<p>本次工作围绕“下载原仓库所需数据、每个数据集完成短轮次训练、用官方预训练模型复现评估性能”三项要求展开，为后续 4D radar 到 LiDAR 跨模态位置识别研究建立可修改、可运行的工程基础。</p>
+<table>
+<tr><th style="width:25%">任务要求</th><th style="width:43%">本阶段已完成</th><th>继续完成的工作</th></tr>
+<tr><td>按原脚本下载对应数据集</td><td>已核对五个数据集的数据需求；用户已下载 MulRan 的 Sejong01、Sejong02，已完成解压与目录检查。</td><td>补齐 MulRan 其余 6 条序列，以及 nuScenes、Snail-Radar、HeRCULES、Boreas 的指定数据。</td></tr>
+<tr><td>每个数据集训练 2–3 轮</td><td>在 Sejong 训练区域抽取小样本，LiDAR、雷达、跨模态三个阶段均完成 2 轮，保存权重并正常退出。</td><td>完成其他可训练数据集的短训；随后按原配置补齐训练数据。Boreas 按论文设定只做零样本评估。</td></tr>
+<tr><td>下载官方模型并评估</td><td>已下载 MulRan、nuScenes 跨模态权重；已评估 MulRan 权重在 Sejong 测试划分上的性能，并评估本次短训权重。</td><td>完成其他测试划分与数据集的官方权重评估，并修复当前评估脚本中发现的指标计算问题。</td></tr>
+</table>
+<p><strong>完成范围：</strong>现阶段可确认 Sejong 的“数据读取 → 预处理 → 单模态训练 → 跨模态训练 → 权重加载 → 检索评估”流程可运行；五数据集复现任务尚未全部完成。MulRan 使用扫描雷达，本次结果还不能代替后续 4D 雷达实验。</p>
+
+<h2>二、论文学习与方法理解</h2>
+<p>论文题目为 <em>RLPR: Radar-to-LiDAR Place Recognition via Two-Stage Asymmetric Cross-Modal Alignment for Autonomous Driving</em>，发表于 IEEE Robotics and Automation Letters，2026 年，第 11 卷第 8 期。官方代码仓库为 <a href="https://github.com/QiZS-BIT/RLPR">QiZS-BIT/RLPR</a>，本地版本为 <code>ad6478a5499bab227d7f063cb77d4843dc6f9b4a</code>。</p>
+<p>论文研究的是：给定当前雷达观测，在已有 LiDAR 地图数据库中检索对应位置。网络输出可比较的描述子，再进行近邻检索；该流程本身不生成 LiDAR 点云，也不直接输出完整六自由度精确位姿。</p>
+<ol>
+<li><strong>统一空间表示：</strong>将 LiDAR 与雷达组织为极坐标 BEV，利用两种传感器共有的空间结构。论文采用这一设计兼容不同雷达类型，同时舍弃 RCS、多普勒速度等模态专有信息。</li>
+<li><strong>双分支特征提取：</strong>雷达和 LiDAR 分别经 Mamba 构成的 Polar Context Enhancer、ResNet 骨干提取特征；局部描述子与 Transformer、NetVLAD 聚合得到的全局描述子各为 256 维，拼接为 512 维检索描述子。</li>
+<li><strong>两阶段非对称对齐：</strong>先用 lazy triplet loss 独立预训练 LiDAR 和雷达分支；再加载两个分支权重，以雷达分支为冻结的特征锚点，训练 LiDAR 分支，并通过 InfoNCE 对齐局部与全局描述子。</li>
+</ol>
+<p>当前已熟悉原始数据元信息生成、样本索引、BEV 生成、单模态训练、跨模态对齐和测试入口。后续接入 4D 雷达时，需要重点核对点云字段、位姿与时间同步、100×100 BEV 表示以及跨传感器泛化情况。</p>
+
+<h2>三、环境配置与所用工具</h2>
+<table>
+<tr><th>项目</th><th>实际配置或用途</th></tr>
+<tr><td>系统与硬件</td><td>Ubuntu 20.04.6 LTS；NVIDIA GeForce RTX 4060 Laptop GPU。</td></tr>
+<tr><td>Conda 环境</td><td><code>/mnt/data300/envs/rlpr</code>；Python 3.10.22。</td></tr>
+<tr><td>主要依赖</td><td>PyTorch 2.1.0+cu121；torchvision 0.16.0+cu121；NumPy 1.26.4；mamba-ssm 2.2.4；transformers 4.44.2。</td></tr>
+<tr><td>数据处理</td><td>NumPy 与 pickle 保存索引和元信息；Open3D 处理点云与体素降采样；OpenCV 读取及保存雷达、LiDAR BEV 图片。</td></tr>
+<tr><td>训练与检索</td><td>PyTorch / CUDA 进行前向、反向和优化；scikit-learn 构建位置邻域与正负样本；FAISS 进行描述子 L2 近邻检索；TensorBoardX 保存训练日志。</td></tr>
+</table>
+<p>代码、权重、环境版本清单和下载依赖分别放在 RLPR 工程目录下；原始数据单独放在 RLPR_dataset 中。环境已通过模型前向、反向以及实际三阶段训练验证。下载和运行由用户在本机完成，辅助脚本负责按现有数据范围调用原仓库函数。</p>
+
+<h2 class="page">四、数据下载与预处理</h2>
+<h3>4.1 根据仓库引导核对的数据范围</h3>
+<table>
+<tr><th style="width:13%">数据集</th><th style="width:55%">原代码要求</th><th>当前状态与实验用途</th></tr>
+<tr><td>MulRan</td><td>Sejong01/02、KAIST01/02、Riverside01/02、DCC01/02；每条序列包含 global_pose.csv、Ouster/*.bin、polar/*.png。</td><td>已完成 Sejong01/02。原训练还使用 KAIST；Riverside、DCC 等划分的评估待完成。</td></tr>
+<tr><td>nuScenes</td><td>完整 v1.0 trainval 和 test；保留元数据、maps、samples，以及代码读取的 LiDAR、雷达、相机数据。</td><td>指定数据未就绪；nusc.pth.tar 已下载，尚未在真实数据上训练与评估。</td></tr>
+<tr><td>Snail-Radar</td><td>训练：20231208/data4、20240116/data5、20240123/data2。测试：20240116_eve/data3、20240116/data2。需位姿 txt、xt32 点云、eagleg7/enhanced 雷达点云。</td><td>上述五条完整序列未就绪；用于后续 4D 雷达到 LiDAR 复现。</td></tr>
+<tr><td>HeRCULES</td><td>RiverIsland/01、02 和 SportsComplex/01、02；需 Aeva、continental 点云及两类 gt 文件。</td><td>未完成下载与复现；原流程以 Snail-Radar 权重初始化，再进行微调。</td></tr>
+<tr><td>Boreas</td><td>2020-12-18-13-44、2021-09-14-20-00、2021-01-26-11-22；需位姿 csv、lidar、radar、camera_224。</td><td>未完成指定数据准备。论文排除 Boreas 训练数据，使用 MulRan 权重做零样本评估。</td></tr>
+</table>
+<p class="note">下载范围以原仓库 README、各数据集 gen_info.py 和 scripts 下的流程脚本为依据。已有的其他 Snail 序列不能直接替代上表指定的完整 4D 雷达实验数据。</p>
+
+<h3>4.2 已下载的 MulRan 数据</h3>
+<p>目前原始数据位于 <code>/media/rwj/ZX1 2TB/RLPR_dataset/MulRan</code>，两个子目录分别为 <code>sejong01</code> 和 <code>sejong02</code>。数据包包含外层 tar.gz 和内层 tar，已完成两层解包，点云及图片直接放入各序列的 Ouster 和 polar 目录。</p>
+<table>
+<tr><th>序列</th><th>LiDAR 点云帧数</th><th>雷达图片帧数</th><th>有效同步配对</th><th>同步条件未通过</th></tr>
+<tr><td>Sejong01</td><td>28,779</td><td>11,503</td><td>8,744</td><td>2,759</td></tr>
+<tr><td>Sejong02</td><td>27,494</td><td>10,979</td><td>8,727</td><td>2,252</td></tr>
+<tr><td>合计</td><td>56,273</td><td>22,482</td><td>17,471</td><td>5,011</td></tr>
+</table>
+<p>Sejong02 包含一个空点云文件 <code>1566279795718079314.bin</code>，该时间戳已在原 gen_info.py 的异常点云列表中。脚本对该文件设有跳过逻辑，未将它作为正常样本补造。</p>
+
+<h3>4.3 预处理过程及输出</h3>
+<p><strong>时间与位姿同步：</strong>调用 <code>gen_info</code>。读取 global_pose.csv 的纳秒时间戳和 4×4 位姿，为雷达帧寻找最近的位姿及 LiDAR 帧。本次参数 t_tolerance=1.0，对应位姿差不超过 1 秒、雷达与 LiDAR 差不超过 50 毫秒。终端的 “unknown pose” 提示同时涵盖代码中这两类时间条件不通过的情况。输出 17,471 条雷达、LiDAR、位姿元信息。</p>
+<p><strong>训练与测试划分：</strong>调用 <code>process_infos_sejong</code>，沿用原仓库的地理区域划分。训练区域与测试区域之间设有边界隔离；Sejong01 提供数据库，Sejong02 提供查询，测试查询要求在数据库中存在 9 米以内的匹配位置。</p>
+<table>
+<tr><th>划分</th><th>数量</th><th>用途</th></tr>
+<tr><td>训练区域数据库</td><td>7,114</td><td>来自 Sejong01。</td></tr>
+<tr><td>通过位置匹配筛选的训练查询</td><td>7,202</td><td>来自 Sejong02；与上行合并构成原脚本使用的训练样本池。</td></tr>
+<tr><td>测试数据库</td><td>1,505</td><td>Sejong01 测试区域的 LiDAR 检索参考。</td></tr>
+<tr><td>测试查询</td><td>1,380</td><td>Sejong02 测试区域的雷达查询。</td></tr>
+</table>
+<p><strong>BEV 生成：</strong>调用 <code>gen_bev</code>。LiDAR 点云按原代码去除零点、裁剪 80 米感知范围、过滤 z≤−0.9 米点，并以 1.6 米体素降采样后投影到极坐标网格；雷达 polar 图片截取相应距离范围并缩放。两路图片尺寸均为高 50 × 宽 225；训练读取时除以 256，复制为三通道。此次评估处理 2,885 个索引样本。</p>
+<p>评估输出目录为 <code>RLPR/processed/mulran_sejong</code>，其中 <code>info/mulran_infos-sejong.pkl</code> 保存元信息，<code>index/sejong_test_db.npy</code> 和 <code>sejong_test_query.npy</code> 保存测试划分，<code>bev/mm_bev/lidar</code> 与 <code>radar</code> 保存输入图片。</p>
+
+<h2 class="page">五、小样本训练运行情况</h2>
+<p>为验证工程训练流程，在原地理训练区域的样本池中，以随机种子 0 抽取 1,024 个数据库样本，再从其中抽取 256 个查询。数据库与查询可重合，沿用原代码训练样本池的组织方式；测试区域不参与本次抽样。</p>
+<p>运行入口为工程辅助脚本 <code>RLPR/sejong_short_train.sh</code>。脚本调用原 UnimodalTrainer 和 CrossModalTrainer，仅为本次运行配置 Sejong 数据、抽样规模、batch size 和轮数；原默认训练中的 KAIST 数据本次未加入。</p>
+<table>
+<tr><th>项目</th><th>本次设定</th></tr>
+<tr><td>训练规模与轮数</td><td>1,024 个数据库样本、256 个查询；LiDAR、雷达、跨模态各 2 轮。</td></tr>
+<tr><td>Batch 与采样</td><td>batch size=1；每个查询组织 1 个正样本、10 个负样本，连同查询共 12 个样本。</td></tr>
+<tr><td>优化配置</td><td>Adam；初始学习率 5×10⁻⁵；每轮乘 0.8；triplet margin=0.5；正样本距离阈值 9 米，负样本排除阈值 12 米。</td></tr>
+<tr><td>初始化与训练顺序</td><td>单模态骨干使用 ImageNet ResNet18 初始化；完成两路单模态训练后，加载其第 2 轮权重，再进行跨模态训练，并冻结雷达分支参数。</td></tr>
+</table>
+<table>
+<tr><th>训练阶段</th><th>参数量</th><th>第 1 轮 loss</th><th>第 2 轮 loss</th><th>运行结果</th></tr>
+<tr><td>LiDAR 单模态</td><td>2,272,546</td><td>0.14391835</td><td>0.05139263</td><td>完成 2 轮，保存权重。</td></tr>
+<tr><td>雷达单模态</td><td>2,272,546</td><td>0.15860988</td><td>0.05707145</td><td>完成 2 轮，保存权重。</td></tr>
+<tr><td>跨模态对齐</td><td>4,545,092</td><td>0.62873495</td><td>0.34575570</td><td>完成 2 轮，保存权重。</td></tr>
+</table>
+<p>本次运行中没有出现 loss=NaN、显存不足或训练中断。三个阶段 loss 均下降，表明数据加载、前向、损失计算、反向更新和权重衔接可以正常执行；短轮次 loss 下降尚不足以证明充分收敛。单模态每轮的训练迭代约 15 秒，跨模态约 20 秒，另有 BEV 生成与难负样本缓存时间。</p>
+<p>权重分别保存于 <code>RLPR/runs/sejong_short_train</code> 下的 <code>l_mulran/weights</code>、<code>r_mulran/weights</code> 和 <code>r2l_mulran/weights</code>，每个目录均保存第 1、2 轮模型。最终跨模态权重为 <code>r2l_mulran/weights/2.pth.tar</code>。</p>
+
+<h2>六、预训练权重与自训练权重评估结果</h2>
+<p>两次评估均调用原入口 <code>python test_cross_modal.py --dataset mulran</code>，使用相同的 Sejong 测试划分：1,505 个 LiDAR 数据库样本、1,380 个雷达查询，检索成功的位置阈值为 9 米。通过 <code>RLPR_CHECKPOINT_PATH</code> 分别指定官方 MulRan 权重和本次短训权重。</p>
+<table>
+<tr><th>指标</th><th>官方 MulRan 预训练权重</th><th>Sejong 小样本短训权重</th></tr>
+<tr><td>Recall@1</td><td>77.32%</td><td>46.52%</td></tr>
+<tr><td>Recall@5</td><td>88.77%</td><td>64.13%</td></tr>
+<tr><td>Recall@10</td><td>92.54%</td><td>70.58%</td></tr>
+<tr><td>Recall@20</td><td>95.94%</td><td>77.39%</td></tr>
+<tr><td>Recall@1%（原脚本输出，待核对）</td><td>95.94%</td><td>77.39%</td></tr>
+<tr><td>原脚本 max F1 输出</td><td>0.8831734961</td><td>NaN，当前无有效数值</td></tr>
+</table>
+<p>官方权重两路特征提取约 12 秒，本次短训权重约 11 秒；后续 PR 阈值扫描分别约 22 秒和 21 秒。这些时间来自终端日志，包含整个测试循环，不能直接等同于论文的单帧纯模型推理耗时。</p>
+<p>短训权重的 Recall@1 比官方权重低 30.80 个百分点。当前仅用 Sejong 小样本、每阶段 2 轮及 batch size=1，且未包含原配置中的 KAIST 数据，因此该结果只用于训练与权重评估流程验证，不能据此判断论文完整训练方案的性能。模型精度是否可以恢复，需要在完整训练协议下进一步验证。</p>
+<p><strong>与论文结果对照的范围：</strong>所提供 PDF 的主结果表 Table I 列出的是 MulRan-Riverside、MulRan-DCC、Bor-Clear，未给出本次 Sejong 划分的直接对照值。因此 77.32% 是本地 Sejong 实测结果，不能写成“已复现论文主表性能”。后续对照目标包括：</p>
+<table>
+<tr><th>论文 Table I 划分</th><th>AR@1</th><th>AR@5</th><th>AR@10</th><th>max F1</th><th>本地状态</th></tr>
+<tr><td>MulRan-Riverside</td><td>64.85%</td><td>78.77%</td><td>84.22%</td><td>0.8057</td><td>数据与评估待补齐</td></tr>
+<tr><td>MulRan-DCC</td><td>55.32%</td><td>73.94%</td><td>82.98%</td><td>0.7419</td><td>数据与评估待补齐</td></tr>
+<tr><td>Bor-Clear</td><td>87.60%</td><td>94.26%</td><td>95.31%</td><td>0.9469</td><td>数据与评估待补齐</td></tr>
+</table>
+
+<h2 class="page">七、发现的问题与处理状态</h2>
+<ol>
+<li><strong>F1 输出 NaN：</strong>短训权重评估在 <code>trainer/eval.py</code> 的 F1 计算处出现除法警告。代码对每个阈值计算 <code>2PR/(P+R)</code>；当 P、R 同为 0 时形成 0/0，随后 <code>np.max</code> 将 NaN 传播到最终输出。这不代表训练 loss 出现 NaN，也不影响已完成的 Recall@1/5/10/20 检索统计。当前未修复、未重测，报告保留 NaN 作为无效指标；后续需保护零分母并重新评估。</li>
+<li><strong>Recall@1% 计算顺序：</strong>原代码按查询数量计算 1% 的 K，本次得到 13，并将阈值列为 [1, 5, 10, 20, 13]。但累加逻辑默认列表由小到大，命中 top-20 后会同步累加最后一项，因此当前 Recall@1% 数值被 top-20 的命中结果影响。需确认 1% 的协议定义并独立统计各 K，再报告严谨结果。</li>
+<li><strong>依赖与图片类型提示：</strong>torchvision 的 antialias、PyTorch 的 padding='same' 以及 OpenCV 图片深度转换提示均未中断本次运行。OpenCV 将 BEV 输出转换为 8 位图像；后续修改预处理时，应显式核对 dtype 和归一化范围。</li>
+<li><strong>当前运行范围与原完整配置不同：</strong>原 MulRan 默认包含 Sejong 和 KAIST 训练数据，统一预处理入口还读取 Riverside、DCC。当前按可用数据只调用 Sejong 的原函数，并用辅助脚本做小样本短训，需在后续全量实验中恢复完整数据范围和训练配置。</li>
+</ol>
+
+<h2>八、后续工作安排</h2>
+<ol>
+<li>先修复并重测 F1、Recall@1% 的计算，保存完整日志及评估协议，确保指标可比较。</li>
+<li>补齐 MulRan 的 KAIST01/02、Riverside01/02、DCC01/02，完成原训练数据范围的短训，以及 Riverside、DCC 官方权重评估与论文主表对照。</li>
+<li>优先准备 Snail-Radar 的五条指定完整序列，完成 4D 雷达点云读取、位姿同步、BEV 生成、短训和官方权重测试，建立与后续研究方向直接相关的基线。</li>
+<li>以 Snail-Radar 权重初始化 HeRCULES，按原流程验证微调与测试；另行完成 nuScenes 训练/评估和 Boreas 的零样本评估。Boreas 保持原论文“不参与训练”的设置。</li>
+<li>整理各数据集的数据清单、固定版本、运行命令、权重路径和实测指标。基线稳定后，再根据老师确定的创新方案进行个人实验设计和代码修改。</li>
+</ol>
+<p><strong>当前工程基础：</strong>已具备扫描雷达到 LiDAR 的可运行训练与评估链路，能够定位数据、网络、损失和检索相关模块；下一阶段重点是补齐五数据集复现要求，并建立真实 4D 雷达基线。</p>
+
+<h2>附录：复现入口与证据</h2>
+<p>以下相对路径以 <code>/media/rwj/ZX1 2TB/RLPR</code> 为工程根目录：</p>
+<table>
+<tr><th>内容</th><th>位置或入口</th></tr>
+<tr><td>原始代码与环境清单</td><td><code>src/</code>；<code>environment.lock.txt</code></td></tr>
+<tr><td>预处理实现</td><td><code>src/dataset/MulRan/gen_info.py</code>、<code>gen_index.py</code>、<code>gen_bev.py</code></td></tr>
+<tr><td>训练及评估实现</td><td><code>src/trainer/unimodal.py</code>、<code>cross_modal.py</code>、<code>eval.py</code>；<code>src/test_cross_modal.py</code></td></tr>
+<tr><td>小样本训练命令</td><td><code>bash sejong_short_train.sh</code></td></tr>
+<tr><td>评估命令</td><td><code>python test_cross_modal.py --dataset mulran</code>；设置 <code>RLPR_MULRAN_TEST_SPLIT=sejong</code> 和目标权重路径。</td></tr>
+<tr><td>官方权重</td><td><code>pretrained/mulran.pth.tar</code>；<code>pretrained/nusc.pth.tar</code>（nuScenes 尚未实测）</td></tr>
+<tr><td>本阶段运行证据</td><td>本报告目录下 <code>运行日志.txt</code>，保留用户提供的预处理、官方评估、短训、自训练评估完整输出。</td></tr>
+</table>
+<p class="note">参考依据：用户提供的 RLPR_2026.pdf，论文第 IV 节及 Table I–III；官方 GitHub 仓库及本地固定版本代码；本机生成的权重、元信息和用户提供的运行日志。论文 DOI：<a href="https://doi.org/10.1109/LRA.2026.3707282">10.1109/LRA.2026.3707282</a>。本报告不将未下载、未训练或未评估的项目计为完成。</p>
+</body>
+</html>
