@@ -1,0 +1,2 @@
+RUN /media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110
+pure_phase/l/epoch1 loss 0.20325784 {'Recall@1': 95.43478260869566, 'Recall@5': 97.7536231884058, 'Recall@10': 98.40579710144928, 'Recall@20': 98.98550724637681}

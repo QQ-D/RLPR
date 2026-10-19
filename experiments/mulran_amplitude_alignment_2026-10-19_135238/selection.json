@@ -1,0 +1,27 @@
+{
+  "selected": "infonce",
+  "rule": "Sejong Recall@1, then F1, then signed control on exact tie",
+  "validation": {
+    "signed": {
+      "F1": 0.8662092624356775,
+      "Recall@1": 75.0,
+      "Recall@5": 87.31884057971014,
+      "Recall@10": 92.17391304347827,
+      "Recall@20": 95.79710144927536,
+      "Recall@1percent": 94.20289855072464
+    },
+    "infonce": {
+      "F1": 0.8684777921517896,
+      "Recall@1": 75.14492753623189,
+      "Recall@5": 88.47826086956522,
+      "Recall@10": 92.97101449275362,
+      "Recall@20": 96.23188405797102,
+      "Recall@1percent": 94.4927536231884
+    }
+  },
+  "checkpoints": {
+    "signed": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+    "infonce": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+  },
+  "locked_at": "2026-10-19T14:16:51.593199+08:00"
+}

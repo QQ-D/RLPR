@@ -1,0 +1,30 @@
+{
+  "scope": "Amplitude model; fusion supervision fixed0; compare phase auxiliary .1/.03/0; fresh seed0 cross1epoch per configuration",
+  "reference": "runs/mulran_amplitude_fusion_2026-10-19_122008/fusion_00/weights/1.pth.tar",
+  "reference_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+  "initialization": "Same original amplitude L5/R5 as preceding fusion comparison; never continue training from an aligned cross-modal checkpoint",
+  "model_or_trainer_changes": false,
+  "semantics": "phase_loss_weight scales both circular-phase consistency and spectral coherence auxiliaries; at zero both have zero contribution but forward computations remain unchanged. Fusion supervision stays zero with fusion computation/BN path enabled in all configurations.",
+  "selection": "All configurations finish Sejong validation, then lock by R1/F1/order .1/.03/0, then benchmark DCC/Riverside without reselection",
+  "tests": {"command": "python -m unittest discover -s tests -q", "passed": 89, "log": "runs/phase_weight_regression_2026-10-19.log"},
+  "preflight": "Preceding fusion protocol, selection, fixed L5/R5/control checkpoint hashes and all83 listed source files verified unchanged",
+  "review": {
+    "reviewer": "phase_weight_review",
+    "blocking_findings": 0,
+    "minor_deferred": "An orphaned Sejong metrics file before its checkpoint digest is recorded assumes the same checkpoint remains in place; normal crash recovery satisfies this, but manually replacing an unrecorded checkpoint could reuse stale metrics. Do not replace checkpoint files during the run. Recorded checkpoints are hash-guarded."
+  },
+  "status": "COMPLETE",
+  "run_root": "runs/mulran_amplitude_phase_2026-10-19_130536",
+  "source_commit": "7ac9748",
+  "finished_at": "2026-10-19T13:44:59.886339+08:00",
+  "selected_configuration": "phase_01",
+  "validation_recall_at_1": {"phase_01": 75.0, "phase_003": 74.05797101449275, "phase_00": 74.1304347826087},
+  "test_recall_at_1": {
+    "phase_01": {"dcc": 55.85106382978723, "riverside": 63.341067285382834},
+    "phase_003": {"dcc": 54.78723404255319, "riverside": 62.64501160092807},
+    "phase_00": {"dcc": 54.78723404255319, "riverside": 62.41299303944315}
+  },
+  "completed_checks": ["All3 checkpoints and recorded hashes", "Frozen radar teachers", "2071 optimization steps in every arm", "Control model tensor bytes equal preceding fusion_00 reference", "All3 actual mined-negative arrays and frame IDs identical", "Paired sampler and worker generator states equal", "Source/protocol/selection/initialization hashes", "Runtime versions and GPU/driver match launch", "Metrics JSON files match final records"],
+  "conclusion": "Retain phase auxiliary .1 with fusion supervision0. Lower auxiliary weights did not improve validation or test R@1; some secondary metrics have mixed changes. No increase over preceding selected model and no new training beyond these3 one-epoch configurations.",
+  "caveat": "Single seed, exploratory benchmark comparisons; test scenes were inspected previously; no claim of superiority"
+}

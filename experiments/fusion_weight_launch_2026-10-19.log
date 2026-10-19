@@ -1,0 +1,11 @@
+RUN /media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_121853
+Traceback (most recent call last):
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/scripts/fusion_weight_ablation.py", line 261, in <module>
+    run(args.run_root)
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/scripts/fusion_weight_ablation.py", line 187, in run
+    child(arm, 'train')
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/scripts/fusion_weight_ablation.py", line 172, in child
+    subprocess.run([sys.executable, '-u', str(root / 'driver.py'), '--child', mode,
+  File "/mnt/data300/envs/rlpr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/mnt/data300/envs/rlpr/bin/python', '-u', '/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_121853/driver.py', '--child', 'train', '--root', '/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_121853', '--arm', 'fusion_05', '--split', 'sejong']' returned non-zero exit status 1.

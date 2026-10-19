@@ -1,0 +1,17 @@
+{
+  "model_variant": "spectral",
+  "code_commit": "f17c5c6143d5d1925f08477687c5f74b4598235a",
+  "code_status": "",
+  "epochs_per_stage": 2,
+  "database_frames": 1024,
+  "query_frames": 256,
+  "batch_size": 1,
+  "seed": 0,
+  "torch": "2.1.0+cu121",
+  "data_info": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_sejong/info/mulran_infos-sejong.pkl",
+  "phase_loss_weight": 0.1,
+  "phase_attention": true,
+  "dynamic_mask": true,
+  "training_scope": "Sejong01/02 training regions; excludes geographic test regions and KAIST",
+  "status": "COMPLETE"
+}

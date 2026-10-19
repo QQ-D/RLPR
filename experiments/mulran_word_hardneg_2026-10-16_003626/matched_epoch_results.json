@@ -1,0 +1,62 @@
+{
+  "status": "COMPLETE",
+  "selected_epoch": 2,
+  "protocol": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/matched_epoch_protocol.json",
+  "baseline_report_changed": false,
+  "results": {
+    "dcc": {
+      "epoch": 2,
+      "random_negatives": {
+        "metrics": {
+          "Recall@1": 54.26,
+          "Recall@5": 70.21,
+          "Recall@10": 80.85,
+          "Recall@20": 86.7,
+          "Recall@1percent": 54.26,
+          "F1": 0.7401574803149605
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/matched_baseline_epoch_2_dcc.log"
+      },
+      "hard_negatives": {
+        "metrics": {
+          "Recall@1": 55.32,
+          "Recall@5": 69.15,
+          "Recall@10": 81.38,
+          "Recall@20": 87.23,
+          "Recall@1percent": 55.32,
+          "F1": 0.7392996108949417
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_2_dcc.log",
+        "completed_at": "2026-10-16T01:31:40.529736+08:00"
+      },
+      "baseline_metric_origin": "Additional evaluation chosen only by hard-negative validation-selected epoch"
+    },
+    "riverside": {
+      "epoch": 2,
+      "random_negatives": {
+        "metrics": {
+          "Recall@1": 55.45,
+          "Recall@5": 71.87,
+          "Recall@10": 79.99,
+          "Recall@20": 85.79,
+          "Recall@1percent": 84.51,
+          "F1": 0.722521137586472
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/matched_baseline_epoch_2_riverside.log"
+      },
+      "hard_negatives": {
+        "metrics": {
+          "Recall@1": 56.09,
+          "Recall@5": 72.45,
+          "Recall@10": 79.47,
+          "Recall@20": 85.85,
+          "Recall@1percent": 84.34,
+          "F1": 0.7310344827586208
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_2_riverside.log",
+        "completed_at": "2026-10-16T01:32:38.357890+08:00"
+      },
+      "baseline_metric_origin": "Additional evaluation chosen only by hard-negative validation-selected epoch"
+    }
+  }
+}

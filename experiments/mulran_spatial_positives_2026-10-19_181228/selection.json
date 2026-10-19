@@ -1,0 +1,80 @@
+{
+  "selected": "multi",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "rule": "Mean Sejong F1, then mean Recall@1, then single-positive control on exact tie; evaluated seed set is [0] or promoted [0,1,2]; no individual seed selection.",
+  "baseline": {
+    "0": {
+      "validation": {
+        "F1": 0.8684777921517896,
+        "Recall@1": 75.14492753623189,
+        "Recall@5": 88.47826086956522,
+        "Recall@10": 92.97101449275362,
+        "Recall@20": 96.23188405797102,
+        "Recall@1percent": 94.4927536231884
+      },
+      "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+    },
+    "1": {
+      "validation": {
+        "F1": 0.862913622690159,
+        "Recall@1": 74.92753623188406,
+        "Recall@5": 87.68115942028986,
+        "Recall@10": 92.46376811594203,
+        "Recall@20": 95.21739130434783,
+        "Recall@1percent": 93.76811594202898
+      },
+      "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319"
+    },
+    "2": {
+      "validation": {
+        "F1": 0.8676731793960923,
+        "Recall@1": 75.07246376811594,
+        "Recall@5": 87.7536231884058,
+        "Recall@10": 92.3913043478261,
+        "Recall@20": 96.15942028985506,
+        "Recall@1percent": 93.76811594202898
+      },
+      "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6"
+    }
+  },
+  "multi": {
+    "0": {
+      "validation": {
+        "F1": 0.8693424423569598,
+        "Recall@1": 75.94202898550725,
+        "Recall@5": 88.47826086956522,
+        "Recall@10": 92.89855072463769,
+        "Recall@20": 95.94202898550725,
+        "Recall@1percent": 94.20289855072464
+      },
+      "checkpoint_sha256": "26d71a1f74ec152306b2a2f6c7119e645bafb6951d045261ba0f472ab857f14f"
+    },
+    "1": {
+      "validation": {
+        "F1": 0.8633031479085814,
+        "Recall@1": 74.4927536231884,
+        "Recall@5": 88.04347826086956,
+        "Recall@10": 92.89855072463769,
+        "Recall@20": 95.65217391304348,
+        "Recall@1percent": 93.69565217391305
+      },
+      "checkpoint_sha256": "f34fcd09e811cdde6c5d18399ef3cc536cb9abd5bf5d074b632524667b4f713c"
+    },
+    "2": {
+      "validation": {
+        "F1": 0.8669565217391304,
+        "Recall@1": 75.43478260869566,
+        "Recall@5": 88.47826086956522,
+        "Recall@10": 92.68115942028986,
+        "Recall@20": 95.86956521739131,
+        "Recall@1percent": 94.42028985507245
+      },
+      "checkpoint_sha256": "064c35781ea1300296c0d31739e33a5a483282f6e9a278e1c017a7b4931961b5"
+    }
+  },
+  "locked_at": "2026-10-19T19:00:30.706895+08:00"
+}

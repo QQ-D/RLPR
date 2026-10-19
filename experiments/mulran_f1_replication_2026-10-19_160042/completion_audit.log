@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/media/rwj/ZX1 2TB/RLPR/reports/2026-10-19/audit_f1_replication.py", line 81, in <module>
+    assert all(runtime[k]==launch[k] for k in runtime)
+AssertionError

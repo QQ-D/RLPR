@@ -1,0 +1,745 @@
+{
+  "status": "COMPLETE",
+  "phase": "COMPLETE",
+  "started_at": "2026-10-19T18:12:28.852836+08:00",
+  "protocol_sha256": "a2a3cbff61967eea1a26aca4a84f423e4e45de02708bea0344f92bfcce644268",
+  "baseline": {
+    "0": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+      "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+        "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+      },
+      "alignment_loss": "infonce",
+      "validation": {
+        "F1": 0.8684777921517896,
+        "Recall@1": 75.14492753623189,
+        "Recall@5": 88.47826086956522,
+        "Recall@10": 92.97101449275362,
+        "Recall@20": 96.23188405797102,
+        "Recall@1percent": 94.4927536231884
+      },
+      "benchmarks": {
+        "dcc": {
+          "F1": 0.778846153846154,
+          "Recall@1": 51.06382978723404,
+          "Recall@5": 73.40425531914893,
+          "Recall@10": 78.72340425531915,
+          "Recall@20": 89.8936170212766,
+          "Recall@1percent": 51.06382978723404
+        },
+        "riverside": {
+          "F1": 0.8011027963765261,
+          "Recall@1": 62.35498839907193,
+          "Recall@5": 75.46403712296984,
+          "Recall@10": 81.2645011600928,
+          "Recall@20": 86.77494199535964,
+          "Recall@1percent": 85.5568445475638
+        }
+      },
+      "artifacts": {
+        "sejong.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+          "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+        },
+        "sejong_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong_diagnostics.json",
+          "sha256": "c98ae6d86e3fdf68f62fe37dc065fe48fab3a79be00ac7cf3ac5594be1756a3a"
+        },
+        "sejong.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.npz",
+          "sha256": "80487cd750820f0962e797602375c6716995031992a41b12948973f2534e7042"
+        },
+        "sejong.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.csv",
+          "sha256": "e49e8cf2482cce2b397843f38ad888824c7cacf23a8547cbb2df5cc4807ef355"
+        },
+        "sejong_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+          "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+        },
+        "dcc.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.json",
+          "sha256": "959564200f3ca2e6635afda8927dd653617500918e8b75e653a6f784cd5de386"
+        },
+        "dcc_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc_diagnostics.json",
+          "sha256": "a9c3f31f641977e99fd01a2d85a43f38746097ee6ce0ee7a5ffc2a68127303ea"
+        },
+        "dcc.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.npz",
+          "sha256": "aa6a4dec31d546944e6d9a4d2a98432049c5393cdc82e04b99ec847c5e1cd8d4"
+        },
+        "dcc.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.csv",
+          "sha256": "2e56ed5dc4ded06c278e187c67dffdf15d732f6401ceb5bc0a0a99da6701d3d1"
+        },
+        "dcc_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.json",
+          "sha256": "959564200f3ca2e6635afda8927dd653617500918e8b75e653a6f784cd5de386"
+        },
+        "riverside.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.json",
+          "sha256": "4e5a094af1c03e35a508d51503989f8a2f210f7692759788c73cae53e66936ff"
+        },
+        "riverside_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside_diagnostics.json",
+          "sha256": "9c79495c211f604f3432234e4aae9557e8e4c82ccd09f81f9d3dd15679cd9ff8"
+        },
+        "riverside.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.npz",
+          "sha256": "56bbd55481a98700633d412da061bfd51e90661b672e850b812c00cbe6fa4d32"
+        },
+        "riverside.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.csv",
+          "sha256": "03ce7b55858fb65be07cb49f211c3a29663957badb614044f26a94195fe71cc9"
+        },
+        "riverside_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.json",
+          "sha256": "4e5a094af1c03e35a508d51503989f8a2f210f7692759788c73cae53e66936ff"
+        }
+      },
+      "validation_artifact": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+        "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+      }
+    },
+    "1": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+      "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+        "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+      },
+      "artifacts": {
+        "seed_start": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/seed_start.json",
+          "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+        },
+        "mining.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/cache/cross_negatives_epoch_1.npz",
+          "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+        },
+        "mining.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/cache/cross_negatives_epoch_1.json",
+          "sha256": "9e804276686c76c98eea7a7e69941d81cdb4f1c919c54f26154885e2b44cc3bb"
+        },
+        "sejong.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+          "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+        },
+        "sejong_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong_diagnostics.json",
+          "sha256": "970816ca4bfbdbd780bab721513bbb26793336b45ec719f871aa8fb7525d4218"
+        },
+        "sejong.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.npz",
+          "sha256": "94421c5a608b932022b92f87fbdf11563ae9a43dcb344dd9111de069e014eb64"
+        },
+        "sejong.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.csv",
+          "sha256": "039772883a944cf42796d3529d9a4eadd76b2c2afb56e151e1070b4f9f07f991"
+        },
+        "sejong_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+          "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+        },
+        "dcc.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.json",
+          "sha256": "f8f7cfa11501c2151d12b901425f18d30fa306f9257e61868c0ded4ebf9a693d"
+        },
+        "dcc_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc_diagnostics.json",
+          "sha256": "06d020596f83d1c480ecb9ca48c935a679b3188065e4708ae8317f91ed9a08fa"
+        },
+        "dcc.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.npz",
+          "sha256": "c3b3d72f53251a071d87b0346bb5174e1659d5a3ab42356b4137290dd7177f49"
+        },
+        "dcc.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.csv",
+          "sha256": "f655a3b8edb47d9723119a0a0b7214831ed62fab0415ce99aeaf63abe0a529de"
+        },
+        "dcc_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.json",
+          "sha256": "f8f7cfa11501c2151d12b901425f18d30fa306f9257e61868c0ded4ebf9a693d"
+        },
+        "riverside.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.json",
+          "sha256": "27eed4ac880f3fe3710f4eb234b84095bf807cadecc93ff37a20d654e5141ba4"
+        },
+        "riverside_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside_diagnostics.json",
+          "sha256": "7bc8a8c505a0983444a3c41cb8638fd063cd058083867021215c602e5680d61f"
+        },
+        "riverside.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.npz",
+          "sha256": "973b400289970beabd48505882ab4e8f49c7e28f64861609b33129f7537d9ed6"
+        },
+        "riverside.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.csv",
+          "sha256": "68361e600da28e69d932ce6237da2d95b0048b5c37cbf26f865ff6a727cc5997"
+        },
+        "riverside_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.json",
+          "sha256": "27eed4ac880f3fe3710f4eb234b84095bf807cadecc93ff37a20d654e5141ba4"
+        }
+      },
+      "validation": {
+        "F1": 0.862913622690159,
+        "Recall@1": 74.92753623188406,
+        "Recall@5": 87.68115942028986,
+        "Recall@10": 92.46376811594203,
+        "Recall@20": 95.21739130434783,
+        "Recall@1percent": 93.76811594202898
+      },
+      "validation_artifact": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+        "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+      },
+      "benchmarks": {
+        "dcc": {
+          "F1": 0.7488151658767773,
+          "Recall@1": 51.59574468085106,
+          "Recall@5": 72.87234042553192,
+          "Recall@10": 80.31914893617021,
+          "Recall@20": 88.29787234042553,
+          "Recall@1percent": 51.59574468085106
+        },
+        "riverside": {
+          "F1": 0.7890895121014213,
+          "Recall@1": 61.542923433874705,
+          "Recall@5": 75.75406032482599,
+          "Recall@10": 81.67053364269141,
+          "Recall@20": 86.3109048723898,
+          "Recall@1percent": 85.67285382830626
+        }
+      }
+    },
+    "2": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/weights/1.pth.tar",
+      "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+        "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+      },
+      "artifacts": {
+        "seed_start": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/seed_start.json",
+          "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+        },
+        "mining.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/cache/cross_negatives_epoch_1.npz",
+          "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+        },
+        "mining.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/cache/cross_negatives_epoch_1.json",
+          "sha256": "cdffc1f83f4e92c3560061820a3ab0363e1d96ac2679d97ce8cb3f59853eea18"
+        },
+        "sejong.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+          "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+        },
+        "sejong_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong_diagnostics.json",
+          "sha256": "169c614b4d69f63c7ccf10c7850ad4850cc704da764c9f8b9fe5b48226a5861e"
+        },
+        "sejong.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.npz",
+          "sha256": "415d2a5af24f8e21520293df1a5f617c1ca08beb168b326e91ea715054157f69"
+        },
+        "sejong.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.csv",
+          "sha256": "4444ea055f134e22f9fb28f9b2a9b2d03eff76220bd552dd4690586a67b42836"
+        },
+        "sejong_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+          "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+        },
+        "dcc.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.json",
+          "sha256": "2b5676331dcd2f12f373d136bbb1bb7bb28c3506551de1aeb054efa115235fab"
+        },
+        "dcc_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc_diagnostics.json",
+          "sha256": "d82c06da98517b28a0377624ba32d4574e33719ff1c3c160f4338cf4de37e537"
+        },
+        "dcc.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.npz",
+          "sha256": "56329dfbc8746e32db06fec675c307ca991ab2d92ff06229eb7345e1bf95f8c5"
+        },
+        "dcc.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.csv",
+          "sha256": "42d1867fc0b7c2d403438bd99e3ce1c50b7b8f7a08e2041c5aae0336c8852b45"
+        },
+        "dcc_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.json",
+          "sha256": "2b5676331dcd2f12f373d136bbb1bb7bb28c3506551de1aeb054efa115235fab"
+        },
+        "riverside.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.json",
+          "sha256": "03ef28da485d8184a72a7ae7e7173e32cceb8e865b0ca77e869ffe6e02a47e0c"
+        },
+        "riverside_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside_diagnostics.json",
+          "sha256": "512a72cabcae57f57283570c52b33b5bdfc23070d09b264993250ac434103f93"
+        },
+        "riverside.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.npz",
+          "sha256": "18ac130ace8703819ac473295582b950fdf3c2878f0974d74e3f31c50f04ef46"
+        },
+        "riverside.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.csv",
+          "sha256": "aa64e2a985c867e8e1372f0c16c5b102868dda29f924fc23a328a8961b80d6db"
+        },
+        "riverside_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.json",
+          "sha256": "03ef28da485d8184a72a7ae7e7173e32cceb8e865b0ca77e869ffe6e02a47e0c"
+        }
+      },
+      "validation": {
+        "F1": 0.8676731793960923,
+        "Recall@1": 75.07246376811594,
+        "Recall@5": 87.7536231884058,
+        "Recall@10": 92.3913043478261,
+        "Recall@20": 96.15942028985506,
+        "Recall@1percent": 93.76811594202898
+      },
+      "validation_artifact": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+        "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+      },
+      "benchmarks": {
+        "dcc": {
+          "F1": 0.7464114832535886,
+          "Recall@1": 50.0,
+          "Recall@5": 72.87234042553192,
+          "Recall@10": 78.19148936170212,
+          "Recall@20": 88.82978723404256,
+          "Recall@1percent": 50.0
+        },
+        "riverside": {
+          "F1": 0.8001564333202972,
+          "Recall@1": 62.7030162412993,
+          "Recall@5": 76.16009280742459,
+          "Recall@10": 81.4385150812065,
+          "Recall@20": 86.42691415313224,
+          "Recall@1percent": 85.26682134570765
+        }
+      }
+    }
+  },
+  "trials": {
+    "0": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/weights/1.pth.tar",
+      "checkpoint_sha256": "26d71a1f74ec152306b2a2f6c7119e645bafb6951d045261ba0f472ab857f14f",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+        "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+      },
+      "artifacts": {
+        "seed_start": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/seed_start.json",
+          "sha256": "4f21e868e18abd6d2891553aab1655e75972504c51776f52d4e0c7c039aeb5df"
+        },
+        "mining.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/cache/cross_negatives_epoch_1.npz",
+          "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+        },
+        "mining.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/cache/cross_negatives_epoch_1.json",
+          "sha256": "007ad13bca7415999500ec2f7235aee454ca9c2bf414faf7a26df84172488743"
+        },
+        "sejong.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/sejong.json",
+          "sha256": "639042dcfbf43b06dcc921f9b66fad8062bfcbf5578aa0fc9fc9393aeaf27f00"
+        },
+        "sejong_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/sejong_diagnostics.json",
+          "sha256": "b3850a1a391925601f2d7207023e97bac40a1728daaebeb3aafe0090f701287a"
+        },
+        "sejong.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/sejong.npz",
+          "sha256": "fc97a20e85656a3962c80545bc2069ffa82cdd2f9ef50a9e69e4a69dadd429ac"
+        },
+        "sejong.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/sejong.csv",
+          "sha256": "99be60d6a0d0b775523779c0848df2f210fe9b478a02b710217f377ceff46ec6"
+        },
+        "sejong_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/sejong.json",
+          "sha256": "639042dcfbf43b06dcc921f9b66fad8062bfcbf5578aa0fc9fc9393aeaf27f00"
+        },
+        "dcc.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/dcc.json",
+          "sha256": "91f580f4551f642f7218a929e51b7b22011d779a9ba8e800694b688f384322a5"
+        },
+        "dcc_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/dcc_diagnostics.json",
+          "sha256": "cd3c0fb839270b5075bc6c8464e0b6a7a0b22f4f28a281f73bdbf4b6a2225d1e"
+        },
+        "dcc.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/dcc.npz",
+          "sha256": "191534537c94a49bd7372694b5051f5c6c8db3f53e861631bd3b0b7fb33e032d"
+        },
+        "dcc.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/dcc.csv",
+          "sha256": "af44924fc1e769198378d9270a7800f70cbf75ba4ad5e4d3dbe87a9ae597ad19"
+        },
+        "dcc_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/dcc.json",
+          "sha256": "91f580f4551f642f7218a929e51b7b22011d779a9ba8e800694b688f384322a5"
+        },
+        "riverside.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/riverside.json",
+          "sha256": "49a2ea82ac2d26a3557293d5a453cc464cb91a90e032c15be899fdfaab293132"
+        },
+        "riverside_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/riverside_diagnostics.json",
+          "sha256": "075d318cecfb33b7bd091a11360dea14884ec70583dd2f21822b9cdedc03dbef"
+        },
+        "riverside.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/riverside.npz",
+          "sha256": "bc9701d2bd780c3499436964fcf910a90d4b0cff528cf793cf530c92b6034364"
+        },
+        "riverside.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/riverside.csv",
+          "sha256": "27e4702223daa70d384b190ad63225190d3139579d0f967b451871f021d0b140"
+        },
+        "riverside_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/riverside.json",
+          "sha256": "49a2ea82ac2d26a3557293d5a453cc464cb91a90e032c15be899fdfaab293132"
+        }
+      },
+      "validation": {
+        "F1": 0.8693424423569598,
+        "Recall@1": 75.94202898550725,
+        "Recall@5": 88.47826086956522,
+        "Recall@10": 92.89855072463769,
+        "Recall@20": 95.94202898550725,
+        "Recall@1percent": 94.20289855072464
+      },
+      "benchmarks": {
+        "dcc": {
+          "F1": 0.7714285714285715,
+          "Recall@1": 53.191489361702125,
+          "Recall@5": 72.3404255319149,
+          "Recall@10": 79.25531914893617,
+          "Recall@20": 87.7659574468085,
+          "Recall@1percent": 53.191489361702125
+        },
+        "riverside": {
+          "F1": 0.7954545454545454,
+          "Recall@1": 61.77494199535963,
+          "Recall@5": 76.39211136890951,
+          "Recall@10": 81.78654292343387,
+          "Recall@20": 86.36890951276102,
+          "Recall@1percent": 85.09280742459396
+        }
+      }
+    },
+    "1": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/weights/1.pth.tar",
+      "checkpoint_sha256": "f34fcd09e811cdde6c5d18399ef3cc536cb9abd5bf5d074b632524667b4f713c",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+        "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+      },
+      "artifacts": {
+        "seed_start": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/seed_start.json",
+          "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+        },
+        "mining.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/cache/cross_negatives_epoch_1.npz",
+          "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+        },
+        "mining.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/cache/cross_negatives_epoch_1.json",
+          "sha256": "14b537e8f2d665532dd542acc5cb8e7a91469eadca15efbe5d7e6c2925d43a1d"
+        },
+        "sejong.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/sejong.json",
+          "sha256": "0f0cc8a5978ba04dac7d14a48fc625c606405426a47ea93af06c863988a9548f"
+        },
+        "sejong_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/sejong_diagnostics.json",
+          "sha256": "66171e4750ae599c7181673a23434d6fa113518856e0a9b65bfde1b032a0143a"
+        },
+        "sejong.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/sejong.npz",
+          "sha256": "22e52726bff368a78569789252c8777a0b0824540fab45a02a845e4f34bd609c"
+        },
+        "sejong.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/sejong.csv",
+          "sha256": "a06d341c5d8fcd5befef8be309784b4742b4082ad4a2da52194ff11f011eb186"
+        },
+        "sejong_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/sejong.json",
+          "sha256": "0f0cc8a5978ba04dac7d14a48fc625c606405426a47ea93af06c863988a9548f"
+        },
+        "dcc.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/dcc.json",
+          "sha256": "80b27bf60b91e9e1385bb906356f3b08e88e21b92cd31d2cfaf540ae3adb4063"
+        },
+        "dcc_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/dcc_diagnostics.json",
+          "sha256": "d7532b92ab22fb8edbe1fd6930884299589e4de63b6a4a08ad7c3fa99c67cc07"
+        },
+        "dcc.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/dcc.npz",
+          "sha256": "de7ae2fa5f423b9443f625a0ac93d8e5ec5a5e0519f48f97698f230dc46f8ef6"
+        },
+        "dcc.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/dcc.csv",
+          "sha256": "0f99bfd483ae7cca2b416c52e643bc063dd87f7da453ab037f98e3ae8dab5492"
+        },
+        "dcc_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/dcc.json",
+          "sha256": "80b27bf60b91e9e1385bb906356f3b08e88e21b92cd31d2cfaf540ae3adb4063"
+        },
+        "riverside.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/riverside.json",
+          "sha256": "95e22093c3012fd4c749f608d1c8e1b98b2f70029ce735675d8f882b6fe4a57a"
+        },
+        "riverside_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/riverside_diagnostics.json",
+          "sha256": "9f6a841fc25de4385fbe44a98842915a36b70c6ee76db87c8489b11017e1ef00"
+        },
+        "riverside.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/riverside.npz",
+          "sha256": "787dd658d194e80fe17bf599900584373fb5f1b817da9903ea78be64762df8b6"
+        },
+        "riverside.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/riverside.csv",
+          "sha256": "a325a086db768de1856902ca124b0438f889ab98eb3b845004ba22863ca5ba0e"
+        },
+        "riverside_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/riverside.json",
+          "sha256": "95e22093c3012fd4c749f608d1c8e1b98b2f70029ce735675d8f882b6fe4a57a"
+        }
+      },
+      "validation": {
+        "F1": 0.8633031479085814,
+        "Recall@1": 74.4927536231884,
+        "Recall@5": 88.04347826086956,
+        "Recall@10": 92.89855072463769,
+        "Recall@20": 95.65217391304348,
+        "Recall@1percent": 93.69565217391305
+      },
+      "benchmarks": {
+        "dcc": {
+          "F1": 0.75,
+          "Recall@1": 53.72340425531915,
+          "Recall@5": 73.40425531914893,
+          "Recall@10": 80.31914893617021,
+          "Recall@20": 88.82978723404256,
+          "Recall@1percent": 53.72340425531915
+        },
+        "riverside": {
+          "F1": 0.7889833940866747,
+          "Recall@1": 60.90487238979119,
+          "Recall@5": 75.34802784222738,
+          "Recall@10": 81.38051044083527,
+          "Recall@20": 86.48491879350348,
+          "Recall@1percent": 85.20881670533643
+        }
+      }
+    },
+    "2": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/weights/1.pth.tar",
+      "checkpoint_sha256": "064c35781ea1300296c0d31739e33a5a483282f6e9a278e1c017a7b4931961b5",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+        "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+      },
+      "artifacts": {
+        "seed_start": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/seed_start.json",
+          "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+        },
+        "mining.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/cache/cross_negatives_epoch_1.npz",
+          "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+        },
+        "mining.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/cache/cross_negatives_epoch_1.json",
+          "sha256": "128854ca54d10beb87bc01886bb193bc79ffe05c8e0f8aaf8dc4c793f0f593b6"
+        },
+        "sejong.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/sejong.json",
+          "sha256": "28a02ae5b7021c6d2f7b112f0c965c3e674c8701a7ab9f6db6de25b918199e72"
+        },
+        "sejong_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/sejong_diagnostics.json",
+          "sha256": "eb2665006439f3a1b98627c37a1d6f733c25f5a00932b95e845cf7777b733d60"
+        },
+        "sejong.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/sejong.npz",
+          "sha256": "55bb5934e2df7a1f065e5dd9eb37bc9527ec3cce20fc322299704ff677302527"
+        },
+        "sejong.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/sejong.csv",
+          "sha256": "e72333c0920412bee7042731283297b7309a12c880b88dece28632cf3ca17b96"
+        },
+        "sejong_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/sejong.json",
+          "sha256": "28a02ae5b7021c6d2f7b112f0c965c3e674c8701a7ab9f6db6de25b918199e72"
+        },
+        "dcc.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/dcc.json",
+          "sha256": "8a91b18ff94873da183f17fcdd00afad6e2ea99e07cb3685facfb2e568648dae"
+        },
+        "dcc_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/dcc_diagnostics.json",
+          "sha256": "698f5bb1fc03f17e3f887ac1ffac3f8dd92d2242150c08fa0c285e243f3971c4"
+        },
+        "dcc.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/dcc.npz",
+          "sha256": "e7210c1caf2aab91369939a28f90d0838f96821ba31d3b83b9a059898d92e44d"
+        },
+        "dcc.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/dcc.csv",
+          "sha256": "4e955aabb37641c08d86086fe5fa15b31aa8997bad6157d178ed90d2e165aa85"
+        },
+        "dcc_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/dcc.json",
+          "sha256": "8a91b18ff94873da183f17fcdd00afad6e2ea99e07cb3685facfb2e568648dae"
+        },
+        "riverside.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/riverside.json",
+          "sha256": "ef511941a96511813bc1e3c225fd2be38a07730d25d4f64422504ef18f757c90"
+        },
+        "riverside_diagnostics.json": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/riverside_diagnostics.json",
+          "sha256": "59dc08361c78635afc1c458c04430f823ca87fa628d6f8202ceb5a059a635527"
+        },
+        "riverside.npz": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/riverside.npz",
+          "sha256": "ee8637951f1dd8294fec5906f6629ac5b74816c547a939937f23e622df9a8e38"
+        },
+        "riverside.csv": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/riverside.csv",
+          "sha256": "a1b4cf9d9e650693b39a2c725aa950b821dcd8816c14dac133da36a8a38c55d1"
+        },
+        "riverside_metrics": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/riverside.json",
+          "sha256": "ef511941a96511813bc1e3c225fd2be38a07730d25d4f64422504ef18f757c90"
+        }
+      },
+      "validation": {
+        "F1": 0.8669565217391304,
+        "Recall@1": 75.43478260869566,
+        "Recall@5": 88.47826086956522,
+        "Recall@10": 92.68115942028986,
+        "Recall@20": 95.86956521739131,
+        "Recall@1percent": 94.42028985507245
+      },
+      "benchmarks": {
+        "dcc": {
+          "F1": 0.7428571428571428,
+          "Recall@1": 52.12765957446809,
+          "Recall@5": 71.80851063829788,
+          "Recall@10": 79.7872340425532,
+          "Recall@20": 88.29787234042553,
+          "Recall@1percent": 52.12765957446809
+        },
+        "riverside": {
+          "F1": 0.7916006339144216,
+          "Recall@1": 60.84686774941995,
+          "Recall@5": 75.63805104408353,
+          "Recall@10": 81.61252900232019,
+          "Recall@20": 86.7169373549884,
+          "Recall@1percent": 85.9048723897912
+        }
+      }
+    }
+  },
+  "training_status": "COMPLETE",
+  "evaluation_status": "COMPLETE",
+  "report_status": "COMPLETE",
+  "control_replay_bitwise_equal": true,
+  "control": {
+    "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/weights/1.pth.tar",
+    "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+    "optimizer_steps": 2071,
+    "all_finite": true,
+    "radar_unchanged": true,
+    "sampling": {
+      "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+      "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+    },
+    "artifacts": {
+      "seed_start": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/seed_start.json",
+        "sha256": "4f21e868e18abd6d2891553aab1655e75972504c51776f52d4e0c7c039aeb5df"
+      },
+      "mining.npz": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/cache/cross_negatives_epoch_1.npz",
+        "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+      },
+      "mining.json": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/cache/cross_negatives_epoch_1.json",
+        "sha256": "2b89c55bfc31d9e4645bb1d2e68f44c416ee58a8f870cabae4c5948b514300cf"
+      },
+      "sejong.json": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/sejong.json",
+        "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+      },
+      "sejong_diagnostics.json": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/sejong_diagnostics.json",
+        "sha256": "cfb18b615fbe0a1de52461289a048d9dd176a7f858216ece2488f5128820b39f"
+      },
+      "sejong.npz": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/sejong.npz",
+        "sha256": "80487cd750820f0962e797602375c6716995031992a41b12948973f2534e7042"
+      },
+      "sejong.csv": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/sejong.csv",
+        "sha256": "e49e8cf2482cce2b397843f38ad888824c7cacf23a8547cbb2df5cc4807ef355"
+      },
+      "sejong_metrics": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/sejong.json",
+        "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+      }
+    },
+    "validation": {
+      "F1": 0.8684777921517896,
+      "Recall@1": 75.14492753623189,
+      "Recall@5": 88.47826086956522,
+      "Recall@10": 92.97101449275362,
+      "Recall@20": 96.23188405797102,
+      "Recall@1percent": 94.4927536231884
+    }
+  },
+  "screening_sha256": "92dd680ab18ec281e5805702cf18fc482379960d70f3b949049f68b397e19ee8",
+  "promoted": true,
+  "selection_sha256": "966d2063737a64933dab27ea5f9ee251bf9a8cac01e1eeb54a234cf60ea1eef0",
+  "selected_family": "multi",
+  "evaluated_seeds": [
+    0,
+    1,
+    2
+  ],
+  "results_finished_at": "2026-10-19T19:04:10.747429+08:00",
+  "finished_at": "2026-10-19T19:04:10.982589+08:00"
+}

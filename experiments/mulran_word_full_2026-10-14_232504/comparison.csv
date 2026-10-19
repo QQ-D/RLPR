@@ -1,0 +1,7 @@
+dataset,model,Recall@1_percent,Recall@5_percent,Recall@10_percent,max_F1
+riverside,paper,64.85,78.77,84.22,0.8057
+riverside,official_checkpoint_reproduced,65.26,79.23,84.4,0.8107703814510098
+riverside,spectral_word_full_5_5_1,54.81,72.8,78.94,0.7125475285171102
+dcc,paper,55.32,73.94,82.98,0.7419
+dcc,official_checkpoint_reproduced,55.32,74.47,82.45,0.7500000000000001
+dcc,spectral_word_full_5_5_1,52.13,71.28,80.32,0.7058823529411765

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/media/rwj/ZX1 2TB/RLPR/reports/2026-10-19/finish_f1_replication.py", line 49, in <module>
+    subprocess.run([sys.executable,str(HERE/'audit_f1_replication.py')],cwd=SOURCE,stdout=handle,stderr=subprocess.STDOUT,check=True)
+  File "/mnt/data300/envs/rlpr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/mnt/data300/envs/rlpr/bin/python', '/media/rwj/ZX1 2TB/RLPR/reports/2026-10-19/audit_f1_replication.py']' returned non-zero exit status 1.

@@ -1,0 +1,36 @@
+{
+  "selected": "fusion_00",
+  "rule": "Sejong Recall@1, then F1, then configuration order .5/.1/0",
+  "validation": {
+    "fusion_05": {
+      "F1": 0.8630490956072351,
+      "Recall@1": 74.34782608695653,
+      "Recall@5": 87.2463768115942,
+      "Recall@10": 92.2463768115942,
+      "Recall@20": 95.57971014492753,
+      "Recall@1percent": 93.91304347826087
+    },
+    "fusion_01": {
+      "F1": 0.8660245183887917,
+      "Recall@1": 74.56521739130434,
+      "Recall@5": 86.81159420289855,
+      "Recall@10": 92.2463768115942,
+      "Recall@20": 95.65217391304348,
+      "Recall@1percent": 93.84057971014492
+    },
+    "fusion_00": {
+      "F1": 0.8662092624356775,
+      "Recall@1": 75.0,
+      "Recall@5": 87.31884057971014,
+      "Recall@10": 92.17391304347827,
+      "Recall@20": 95.79710144927536,
+      "Recall@1percent": 94.20289855072464
+    }
+  },
+  "checkpoints": {
+    "fusion_05": "9030163c126b90a806da942b42b749c1d071276bdeef59dc1e878adf1bbabdf0",
+    "fusion_01": "2bcca721dc667d83fa845810706d9cb893594948d1752346f48a89342ee830d0",
+    "fusion_00": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+  },
+  "locked_at": "2026-10-19T12:55:28.104469+08:00"
+}

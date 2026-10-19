@@ -1,0 +1,10 @@
+{
+  "all_three_mining_arrays_equal": true,
+  "query_frames": 16568,
+  "database_frames": 16602,
+  "hashes": {
+    "hard_indices": "0c53db70c62abf8d6e54ed1f0bdf96f541b27af5b109e01044c743ee9c5d08e7",
+    "database_frame_ids": "45c32e4ae71029ef11ba5df57291cdea54f3322687759e70d5c3bbde22c694c1",
+    "query_frame_ids": "9793209c95dee3cce40fbc8099e4a4802237be39fdefc654420fd7c355dc2f83"
+  }
+}

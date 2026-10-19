@@ -1,0 +1,81 @@
+{
+  "scope": "Actual MulRan indexes used in full Word training and ablations; scan centers and sensor file names checked, not raw point-cloud coverage",
+  "unique_training_frames": 18854,
+  "training_indexes": {
+    "sejong_db.npy": {
+      "rows": 14316,
+      "sequences": {
+        "sejong01": 7114,
+        "sejong02": 7202
+      },
+      "sha256": "3439318ef1d51f3ba11764b00c86c051612355274fa69a405ec768e11c8a7947"
+    },
+    "sejong_train_query.npy": {
+      "rows": 14316,
+      "sequences": {
+        "sejong01": 7114,
+        "sejong02": 7202
+      },
+      "sha256": "3439318ef1d51f3ba11764b00c86c051612355274fa69a405ec768e11c8a7947"
+    },
+    "kaist_db.npy": {
+      "rows": 2286,
+      "sequences": {
+        "KAIST01": 2286
+      },
+      "sha256": "aabbec375128f4d7ab6399c67b17b461e171cfdae61ad47e8c894b3c1267f927"
+    },
+    "kaist_train_query.npy": {
+      "rows": 2252,
+      "sequences": {
+        "KAIST02": 2252
+      },
+      "sha256": "7fb64f485c8ab2b6663d1153d2200a94114a48bb3c6023f8bb3ae21d538c46c7"
+    }
+  },
+  "test_checks": {
+    "sejong": {
+      "database": 1505,
+      "queries": 1380,
+      "sequences": {
+        "sejong01": 1505,
+        "sejong02": 1380
+      },
+      "overlap_with_training": {
+        "frame_ids": 0,
+        "lidar_files": 0,
+        "radar_files": 0
+      },
+      "nearest_training_scan_center_m": 51.12581110986745
+    },
+    "dcc": {
+      "database": 204,
+      "queries": 188,
+      "sequences": {
+        "DCC01": 204,
+        "DCC02": 188
+      },
+      "overlap_with_training": {
+        "frame_ids": 0,
+        "lidar_files": 0,
+        "radar_files": 0
+      },
+      "nearest_training_scan_center_m": 1981.3477351613274
+    },
+    "riverside": {
+      "database": 1558,
+      "queries": 1724,
+      "sequences": {
+        "Riverside01": 1558,
+        "Riverside02": 1724
+      },
+      "overlap_with_training": {
+        "frame_ids": 0,
+        "lidar_files": 0,
+        "radar_files": 0
+      },
+      "nearest_training_scan_center_m": 27.723549290086787
+    }
+  },
+  "sejong_train_outside_all_550m_regions": true
+}

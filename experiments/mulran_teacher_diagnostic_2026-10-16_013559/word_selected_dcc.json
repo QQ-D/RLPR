@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/2.pth.tar",
+  "variant": "spectral_word",
+  "split": "dcc",
+  "metrics": {
+    "R2L": {
+      "Recall@1": 55.319148936170215,
+      "Recall@5": 69.14893617021278,
+      "Recall@10": 81.38297872340425,
+      "Recall@20": 87.2340425531915
+    },
+    "R2R": {
+      "Recall@1": 72.87234042553192,
+      "Recall@5": 82.4468085106383,
+      "Recall@10": 84.57446808510637,
+      "Recall@20": 87.7659574468085
+    },
+    "L2L": {
+      "Recall@1": 75.53191489361703,
+      "Recall@5": 82.97872340425532,
+      "Recall@10": 85.63829787234043,
+      "Recall@20": 88.82978723404256
+    }
+  },
+  "note": "R2R diagnoses the fixed radar teacher; L2L uses the LiDAR branch after cross-modal alignment, not its unimodal initialization."
+}

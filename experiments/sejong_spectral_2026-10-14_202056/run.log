@@ -1,0 +1,55 @@
+total frames:  17471
+database frames:  7114
+train query frames:  7202
+test database frames:  1505
+test query frames:  1380
+Spectral short train: database=1024, queries=256, epochs=2, batch_size=1
+
+===== spectral l_mulran: 2 epochs =====
+Number of model parameters: 2300658
+
+Training From Scratch
+
+Training Process-epoch 1-------->
+
+Generating cache mulran -------->
+epoch 1 finishes
+loss [0.14714572]
+
+Training Process-epoch 2-------->
+
+Generating cache mulran -------->
+epoch 2 finishes
+loss [0.04398736]
+
+===== spectral r_mulran: 2 epochs =====
+Number of model parameters: 2300658
+
+Training From Scratch
+
+Training Process-epoch 1-------->
+
+Generating cache mulran -------->
+epoch 1 finishes
+loss [0.166144]
+
+Training Process-epoch 2-------->
+
+Generating cache mulran -------->
+epoch 2 finishes
+loss [0.05758557]
+
+===== spectral cross-modal: 2 epochs =====
+Number of model parameters: 4601316
+
+Training From Scratch
+
+Training Process-epoch 1-------->
+epoch 1 finishes
+loss [1.7951398]
+
+Training Process-epoch 2-------->
+epoch 2 finishes
+loss [1.0570624]
+
+Training complete. Checkpoint: /media/rwj/ZX1 2TB/RLPR/runs/sejong_spectral_2026-10-14_202056/r2l_mulran/weights/2.pth.tar

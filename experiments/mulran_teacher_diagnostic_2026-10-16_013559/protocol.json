@@ -1,0 +1,9 @@
+{
+  "selected_experiment": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626",
+  "selected_epoch": 2,
+  "selection_rule": "Maximum Sejong Recall@1, then F1, then earliest epoch; lock before benchmarks",
+  "diagnostics": "Fixed selected Word model and released official model, R2L/R2R/L2L; no training or checkpoint reselection",
+  "strict": true,
+  "cublas_workspace": ":4096:8",
+  "batch_size": 1
+}

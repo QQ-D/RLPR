@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "split": "riverside",
+  "sequences": [
+    "Riverside01",
+    "Riverside02"
+  ],
+  "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+  "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+  "source_root": "/media/rwj/ZX1 2TB/RLPR/src",
+  "query_sequence": "Riverside02",
+  "database_sequence": "Riverside01",
+  "timestamp_pose_tolerance_s": 1.0,
+  "timestamp_lidar_tolerance_s": 0.05,
+  "database_query_spatial_sampling_m": 1.0,
+  "positive_threshold_m": 9.0,
+  "bev_height_width": [
+    50,
+    225
+  ],
+  "range_m": 80.0,
+  "lidar_voxel_m": 1.6,
+  "synchronized_frames": 4939,
+  "database_frames": 1558,
+  "query_frames": 1724,
+  "seconds": 70.59450597599971
+}

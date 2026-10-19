@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "checkpoints_verified": 2,
+  "optimizer_steps_each": 2071,
+  "source_protocol_selection_initialization_hashes_verified": true,
+  "teachers_unchanged": true,
+  "control_replay_bitwise_equal": true,
+  "paired_sampling_streams_match": true,
+  "mined_negative_arrays_identical": true,
+  "runtime_matches_launch": true,
+  "selected_configuration": "infonce",
+  "finished_at": "2026-10-19T14:19:13.669853+08:00"
+}

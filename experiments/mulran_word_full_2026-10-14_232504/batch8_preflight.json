@@ -1,0 +1,23 @@
+{
+  "batch_size": 8,
+  "tuple_input_shape": [
+    8,
+    12,
+    3,
+    50,
+    225
+  ],
+  "scope": "One forward/backward per architecture; no optimizer update",
+  "l": {
+    "loss": 0.347768098115921,
+    "peak_allocated_mb": 1053.59130859375
+  },
+  "r": {
+    "loss": 0.4273776113986969,
+    "peak_allocated_mb": 1060.39794921875
+  },
+  "cross": {
+    "loss": 3.379885673522949,
+    "peak_allocated_mb": 1972.2783203125
+  }
+}

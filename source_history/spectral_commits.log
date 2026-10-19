@@ -1,0 +1,183 @@
+commit 8c8bb597c4a88a2937e311bd045ecf89c3da6d1c
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 19:22:11 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 19:22:11 2026 +0800
+
+    feat: run paired three-seed InfoNCE temperature comparison
+
+commit 20918a8a672a25be6bcd2b7afa24fec4e9493565
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 18:12:25 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 18:12:25 2026 +0800
+
+    feat: compare geographic multi-positive InfoNCE with F1-first screening
+
+commit d997816be394f03f4b4242361725850b7bf92e7a
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 16:00:29 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 16:00:29 2026 +0800
+
+    feat: add F1-first paired cross-stage replication and diagnostics
+
+commit f097204bf066174de488b613519acf89f0383099
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 14:22:14 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 14:22:14 2026 +0800
+
+    Record objective tradeoff and unchanged benchmark selection
+
+commit bc7275514f3e526059d8343052ed049316b2f949
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 13:52:34 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 13:52:34 2026 +0800
+
+    Compare retained amplitude alignment with existing Word InfoNCE
+
+commit 7a6cc3b25e9c21ed16e62eb5143cfa9896aecfbc
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 13:47:19 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 13:47:19 2026 +0800
+
+    Record completed phase auxiliary weight ablation and retained control
+
+commit 7ac9748501d1e5db1faeaeef4277408f7779692e
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 13:05:33 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 13:05:33 2026 +0800
+
+    Add isolated phase auxiliary weight comparison after fusion selection
+
+commit 7edb2ef20f33434ea402738a3caafbf7e3e1c862
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 13:00:26 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 13:00:26 2026 +0800
+
+    Record completed amplitude fusion-weight comparison and audits
+
+commit 95ad92878c44954c408fc132be6cfa948ed9063f
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 12:19:57 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 12:19:57 2026 +0800
+
+    Keep fusion trials on the full training data root
+
+commit ba8a552bebffbbcc0d19fe232ff205ac5b99ab84
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Mon Oct 19 12:18:36 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Mon Oct 19 12:18:36 2026 +0800
+
+    Add controlled fusion-weight comparison on amplitude teachers
+
+commit 43e33d27c1b10cadc10be5b66714dc733c0d6316
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Sun Oct 18 19:32:34 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Sun Oct 18 19:32:34 2026 +0800
+
+    Record launch of official-budget modified-model comparison
+
+commit 0535d1c819c9840e4cca5049eeec0ecfecc3ac1d
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Sun Oct 18 19:31:05 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Sun Oct 18 19:31:05 2026 +0800
+
+    Add official MulRan epoch budget for modified-model experiments
+
+commit 75a19eb0000978a990ffedeba8558f5fce80ada3
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Fri Oct 16 12:10:49 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Fri Oct 16 12:10:49 2026 +0800
+
+    Document reviewed amplitude experiment and active training status
+
+commit dd42f1709604964b36b2da8fabd80b480d0ff3c6
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Fri Oct 16 12:07:16 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Fri Oct 16 12:07:16 2026 +0800
+
+    Add controlled magnitude retention ablation and safe training checkpoints
+
+commit 2cd8f483a9b6d5e4fbaa854a01fe80e858c0521f
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Fri Oct 16 01:38:35 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Fri Oct 16 01:38:35 2026 +0800
+
+    Add reproducible alignment controls and cross-modal hard-negative experiments
+
+commit c945c37b9cee260e5abcfa54570830770f60a9bb
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Thu Oct 15 02:42:56 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Thu Oct 15 02:42:56 2026 +0800
+
+    Record full Word MulRan training and DCC Riverside evaluation
+
+commit 5ef9f319fb196e77ca9279c79447bdde122b9913
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 22:17:50 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 22:17:50 2026 +0800
+
+    Finalize Word implementation verification ledger
+
+commit f18c011b3743d7f2c5d1b3d92d75aec5e180f039
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 22:12:28 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 22:12:28 2026 +0800
+
+    Record official MulRan pretrained evaluation against paper Table I
+
+commit 0ba65cbc9d9f78fa898e80e3776414996e7c306e
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 21:56:50 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 21:56:50 2026 +0800
+
+    Implement complete Word phase-only Transformer and coherence alignment
+
+commit 91cf7a5e2eb031efa691f2e796ed606aeaa902b9
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 21:17:33 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 21:17:33 2026 +0800
+
+    Add asymmetric radar-to-LiDAR phase cross-attention for paired training
+
+commit 994b4e91ea25f1670ac6e6575d0d98c3a4b46877
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 20:35:42 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 20:36:01 2026 +0800
+
+    Record corrected real Sejong spectral evaluation results
+
+commit a4e86e7bc3413e84c64e0a840fcc4c3877c15b16
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 20:32:34 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 20:32:34 2026 +0800
+
+    Fix zero-denominator F1 and independent recall cutoff counting
+
+commit f17c5c6143d5d1925f08477687c5f74b4598235a
+Author:     QQ-D <rwj2803783685@qq.com>
+AuthorDate: Wed Oct 14 20:17:41 2026 +0800
+Commit:     QQ-D <rwj2803783685@qq.com>
+CommitDate: Wed Oct 14 20:17:41 2026 +0800
+
+    Add Spectral-RLPR frequency filtering, phase attention and alignment training

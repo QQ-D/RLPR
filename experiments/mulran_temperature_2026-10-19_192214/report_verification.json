@@ -1,0 +1,8 @@
+{
+  "pdf": {
+    "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/report.pdf",
+    "sha256": "73112f9cecd732c0eccadf4a4340fad34d0e93019443af94a89f4afd1b80b60b"
+  },
+  "metric_text_verified": true,
+  "pdfinfo": "Title:          RLPR InfoNCE训练温度对照\nSubject:        (unspecified)\nKeywords:       \nAuthor:         RLPR实验记录\nCreator:        (unspecified)\nProducer:       ReportLab PDF Library - www.reportlab.com\nCreationDate:   Mon Oct 19 20:40:55 2026 CST\nModDate:        Mon Oct 19 20:40:55 2026 CST\nTagged:         no\nUserProperties: no\nSuspects:       no\nForm:           none\nJavaScript:     no\nPages:          2\nEncrypted:      no\nPage size:      595.276 x 841.89 pts (A4)\nPage rot:       0\nFile size:      67200 bytes\nOptimized:      no\nPDF version:    1.4\n"
+}

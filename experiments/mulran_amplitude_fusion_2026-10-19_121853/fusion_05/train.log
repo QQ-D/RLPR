@@ -1,0 +1,17 @@
+Number of model parameters: 4165603
+Traceback (most recent call last):
+  File "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_121853/driver.py", line 257, in <module>
+    child_train(args.root, 'amplitude', 'cross', 1)
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/scripts/amplitude_ablation.py", line 154, in child_train
+    trainer = CrossModalTrainer(params, get_model_variant(cfg['model'], 'spectral_word'), cfg['dataloader'])
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/trainer/cross_modal.py", line 46, in __init__
+    loaders = make_dataloader_fn("train", params)
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/dataset/MulRan/mulran_dataloader.py", line 11, in make_dataloader
+    train_dataset = TripletDataset(
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/dataset/MulRan/mulran_dataset.py", line 156, in __init__
+    super().__init__(info_root, bev_dataset_root, trans_threshold=(-pos_dist_thres / 2.0, pos_dist_thres / 2.0))
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/dataset/MulRan/mulran_dataset.py", line 24, in __init__
+    self.infos = self.read_info()
+  File "/media/rwj/ZX1 2TB/RLPR/src_spectral/dataset/MulRan/mulran_dataset.py", line 41, in read_info
+    with open(cur_info_root, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/rwj/ZX1 2TB/RLPR/processed/mulran_sejong/info/mulran_infos-kaist.pkl'

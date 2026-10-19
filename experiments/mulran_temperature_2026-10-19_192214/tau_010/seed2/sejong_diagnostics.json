@@ -1,0 +1,24 @@
+{
+  "best_threshold": {
+    "threshold": 2.8499555893249817,
+    "tp": 1014,
+    "fp": 255,
+    "fn": 40,
+    "tn": 71,
+    "precision": 0.7990543735224587,
+    "recall": 0.9620493358633776,
+    "F1": 0.8730090400344382
+  },
+  "queries": 1380,
+  "database": 1505,
+  "valid_queries": 1380,
+  "correct_top1": 1054,
+  "wrong_top1": 326,
+  "wrong_top1_median_m": 87.72571563720703,
+  "wrong_top1_p90_m": 6107.567138671875,
+  "checkpoint": {
+    "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/weights/1.pth.tar",
+    "sha256": "abe25048266a971ea2d3d4b8ba16e093a9a6c1341647f67181b5aceef1547cf4"
+  },
+  "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN"
+}

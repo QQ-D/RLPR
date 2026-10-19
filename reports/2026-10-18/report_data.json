@@ -1,0 +1,964 @@
+{
+  "generated_at": "2026-10-18T19:51:27.263460+08:00",
+  "scope": "MulRan completed evidence; new official-budget amplitude comparison pending",
+  "completed_metrics": [
+    {
+      "split": "dcc",
+      "model": "论文RLPR",
+      "context": "论文表I",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "55.32",
+      "Recall@5": "73.94",
+      "Recall@10": "82.98",
+      "Recall@20": "",
+      "Recall@1percent": "",
+      "F1": "0.7419"
+    },
+    {
+      "split": "dcc",
+      "model": "官方权重本机测试",
+      "context": "官方预训练权重",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "55.32",
+      "Recall@5": "74.47",
+      "Recall@10": "82.45",
+      "Recall@20": "90.96",
+      "Recall@1percent": "55.32",
+      "F1": "0.7500000000000001"
+    },
+    {
+      "split": "dcc",
+      "model": "历史Word旧MSC",
+      "context": "历史全局随机流",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "52.13",
+      "Recall@5": "71.28",
+      "Recall@10": "80.32",
+      "Recall@20": "84.57",
+      "Recall@1percent": "52.13",
+      "F1": "0.7058823529411765"
+    },
+    {
+      "split": "dcc",
+      "model": "历史Word修正相关度",
+      "context": "历史全局随机流",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "55.85",
+      "Recall@5": "70.74",
+      "Recall@10": "81.38",
+      "Recall@20": "86.17",
+      "Recall@1percent": "55.85",
+      "F1": "0.7603305785123967"
+    },
+    {
+      "split": "dcc",
+      "model": "有符号相关度完整对照",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "True",
+      "epoch": "",
+      "Recall@1": "53.19",
+      "Recall@5": "69.68",
+      "Recall@10": "81.38",
+      "Recall@20": "86.7",
+      "Recall@1percent": "53.19",
+      "F1": "0.7394957983193275"
+    },
+    {
+      "split": "dcc",
+      "model": "仅关闭交叉融合",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "False",
+      "epoch": "",
+      "Recall@1": "53.19",
+      "Recall@5": "70.21",
+      "Recall@10": "81.38",
+      "Recall@20": "85.64",
+      "Recall@1percent": "53.19",
+      "F1": "0.7364341085271318"
+    },
+    {
+      "split": "dcc",
+      "model": "仅关闭频域辅助损失",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "False",
+      "epoch": "",
+      "Recall@1": "55.32",
+      "Recall@5": "68.62",
+      "Recall@10": "79.79",
+      "Recall@20": "87.23",
+      "Recall@1percent": "55.32",
+      "F1": "0.7563025210084034"
+    },
+    {
+      "split": "dcc",
+      "model": "仅替换描述子损失为InfoNCE",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "False",
+      "epoch": "",
+      "Recall@1": "54.79",
+      "Recall@5": "73.4",
+      "Recall@10": "80.32",
+      "Recall@20": "86.17",
+      "Recall@1percent": "54.79",
+      "F1": "0.7698744769874478"
+    },
+    {
+      "split": "riverside",
+      "model": "论文RLPR",
+      "context": "论文表I",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "64.85",
+      "Recall@5": "78.77",
+      "Recall@10": "84.22",
+      "Recall@20": "",
+      "Recall@1percent": "",
+      "F1": "0.8057"
+    },
+    {
+      "split": "riverside",
+      "model": "官方权重本机测试",
+      "context": "官方预训练权重",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "65.26",
+      "Recall@5": "79.23",
+      "Recall@10": "84.4",
+      "Recall@20": "88.75",
+      "Recall@1percent": "87.59",
+      "F1": "0.8107703814510098"
+    },
+    {
+      "split": "riverside",
+      "model": "历史Word旧MSC",
+      "context": "历史全局随机流",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "54.81",
+      "Recall@5": "72.8",
+      "Recall@10": "78.94",
+      "Recall@20": "85.85",
+      "Recall@1percent": "84.4",
+      "F1": "0.7125475285171102"
+    },
+    {
+      "split": "riverside",
+      "model": "历史Word修正相关度",
+      "context": "历史全局随机流",
+      "selected_by_validation": "",
+      "epoch": "",
+      "Recall@1": "56.32",
+      "Recall@5": "72.16",
+      "Recall@10": "80.05",
+      "Recall@20": "86.37",
+      "Recall@1percent": "85.32",
+      "F1": "0.7325448302174742"
+    },
+    {
+      "split": "riverside",
+      "model": "有符号相关度完整对照",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "True",
+      "epoch": "",
+      "Recall@1": "56.79",
+      "Recall@5": "73.14",
+      "Recall@10": "79.64",
+      "Recall@20": "86.31",
+      "Recall@1percent": "85.38",
+      "F1": "0.7342922028766086"
+    },
+    {
+      "split": "riverside",
+      "model": "仅关闭交叉融合",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "False",
+      "epoch": "",
+      "Recall@1": "56.44",
+      "Recall@5": "72.22",
+      "Recall@10": "79.41",
+      "Recall@20": "86.25",
+      "Recall@1percent": "84.92",
+      "F1": "0.73206106870229"
+    },
+    {
+      "split": "riverside",
+      "model": "仅关闭频域辅助损失",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "False",
+      "epoch": "",
+      "Recall@1": "57.48",
+      "Recall@5": "73.32",
+      "Recall@10": "79.58",
+      "Recall@20": "85.96",
+      "Recall@1percent": "84.92",
+      "F1": "0.7401515151515152"
+    },
+    {
+      "split": "riverside",
+      "model": "仅替换描述子损失为InfoNCE",
+      "context": "本次固定采样随机流",
+      "selected_by_validation": "False",
+      "epoch": "",
+      "Recall@1": "57.48",
+      "Recall@5": "74.94",
+      "Recall@10": "81.38",
+      "Recall@20": "86.95",
+      "Recall@1percent": "86.19",
+      "F1": "0.7586206896551725"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "1",
+      "Recall@1": "72.75",
+      "Recall@5": "86.38",
+      "Recall@10": "90.07",
+      "Recall@20": "92.39",
+      "Recall@1percent": "91.3",
+      "F1": "0.8558913710030661"
+    },
+    {
+      "split": "dcc",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "1",
+      "Recall@1": "53.72",
+      "Recall@5": "69.15",
+      "Recall@10": "81.38",
+      "Recall@20": "87.23",
+      "Recall@1percent": "53.72",
+      "F1": "0.7335907335907335"
+    },
+    {
+      "split": "riverside",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "1",
+      "Recall@1": "55.86",
+      "Recall@5": "72.68",
+      "Recall@10": "79.29",
+      "Recall@20": "86.25",
+      "Recall@1percent": "85.03",
+      "F1": "0.727063339731286"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "2",
+      "Recall@1": "72.75",
+      "Recall@5": "87.97",
+      "Recall@10": "91.23",
+      "Recall@20": "93.7",
+      "Recall@1percent": "91.96",
+      "F1": "0.8526176858776947"
+    },
+    {
+      "split": "dcc",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "2",
+      "Recall@1": "54.26",
+      "Recall@5": "70.21",
+      "Recall@10": "80.85",
+      "Recall@20": "86.7",
+      "Recall@1percent": "54.26",
+      "F1": "0.7401574803149605"
+    },
+    {
+      "split": "riverside",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "2",
+      "Recall@1": "55.45",
+      "Recall@5": "71.87",
+      "Recall@10": "79.99",
+      "Recall@20": "85.79",
+      "Recall@1percent": "84.51",
+      "F1": "0.722521137586472"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "3",
+      "Recall@1": "72.46",
+      "Recall@5": "87.25",
+      "Recall@10": "91.59",
+      "Recall@20": "94.42",
+      "Recall@1percent": "93.04",
+      "F1": "0.8528099910793934"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "True",
+      "epoch": "4",
+      "Recall@1": "73.04",
+      "Recall@5": "87.83",
+      "Recall@10": "91.3",
+      "Recall@20": "94.71",
+      "Recall@1percent": "92.39",
+      "F1": "0.8492307692307692"
+    },
+    {
+      "split": "dcc",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "True",
+      "epoch": "4",
+      "Recall@1": "53.19",
+      "Recall@5": "70.74",
+      "Recall@10": "78.19",
+      "Recall@20": "85.64",
+      "Recall@1percent": "53.19",
+      "F1": "0.7222222222222222"
+    },
+    {
+      "split": "riverside",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "True",
+      "epoch": "4",
+      "Recall@1": "52.96",
+      "Recall@5": "70.01",
+      "Recall@10": "78.89",
+      "Recall@20": "85.15",
+      "Recall@1percent": "83.7",
+      "F1": "0.7003231017770598"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "5",
+      "Recall@1": "72.39",
+      "Recall@5": "86.96",
+      "Recall@10": "91.09",
+      "Recall@20": "94.35",
+      "Recall@1percent": "92.03",
+      "F1": "0.8475637013857845"
+    },
+    {
+      "split": "dcc",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "5",
+      "Recall@1": "52.66",
+      "Recall@5": "71.81",
+      "Recall@10": "78.72",
+      "Recall@20": "86.17",
+      "Recall@1percent": "52.66",
+      "F1": "0.7131782945736433"
+    },
+    {
+      "split": "riverside",
+      "model": "严格随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "5",
+      "Recall@1": "53.07",
+      "Recall@5": "69.55",
+      "Recall@10": "78.25",
+      "Recall@20": "85.21",
+      "Recall@1percent": "83.87",
+      "F1": "0.7005473025801408"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "1",
+      "Recall@1": "72.83",
+      "Recall@5": "86.52",
+      "Recall@10": "90.58",
+      "Recall@20": "92.54",
+      "Recall@1percent": "91.52",
+      "F1": "0.8523872098116513"
+    },
+    {
+      "split": "dcc",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "1",
+      "Recall@1": "54.26",
+      "Recall@5": "69.68",
+      "Recall@10": "82.45",
+      "Recall@20": "85.64",
+      "Recall@1percent": "54.26",
+      "F1": "0.734375"
+    },
+    {
+      "split": "riverside",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "1",
+      "Recall@1": "56.55",
+      "Recall@5": "72.8",
+      "Recall@10": "80.34",
+      "Recall@20": "86.43",
+      "Recall@1percent": "85.5",
+      "F1": "0.733511246664125"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "True",
+      "epoch": "2",
+      "Recall@1": "73.48",
+      "Recall@5": "88.12",
+      "Recall@10": "91.88",
+      "Recall@20": "93.33",
+      "Recall@1percent": "92.39",
+      "F1": "0.861098704778919"
+    },
+    {
+      "split": "dcc",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "True",
+      "epoch": "2",
+      "Recall@1": "55.32",
+      "Recall@5": "69.15",
+      "Recall@10": "81.38",
+      "Recall@20": "87.23",
+      "Recall@1percent": "55.32",
+      "F1": "0.7392996108949417"
+    },
+    {
+      "split": "riverside",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "True",
+      "epoch": "2",
+      "Recall@1": "56.09",
+      "Recall@5": "72.45",
+      "Recall@10": "79.47",
+      "Recall@20": "85.85",
+      "Recall@1percent": "84.34",
+      "F1": "0.7310344827586208"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "3",
+      "Recall@1": "72.68",
+      "Recall@5": "87.54",
+      "Recall@10": "91.88",
+      "Recall@20": "94.57",
+      "Recall@1percent": "92.68",
+      "F1": "0.8562472010747872"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "4",
+      "Recall@1": "72.83",
+      "Recall@5": "87.83",
+      "Recall@10": "91.59",
+      "Recall@20": "94.64",
+      "Recall@1percent": "92.39",
+      "F1": "0.853202846975089"
+    },
+    {
+      "split": "sejong_validation",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "5",
+      "Recall@1": "73.48",
+      "Recall@5": "87.9",
+      "Recall@10": "91.16",
+      "Recall@20": "94.35",
+      "Recall@1percent": "92.54",
+      "F1": "0.8580112896222318"
+    },
+    {
+      "split": "dcc",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "5",
+      "Recall@1": "53.72",
+      "Recall@5": "70.74",
+      "Recall@10": "78.72",
+      "Recall@20": "86.17",
+      "Recall@1percent": "53.72",
+      "F1": "0.7272727272727273"
+    },
+    {
+      "split": "riverside",
+      "model": "5困难+5随机采样",
+      "context": "严格确定性单种子；训练/验证划分固定；正式测试不用于选轮数",
+      "selected_by_validation": "False",
+      "epoch": "5",
+      "Recall@1": "53.77",
+      "Recall@5": "71.11",
+      "Recall@10": "80.28",
+      "Recall@20": "85.67",
+      "Recall@1percent": "84.22",
+      "F1": "0.7097560975609757"
+    }
+  ],
+  "official": {
+    "status": "COMPLETE",
+    "protocol": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+      "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc",
+      "paper": "/home/rwj/文档/xwechat_files/wxid_muwkj8wetvon22_070b/msg/file/2026-10/RLPR_2026.pdf",
+      "paper_table": 1,
+      "paper_riverside": {
+        "Recall@1": 64.85,
+        "Recall@5": 78.77,
+        "Recall@10": 84.22,
+        "F1": 0.8057
+      },
+      "paper_dcc": {
+        "Recall@1": 55.32,
+        "Recall@5": 73.94,
+        "Recall@10": 82.98,
+        "F1": 0.7419
+      },
+      "model": "Original RLPR, author-provided MulRan checkpoint",
+      "eval_source": "/media/rwj/ZX1 2TB/RLPR/src_spectral",
+      "model_variant": "rlpr",
+      "metric_arithmetic": "Zero/zero F1 made zero; independently count recall cutoffs; retain query-count-based top1percent convention",
+      "preprocessing_source": "/media/rwj/ZX1 2TB/RLPR/src",
+      "raw_sequences_required": [
+        "DCC01",
+        "DCC02",
+        "Riverside01",
+        "Riverside02"
+      ]
+    },
+    "splits": {
+      "dcc": {
+        "status": "COMPLETE",
+        "preprocessing": {
+          "status": "COMPLETE",
+          "split": "dcc",
+          "sequences": [
+            "DCC01",
+            "DCC02"
+          ],
+          "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+          "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+          "source_root": "/media/rwj/ZX1 2TB/RLPR/src",
+          "query_sequence": "DCC02",
+          "database_sequence": "DCC01",
+          "timestamp_pose_tolerance_s": 1.0,
+          "timestamp_lidar_tolerance_s": 0.05,
+          "database_query_spatial_sampling_m": 10.0,
+          "positive_threshold_m": 9.0,
+          "bev_height_width": [
+            50,
+            225
+          ],
+          "range_m": 80.0,
+          "lidar_voxel_m": 1.6,
+          "synchronized_frames": 4569,
+          "database_frames": 204,
+          "query_frames": 188,
+          "seconds": 18.442313072000616
+        },
+        "metrics": {
+          "Recall@1": 55.32,
+          "Recall@5": 74.47,
+          "Recall@10": 82.45,
+          "Recall@20": 90.96,
+          "Recall@1percent": 55.32,
+          "F1": 0.7500000000000001
+        },
+        "paper_metrics": {
+          "Recall@1": 55.32,
+          "Recall@5": 73.94,
+          "Recall@10": 82.98,
+          "F1": 0.7419
+        },
+        "difference": {
+          "Recall@1": 0.0,
+          "Recall@5": 0.5300000000000011,
+          "Recall@10": -0.5300000000000011,
+          "F1": 0.008100000000000107
+        },
+        "command": [
+          "/mnt/data300/envs/rlpr/bin/python",
+          "-u",
+          "test_cross_modal.py",
+          "--dataset",
+          "mulran",
+          "--model",
+          "rlpr",
+          "--no-cross-fusion"
+        ],
+        "evaluation_log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_official_eval_2026-10-14/dcc_evaluation.log"
+      },
+      "riverside": {
+        "status": "COMPLETE",
+        "preprocessing": {
+          "status": "COMPLETE",
+          "split": "riverside",
+          "sequences": [
+            "Riverside01",
+            "Riverside02"
+          ],
+          "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+          "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+          "source_root": "/media/rwj/ZX1 2TB/RLPR/src",
+          "query_sequence": "Riverside02",
+          "database_sequence": "Riverside01",
+          "timestamp_pose_tolerance_s": 1.0,
+          "timestamp_lidar_tolerance_s": 0.05,
+          "database_query_spatial_sampling_m": 1.0,
+          "positive_threshold_m": 9.0,
+          "bev_height_width": [
+            50,
+            225
+          ],
+          "range_m": 80.0,
+          "lidar_voxel_m": 1.6,
+          "synchronized_frames": 4939,
+          "database_frames": 1558,
+          "query_frames": 1724,
+          "seconds": 70.59450597599971
+        },
+        "metrics": {
+          "Recall@1": 65.26,
+          "Recall@5": 79.23,
+          "Recall@10": 84.4,
+          "Recall@20": 88.75,
+          "Recall@1percent": 87.59,
+          "F1": 0.8107703814510098
+        },
+        "paper_metrics": {
+          "Recall@1": 64.85,
+          "Recall@5": 78.77,
+          "Recall@10": 84.22,
+          "F1": 0.8057
+        },
+        "difference": {
+          "Recall@1": 0.4100000000000108,
+          "Recall@5": 0.46000000000000796,
+          "Recall@10": 0.18000000000000682,
+          "F1": 0.005070381451009798
+        },
+        "command": [
+          "/mnt/data300/envs/rlpr/bin/python",
+          "-u",
+          "test_cross_modal.py",
+          "--dataset",
+          "mulran",
+          "--model",
+          "rlpr",
+          "--no-cross-fusion"
+        ],
+        "evaluation_log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_official_eval_2026-10-14/riverside_evaluation.log"
+      }
+    }
+  },
+  "sensor_diagnostic": {
+    "status": "COMPLETE",
+    "protocol": {
+      "selected_experiment": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626",
+      "selected_epoch": 2,
+      "selection_rule": "Maximum Sejong Recall@1, then F1, then earliest epoch; lock before benchmarks",
+      "diagnostics": "Fixed selected Word model and released official model, R2L/R2R/L2L; no training or checkpoint reselection",
+      "strict": true,
+      "cublas_workspace": ":4096:8",
+      "batch_size": 1
+    },
+    "results": [
+      {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+        "variant": "rlpr",
+        "split": "dcc",
+        "metrics": {
+          "R2L": {
+            "Recall@1": 55.319148936170215,
+            "Recall@5": 74.46808510638297,
+            "Recall@10": 82.4468085106383,
+            "Recall@20": 90.95744680851064
+          },
+          "R2R": {
+            "Recall@1": 73.40425531914893,
+            "Recall@5": 85.63829787234043,
+            "Recall@10": 89.8936170212766,
+            "Recall@20": 95.74468085106383
+          },
+          "L2L": {
+            "Recall@1": 75.53191489361703,
+            "Recall@5": 83.51063829787235,
+            "Recall@10": 86.70212765957447,
+            "Recall@20": 89.8936170212766
+          }
+        },
+        "note": "R2R diagnoses the fixed radar teacher; L2L uses the LiDAR branch after cross-modal alignment, not its unimodal initialization.",
+        "name": "official"
+      },
+      {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+        "variant": "rlpr",
+        "split": "riverside",
+        "metrics": {
+          "R2L": {
+            "Recall@1": 65.25522041763341,
+            "Recall@5": 79.23433874709977,
+            "Recall@10": 84.39675174013921,
+            "Recall@20": 88.74709976798144
+          },
+          "R2R": {
+            "Recall@1": 96.05568445475639,
+            "Recall@5": 97.91183294663574,
+            "Recall@10": 98.72389791183295,
+            "Recall@20": 99.24593967517401
+          },
+          "L2L": {
+            "Recall@1": 84.22273781902551,
+            "Recall@5": 88.57308584686776,
+            "Recall@10": 89.96519721577727,
+            "Recall@20": 91.76334106728538
+          }
+        },
+        "note": "R2R diagnoses the fixed radar teacher; L2L uses the LiDAR branch after cross-modal alignment, not its unimodal initialization.",
+        "name": "official"
+      },
+      {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/2.pth.tar",
+        "variant": "spectral_word",
+        "split": "dcc",
+        "metrics": {
+          "R2L": {
+            "Recall@1": 55.319148936170215,
+            "Recall@5": 69.14893617021278,
+            "Recall@10": 81.38297872340425,
+            "Recall@20": 87.2340425531915
+          },
+          "R2R": {
+            "Recall@1": 72.87234042553192,
+            "Recall@5": 82.4468085106383,
+            "Recall@10": 84.57446808510637,
+            "Recall@20": 87.7659574468085
+          },
+          "L2L": {
+            "Recall@1": 75.53191489361703,
+            "Recall@5": 82.97872340425532,
+            "Recall@10": 85.63829787234043,
+            "Recall@20": 88.82978723404256
+          }
+        },
+        "note": "R2R diagnoses the fixed radar teacher; L2L uses the LiDAR branch after cross-modal alignment, not its unimodal initialization.",
+        "name": "word_selected"
+      },
+      {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/2.pth.tar",
+        "variant": "spectral_word",
+        "split": "riverside",
+        "metrics": {
+          "R2L": {
+            "Recall@1": 56.090487238979115,
+            "Recall@5": 72.4477958236659,
+            "Recall@10": 79.46635730858469,
+            "Recall@20": 85.84686774941996
+          },
+          "R2R": {
+            "Recall@1": 90.02320185614849,
+            "Recall@5": 95.24361948955917,
+            "Recall@10": 97.15777262180974,
+            "Recall@20": 98.25986078886311
+          },
+          "L2L": {
+            "Recall@1": 77.78422273781904,
+            "Recall@5": 85.20881670533643,
+            "Recall@10": 87.93503480278422,
+            "Recall@20": 89.90719257540604
+          }
+        },
+        "note": "R2R diagnoses the fixed radar teacher; L2L uses the LiDAR branch after cross-modal alignment, not its unimodal initialization.",
+        "name": "word_selected"
+      }
+    ]
+  },
+  "current_run_snapshot": {
+    "status": "RUNNING",
+    "started_at": "2026-10-18T19:31:11.255529+08:00",
+    "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110",
+    "protocol_sha256": "a4d5cd471b242f02a950fa3b45c2821aacbeb158ea8742aa189531508daa06d1",
+    "arms": {
+      "pure_phase": {
+        "l": {
+          "epochs": {
+            "1": {
+              "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/l/weights/1.pth.tar",
+              "checkpoint_sha256": "3f6089342329ee5e9b38f1ee2d092182149b5acdb3e50c39a3e28a0e55712683",
+              "optimizer_steps": 2071,
+              "all_finite": true,
+              "radar_unchanged": false,
+              "sampling": {
+                "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+                "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+              },
+              "loss": 0.20325784,
+              "validation": {
+                "Recall@1": 95.43478260869566,
+                "Recall@5": 97.7536231884058,
+                "Recall@10": 98.40579710144928,
+                "Recall@20": 98.98550724637681
+              }
+            }
+          }
+        }
+      },
+      "amplitude": {}
+    },
+    "phase": "pure_phase/l/epoch2"
+  },
+  "current_protocol": {
+    "schedule": "official_code",
+    "unimodal_epochs": 5,
+    "unimodal_additional_epochs": 0,
+    "unimodal_initialization": "resnet18_imagenet",
+    "historical_unimodal_epochs": 0,
+    "cross_epochs": 1,
+    "arms": [
+      "pure_phase",
+      "amplitude"
+    ],
+    "batch_size": 8,
+    "seed": 0,
+    "sampling_seed": 0,
+    "learning_rate": 5e-05,
+    "scheduler_gamma": 0.8,
+    "cache_batch_size": 32,
+    "cross_hard_negative_count": 5,
+    "phase_loss_weight": 0.1,
+    "cross_fusion_loss_weight": 0.5,
+    "alignment_loss": "signed_coherency_v2",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "teacher_selection": "Fixed epoch5 for both unary branches; validation is diagnostic only",
+    "cross_selection": "Fixed epoch1, the sole alignment epoch",
+    "benchmarks": "DCC and Riverside only after both arms lock all selections",
+    "caveat": "Exploratory single-seed ablation; benchmark scenes have been inspected previously",
+    "representation": "Phase-only Transformer inputs; amplitude arm restores measured raw FFT magnitude after self attention and training-only cross attention; no spatial residual",
+    "initialization": {
+      "backbone": {
+        "path": "/media/rwj/ZX1 2TB/RLPR/cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+        "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+      }
+    },
+    "epoch_source": "Original src/scripts/registry.py: UNIMODAL_EPOCHS=5; MulRan cross epochs=1. Paper does not specify MulRan epoch count.",
+    "created_at": "2026-10-18T19:31:10.960082+08:00",
+    "source_commit": "0535d1c819c9840e4cca5049eeec0ecfecc3ac1d",
+    "source_sha256": {
+      "config/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "config/params_boreas.py": "669b7acfe678212a3fe806f3d274535d3b03f29cc5cf2236b0fd73d52563b173",
+      "config/params_full.py": "f4a058efed21f04ed07c43cf5dc5739b062dc9e92137cd2aa8db2bd3fcc067e2",
+      "config/params_hercules.py": "48b0b0836db28124ee2c1761c1dc658ec54ada3a5935109690965c3911d2830e",
+      "config/params_mulran.py": "6c5c8a9a3157ac7f0605d76b94d9cfa6d1d3af8c65f2b6c2d7062e62703e898d",
+      "config/params_nusc.py": "7a21ad980c91638eb602b8dcc44b181f2bb8e0edd2c3b297b35b897197c43aee",
+      "config/params_snail.py": "673403942c62ba22511678d39fb77ad4c5e2d843e3865eeae9fd522c44ae87c9",
+      "config/paths.py": "1bd55eda279b369595a831e0568879bf0121359e6c6e413ae1e878cea79c33b3",
+      "dataset/collate.py": "a931d3aae12a10fd7e9823dbe9427dee86d07780c433abba4f8e3237960868e4",
+      "dataset/cross_negatives.py": "7fe995b6e64a727b28f2d02efa1d0af06cb9c7b73869b6b80b8c7443cc0e701c",
+      "dataset/Boreas/boreas_dataloader.py": "2c383ea140cf3f18ef2b33ed3ddf6338458373cc945e6e16c65a18e7e2b006a0",
+      "dataset/Boreas/boreas_dataset.py": "7f3c2f48e1859ee5b64f018e499ff40f5c958a10fed732ebefd8ac283d037820",
+      "dataset/Boreas/gen_bev.py": "a033a3e347cb609bf4f1fa5c4266d0fc3b7ae298964f8986912901ae44643796",
+      "dataset/Boreas/gen_index.py": "227e3b07aa504c6dab0651ca31590c1c59e2da921241359724b2e785b2636f98",
+      "dataset/Boreas/gen_info.py": "e3103c8c25a66f109ad5ee5859e056fcc263a3b493f49a5fccdf78984dbe1125",
+      "dataset/Boreas/utils.py": "5412602e683c7258722d2a977f549a948c174b2e99abcd0acd7810526b77415a",
+      "dataset/Hercules/gen_bev.py": "1baa51d4763cb8cc8be831ed704834a877d6b58a942c93e18f433ac27f4fedfb",
+      "dataset/Hercules/gen_index.py": "137b551b4466f0e38b5246dd1c015e0b004bd8f3be3dd79d13ba7775ad78174c",
+      "dataset/Hercules/gen_info.py": "48e4f668c8bb2b9367d1ef4a5c9e9fc05eee8d1950f15a61c5efccb7f6c9e0a0",
+      "dataset/Hercules/hercules_dataloader.py": "3574d5adff098ad2481e5ed42138c73b79a4718fdd571db9f9e600d9499c9fc4",
+      "dataset/Hercules/hercules_dataset.py": "fc19831f16053f37029406ef04fa5f7e76f7d9ca98cfe1436bb17ee8e600de5d",
+      "dataset/MulRan/gen_bev.py": "6e723b6defdef973f75c37babb16a46e16ccac8babcae0f7ad238ecda0b02301",
+      "dataset/MulRan/gen_index.py": "d1bb9c44dccfafdd6d8026aa14d495bd6b1bfc4315115b464122c485da4ffaf8",
+      "dataset/MulRan/gen_info.py": "bc402af4682da255a72e080e7524bc00a14a2aeec063dcf8e830d97781228dc8",
+      "dataset/MulRan/mulran_dataloader.py": "8b0fc09644feb36cf41ae58e9742fa9da4837d9789ec0936e916d9796ff35684",
+      "dataset/MulRan/mulran_dataset.py": "e05084ca7c0d735f270f19758ec9bb60d6fd6cc1d4ff8d04b48208a2ccdbfd09",
+      "dataset/MulRan/utils.py": "69667268c569101e9ea2f4e6833e46933f4a504d29456002fd7ab98e73f85176",
+      "dataset/NuScenes/gen_bev.py": "19a2432398726d298e1131d1f7ca4af6c02f0bfd1169c5a8e48c2879c04c2a24",
+      "dataset/NuScenes/gen_index.py": "f0cfa9946676ea01741b2d11935c448d304effd11b8845ea928950f913e674ba",
+      "dataset/NuScenes/gen_info.py": "e5dcb0bf1df82891fececea2b37d4c922f27e416653d96fb804a5ba2a377ad70",
+      "dataset/NuScenes/nuscenes_dataloader.py": "f38f054c0c0fa486f4864275bbf3a0ff42955d3689eb9278e8f44588cab77e29",
+      "dataset/NuScenes/nuscenes_dataset.py": "ce1bc7cf7b20f0afb4536b52c1b5a6a49c74b77f914efbd918165edb5ea410b0",
+      "dataset/NuScenes/utils.py": "8c637f57d17f53440a846d24770716a1f881459d4d2f9483edd720636c2d33f6",
+      "dataset/SnailRadar/gen_bev.py": "63999d470d792782ba80a27975ddb633aaea70fc9d49ed6232166240f5f6224a",
+      "dataset/SnailRadar/gen_index.py": "31d743126b780dab8aa5e1a2a9f5ea8a7228fbce0d613bf09f9901e17a621434",
+      "dataset/SnailRadar/gen_info.py": "b992969fd061b9c1a7a80f01c58388a01656e17a9cc458e721dca1396228ac64",
+      "dataset/SnailRadar/snail_dataloader.py": "50b1064802698a44d435c387a4cda1ff2a30d81160b1039b289354bc90cf8185",
+      "dataset/SnailRadar/snail_dataset.py": "082305a4ff59c3f55bc08370be0bb3e9b0150ec5176b3a9fae5fa783b48aa8ce",
+      "dataset/SnailRadar/utils.py": "c517d42452b326914791b1bd7aa0644d084b00113fe1dad50d3ede57697cf37b",
+      "modules/LCRFusionGCNExpLHFFCN_225.py": "e7de34e275fda10a75adfe39bbeaa9396c98d12d28e2af409c93eb0b2a6ab467",
+      "modules/LCRFusionGCNExpLHFFC_225.py": "cf53f69aaccaa104976deeaeb74e8878835fd341117f5fba3f35705bfb4b7960",
+      "modules/LCRFusionGCNExpRHFFC.py": "189eabf6eef065450f0bf469dcc74dff0a653cba95d7e5fdceb375fb6b286ba4",
+      "modules/LCRFusionGCNExpRHFFCN.py": "45c6971f802c64f74f00954ae32f402a7accdeabbed79e6d73165b583bda4a98",
+      "modules/LR_cross_hffc_225_dis.py": "ba8cf8962603415138eaf386e14ab56787e41ecfc85a29200178108d0cabc326",
+      "modules/LR_cross_hffcn_225_dis.py": "013d197ddf10ff94e78e8a95996bf030b9a1f1a27de94a81713df12d77037612",
+      "modules/loss.py": "29e8af0ad7b9bf670eaf655bbe70f312399ef9e6b4946186867c27eea4796272",
+      "modules/netvlad.py": "a5850911a8321bb265f30c199cacaed91abffac82d8d25de7ad9c6bc2ea29009",
+      "modules/spectral.py": "702925788cec57b45f6629db36d7a06f2a194515d128c8fb8de3f19520f7d1a3",
+      "modules/spectral_models.py": "51fc442a4c9453ccd47d25339374c12dc30965b7aa0bf6184d1c7e971451de6a",
+      "modules/phase_cross.py": "c990c3f3ec66e4d00d7247e9aca481a83a51b87a0e71ff0fb24ec7d007124abb",
+      "modules/phase_transformer.py": "7e64a68f62c173cfb63a74df5a7439dac3c4023dcc1f85cfec64687a8b53eaea",
+      "modules/word_spectral.py": "057d865ffaa7cc25976c5679d8f8453e8d6f98265cfae8c020daba645d0d6b7f",
+      "modules/coherence.py": "c1cc722fcc275995d3f4c8b554a385ae50a661d0ffe96cfdb3df31b52259ce15",
+      "modules/word_models.py": "f38c12dc19a0b2739cbb5f82709ecd2ca6fe56825ff1d95be13b4713866d5a45",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/registry.py": "d7ff1197913268d512526d90d19c6326f2093ac6c7956fdc02eeb94909381933",
+      "scripts/run_mulran_longer_alignment.py": "390828f35f378d463a8aaac214d6bbbd4279786f062c9337beed81f64e64ad6a",
+      "scripts/amplitude_ablation.py": "598bc7ee41b0902c0f3cfe2145c9ffced87d521a87edbbf812ace4ab4216f9df",
+      "trainer/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "trainer/cross_modal.py": "2d7946935b3e0a2331f41c8b711f0a5853289eaf6f0b9ebc59bd0e7f03bf93b2",
+      "trainer/eval.py": "13e9a1fa91fc3d46c14d483bbadc438befe9cee19d7046b753478530b745ae74",
+      "trainer/unimodal.py": "afcc02ca823b788f41da08dd97d89ed0f752844e79370e6945861bba280d1dd0",
+      "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "utils/pretrain.py": "a0e02d9f225fc0c7b2daf7e3d96322fa613d4249efa92f779e0e0d7daba7d42c",
+      "utils/seed.py": "8590c6eda5ae2bd411dbb3a99c0514417ee404ae506bab2f9936eb70b39184e9",
+      "utils/training_state.py": "3b8ded7a91eede29c808d0c8f5656631bbb625ee44314b0673509cc22091d069",
+      "utils/cross_mining.py": "cc2be20d72ab7d925a523c6af8b4c161c9731514b2eef7bff93048581c980a2e",
+      "tests/test_spectral.py": "a556754a23200b7bd183657e14a04cb1d0b42602af19a0f528a8d86e3c919730",
+      "tests/test_spectral_models.py": "b13c77b22674804daa3e892fa0d4b2172edd45ff7a1876668dd2b9644d3fd9c9",
+      "tests/test_eval_metrics.py": "5e1475d4210c73f07de7a9f5de00c1f1846fbe2753f4ba932107afc54562e837",
+      "tests/test_phase_cross_fusion.py": "c69e0443c5b33738437a341913e6e0d7a0dd7ec4b9b8466a7c14d043be14e905",
+      "tests/test_word_spectral.py": "db1e2d2108879bb5d80bf92aae717b51018939ffe3248c0bf7bce3285f49b9c5",
+      "tests/test_coherence.py": "83e4cb3abb903dcf1522fe2762b26beae41ecdbd0e1062ca638a78a4e2718195",
+      "tests/test_word_models.py": "7999a72b854886a28714c30195ab3211b32281e30535e3e4cddd3ce2a65b5c29",
+      "tests/test_alignment_ablation.py": "165295dacf75f0ee978c2b0a7e5b83e734afaeebdee268466860603ac3a236d0",
+      "tests/test_training_control.py": "86b65a2b7b1d90a1dcc1db4bed5108a7504026872e927c8d84429fea4b2d9543",
+      "tests/test_cross_negatives.py": "f0ce2455dc8253bea7126b69116ac0b13bda3df09b0526051a55e9a5ecfe6da8",
+      "tests/test_cross_mining_cache.py": "6e407e16be9286184a517544aa8d4f3d427ebde4a963ecc77942fd44b21e4d79",
+      "tests/test_word_amplitude.py": "fcd8e90bb00d03ead56da4f03908e036524bd1e56825d16a2f30471c3cb61a77",
+      "tests/test_amplitude_protocol.py": "3ec3f0217356286eb5fc6b38b63a7c83b0c499555f8171e28f0bdbfc8a0d9447",
+      "tests/test_atomic_checkpoint.py": "73985705ba7824d82c1ecfcf27e2135cef7fa5711d0f4c67bff513310fd43366"
+    },
+    "nearest_train_validation_m": 50.97763947617131
+  },
+  "current_snapshot_sha256": "df3bd0f400dee3cc18cdf8d95dec61e9277f1626d8584ccf2463924b1393da84",
+  "sources": {
+    "runs/mulran_word_hardneg_2026-10-16_003626/all_results_comparison.csv": "e9d4720ca99f15d42322c50abbef2911cb294cd32c5a7f42f86987afe37a7412"
+  }
+}

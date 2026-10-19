@@ -1,0 +1,34 @@
+{
+  "scope": "Synthetic execution verification; no dataset training or performance evaluation",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.1.0+cu121",
+  "checks": [
+    {
+      "stage": "l",
+      "synthetic_epochs": 2,
+      "checkpoint": "PASS"
+    },
+    {
+      "stage": "r",
+      "synthetic_epochs": 2,
+      "checkpoint": "PASS"
+    },
+    {
+      "stage": "cross",
+      "synthetic_epochs": 2,
+      "checkpoint_roundtrip": "PASS",
+      "real_sejong_bev_forward": "PASS",
+      "frame_index": 8744
+    },
+    {
+      "model": "SpectralCrossCart",
+      "shape": [
+        100,
+        100
+      ],
+      "gpu_forward_backward": "PASS",
+      "loss": 5.068187236785889,
+      "loss_is_synthetic_execution_check": true
+    }
+  ]
+}

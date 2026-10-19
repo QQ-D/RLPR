@@ -1,0 +1,13 @@
+{
+  "pid": 7390,
+  "resumed_at": "2026-10-18T22:08:56.290233+08:00",
+  "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/resume_2026-10-18.log",
+  "reason": "User requested continuation after host restart",
+  "from_checkpoint": "pure_phase/l/weights/1.pth.tar",
+  "schedule": "official_code",
+  "budgets": {
+    "l": 5,
+    "r": 5,
+    "cross": 1
+  }
+}

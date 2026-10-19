@@ -1,0 +1,1234 @@
+{
+  "run": {
+    "status": "COMPLETE",
+    "phase": "COMPLETE",
+    "started_at": "2026-10-19T16:00:42.624837+08:00",
+    "protocol_sha256": "94e4d57ef6baf131ca56b3aaa57c3c4dd6f8570aab34b5836c3d71c75eaca9d0",
+    "seeds": {
+      "0": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+            "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+          },
+          "alignment_loss": "signed_coherency_v2",
+          "validation": {
+            "F1": 0.8662092624356775,
+            "Recall@1": 75.0,
+            "Recall@5": 87.31884057971014,
+            "Recall@10": 92.17391304347827,
+            "Recall@20": 95.79710144927536,
+            "Recall@1percent": 94.20289855072464
+          },
+          "benchmarks": {
+            "dcc": {
+              "F1": 0.7436823104693141,
+              "Recall@1": 55.85106382978723,
+              "Recall@5": 74.46808510638297,
+              "Recall@10": 82.97872340425532,
+              "Recall@20": 90.42553191489363,
+              "Recall@1percent": 55.85106382978723
+            },
+            "riverside": {
+              "F1": 0.7887220798242401,
+              "Recall@1": 63.341067285382834,
+              "Recall@5": 77.08816705336426,
+              "Recall@10": 83.0046403712297,
+              "Recall@20": 88.39907192575406,
+              "Recall@1percent": 87.47099767981439
+            }
+          },
+          "artifacts": {
+            "sejong.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong.json",
+              "sha256": "ab59f7ee0c02b5d579f6249fb7a57a75df4ef15d3c99f4a572aef2b163378684"
+            },
+            "sejong_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong_diagnostics.json",
+              "sha256": "eedef7144fdf341b7fa8e84c9ccd119be9f6f64de04cfee07343ae3033652d0c"
+            },
+            "sejong.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong.npz",
+              "sha256": "77d3fcb1f7fb26a32be364a9eb19787da84bcd80f438fe0793e60a976cd3d95b"
+            },
+            "sejong.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong.csv",
+              "sha256": "446ec8ab388c2668a67788dce5f7dbf5a156942ecd9559585799c3827de311cb"
+            },
+            "sejong_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong.json",
+              "sha256": "ab59f7ee0c02b5d579f6249fb7a57a75df4ef15d3c99f4a572aef2b163378684"
+            },
+            "dcc.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/dcc.json",
+              "sha256": "25b60379921440e648950b561a631b8927ef2c8663e7eb7d936c5ece1ddd3628"
+            },
+            "dcc_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/dcc_diagnostics.json",
+              "sha256": "42a1f0e5342c58d88a63035e5535bb6289f6491c392b9e7e200ceebbe1ca1908"
+            },
+            "dcc.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/dcc.npz",
+              "sha256": "094f8d6801a1ec7a7ad50944f3fc4433843f295e6aceef6a1113219deaf07d5a"
+            },
+            "dcc.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/dcc.csv",
+              "sha256": "d021b1a3bf0e5234851088c07f29e12aac9ac90b2ad63f135872629c3b97bb5d"
+            },
+            "dcc_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/dcc.json",
+              "sha256": "25b60379921440e648950b561a631b8927ef2c8663e7eb7d936c5ece1ddd3628"
+            },
+            "riverside.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/riverside.json",
+              "sha256": "b02ee434a4e6c1e38567748e47d7c27a46751936f8a3ac858eefbce5f9de3a63"
+            },
+            "riverside_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/riverside_diagnostics.json",
+              "sha256": "cfff2b22530039cdaff64affaf9f444086e3e1f145dccb44150ef38db10a67ef"
+            },
+            "riverside.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/riverside.npz",
+              "sha256": "6a724ed762572ef1479dbec3bdac5e2f28182504e4854ab55f78bf09e37c5d93"
+            },
+            "riverside.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/riverside.csv",
+              "sha256": "9a2dafdeaf5c5aebc4342294d4eb670f3303f72ab4443b1c26eb471ca5288c4c"
+            },
+            "riverside_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/riverside.json",
+              "sha256": "b02ee434a4e6c1e38567748e47d7c27a46751936f8a3ac858eefbce5f9de3a63"
+            }
+          },
+          "validation_artifact": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong.json",
+            "sha256": "ab59f7ee0c02b5d579f6249fb7a57a75df4ef15d3c99f4a572aef2b163378684"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+            "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+          },
+          "alignment_loss": "infonce",
+          "validation": {
+            "F1": 0.8684777921517896,
+            "Recall@1": 75.14492753623189,
+            "Recall@5": 88.47826086956522,
+            "Recall@10": 92.97101449275362,
+            "Recall@20": 96.23188405797102,
+            "Recall@1percent": 94.4927536231884
+          },
+          "benchmarks": {
+            "dcc": {
+              "F1": 0.778846153846154,
+              "Recall@1": 51.06382978723404,
+              "Recall@5": 73.40425531914893,
+              "Recall@10": 78.72340425531915,
+              "Recall@20": 89.8936170212766,
+              "Recall@1percent": 51.06382978723404
+            },
+            "riverside": {
+              "F1": 0.8011027963765261,
+              "Recall@1": 62.35498839907193,
+              "Recall@5": 75.46403712296984,
+              "Recall@10": 81.2645011600928,
+              "Recall@20": 86.77494199535964,
+              "Recall@1percent": 85.5568445475638
+            }
+          },
+          "artifacts": {
+            "sejong.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+              "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+            },
+            "sejong_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong_diagnostics.json",
+              "sha256": "c98ae6d86e3fdf68f62fe37dc065fe48fab3a79be00ac7cf3ac5594be1756a3a"
+            },
+            "sejong.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.npz",
+              "sha256": "80487cd750820f0962e797602375c6716995031992a41b12948973f2534e7042"
+            },
+            "sejong.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.csv",
+              "sha256": "e49e8cf2482cce2b397843f38ad888824c7cacf23a8547cbb2df5cc4807ef355"
+            },
+            "sejong_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+              "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+            },
+            "dcc.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.json",
+              "sha256": "959564200f3ca2e6635afda8927dd653617500918e8b75e653a6f784cd5de386"
+            },
+            "dcc_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc_diagnostics.json",
+              "sha256": "a9c3f31f641977e99fd01a2d85a43f38746097ee6ce0ee7a5ffc2a68127303ea"
+            },
+            "dcc.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.npz",
+              "sha256": "aa6a4dec31d546944e6d9a4d2a98432049c5393cdc82e04b99ec847c5e1cd8d4"
+            },
+            "dcc.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.csv",
+              "sha256": "2e56ed5dc4ded06c278e187c67dffdf15d732f6401ceb5bc0a0a99da6701d3d1"
+            },
+            "dcc_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.json",
+              "sha256": "959564200f3ca2e6635afda8927dd653617500918e8b75e653a6f784cd5de386"
+            },
+            "riverside.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.json",
+              "sha256": "4e5a094af1c03e35a508d51503989f8a2f210f7692759788c73cae53e66936ff"
+            },
+            "riverside_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside_diagnostics.json",
+              "sha256": "9c79495c211f604f3432234e4aae9557e8e4c82ccd09f81f9d3dd15679cd9ff8"
+            },
+            "riverside.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.npz",
+              "sha256": "56bbd55481a98700633d412da061bfd51e90661b672e850b812c00cbe6fa4d32"
+            },
+            "riverside.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.csv",
+              "sha256": "03ce7b55858fb65be07cb49f211c3a29663957badb614044f26a94195fe71cc9"
+            },
+            "riverside_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.json",
+              "sha256": "4e5a094af1c03e35a508d51503989f8a2f210f7692759788c73cae53e66936ff"
+            }
+          },
+          "validation_artifact": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+            "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+          }
+        }
+      },
+      "1": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "12587a5e7754190fb32fa22d4c6bf4557cbe68a98fb04d6cb82cef8a0537e8a9",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+            "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+          },
+          "artifacts": {
+            "seed_start": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/seed_start.json",
+              "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+            },
+            "mining.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/cache/cross_negatives_epoch_1.npz",
+              "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+            },
+            "mining.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/cache/cross_negatives_epoch_1.json",
+              "sha256": "0e6fe63e068c58ef66d3865d955f9d4247f61f729266b3fb1ddc29f12aee5cd3"
+            },
+            "sejong.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong.json",
+              "sha256": "e7159f1acacf1a7c2191f93da1588cc1577f693a4fec9b4f203c4f7cbf4e918f"
+            },
+            "sejong_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong_diagnostics.json",
+              "sha256": "6366dfac3fd8733cdd09bee746c194f5b755bb00b19cd8872ab077c6dd087752"
+            },
+            "sejong.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong.npz",
+              "sha256": "627c1d373284b4ff2e6ae66f1e0c9327e145c575c2e3aff6be3593c4168162d1"
+            },
+            "sejong.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong.csv",
+              "sha256": "13fede1a7fed9cb6bc107d9b4691dbe2b7bc32a301953ed275e331f644552352"
+            },
+            "sejong_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong.json",
+              "sha256": "e7159f1acacf1a7c2191f93da1588cc1577f693a4fec9b4f203c4f7cbf4e918f"
+            },
+            "dcc.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/dcc.json",
+              "sha256": "4cae2f0e9dab71551d3d549461cab0c30ce7bebb5d0cfba5e4623aacc7b3528a"
+            },
+            "dcc_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/dcc_diagnostics.json",
+              "sha256": "69673714739b9685d131d83a701bc9e1dad97dfe40d778ecf10ca8f2d76fd0b9"
+            },
+            "dcc.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/dcc.npz",
+              "sha256": "fcf59a580b8476ac24da935bdc3bf5b8826bb782e4483822e1853121ab18f8fc"
+            },
+            "dcc.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/dcc.csv",
+              "sha256": "f6bda6193d3c848ba58042ae43eb584f09f22cf5c0d44da0ea21f828bd1b58b2"
+            },
+            "dcc_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/dcc.json",
+              "sha256": "4cae2f0e9dab71551d3d549461cab0c30ce7bebb5d0cfba5e4623aacc7b3528a"
+            },
+            "riverside.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/riverside.json",
+              "sha256": "6f75a9f0aada00516a3d4a78e7c6feac1ded24bf1fe8d0c04d8c9d99abfa03d1"
+            },
+            "riverside_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/riverside_diagnostics.json",
+              "sha256": "f80827e36bab6f43e81f3c61d2f84f9f6a989d939965373e5cf9a826b637b11a"
+            },
+            "riverside.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/riverside.npz",
+              "sha256": "f966ca868fb5a2083137afb6861abf67a8b0ed1d2e6853fa5f0ded0df9275586"
+            },
+            "riverside.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/riverside.csv",
+              "sha256": "bfb27d93530bd7c4154890bc011e48e898bbe8f0c19125d84fdc59b6d67a514b"
+            },
+            "riverside_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/riverside.json",
+              "sha256": "6f75a9f0aada00516a3d4a78e7c6feac1ded24bf1fe8d0c04d8c9d99abfa03d1"
+            }
+          },
+          "validation": {
+            "F1": 0.8656455142231948,
+            "Recall@1": 75.21739130434783,
+            "Recall@5": 88.18840579710145,
+            "Recall@10": 92.02898550724638,
+            "Recall@20": 95.43478260869566,
+            "Recall@1percent": 93.84057971014492
+          },
+          "validation_artifact": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong.json",
+            "sha256": "e7159f1acacf1a7c2191f93da1588cc1577f693a4fec9b4f203c4f7cbf4e918f"
+          },
+          "benchmarks": {
+            "dcc": {
+              "F1": 0.717948717948718,
+              "Recall@1": 54.25531914893617,
+              "Recall@5": 72.87234042553192,
+              "Recall@10": 81.91489361702128,
+              "Recall@20": 90.42553191489363,
+              "Recall@1percent": 54.25531914893617
+            },
+            "riverside": {
+              "F1": 0.7858208955223881,
+              "Recall@1": 63.341067285382834,
+              "Recall@5": 76.91415313225059,
+              "Recall@10": 82.77262180974478,
+              "Recall@20": 88.57308584686776,
+              "Recall@1percent": 87.18097447795824
+            }
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+            "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+          },
+          "artifacts": {
+            "seed_start": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/seed_start.json",
+              "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+            },
+            "mining.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/cache/cross_negatives_epoch_1.npz",
+              "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+            },
+            "mining.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/cache/cross_negatives_epoch_1.json",
+              "sha256": "9e804276686c76c98eea7a7e69941d81cdb4f1c919c54f26154885e2b44cc3bb"
+            },
+            "sejong.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+              "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+            },
+            "sejong_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong_diagnostics.json",
+              "sha256": "970816ca4bfbdbd780bab721513bbb26793336b45ec719f871aa8fb7525d4218"
+            },
+            "sejong.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.npz",
+              "sha256": "94421c5a608b932022b92f87fbdf11563ae9a43dcb344dd9111de069e014eb64"
+            },
+            "sejong.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.csv",
+              "sha256": "039772883a944cf42796d3529d9a4eadd76b2c2afb56e151e1070b4f9f07f991"
+            },
+            "sejong_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+              "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+            },
+            "dcc.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.json",
+              "sha256": "f8f7cfa11501c2151d12b901425f18d30fa306f9257e61868c0ded4ebf9a693d"
+            },
+            "dcc_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc_diagnostics.json",
+              "sha256": "06d020596f83d1c480ecb9ca48c935a679b3188065e4708ae8317f91ed9a08fa"
+            },
+            "dcc.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.npz",
+              "sha256": "c3b3d72f53251a071d87b0346bb5174e1659d5a3ab42356b4137290dd7177f49"
+            },
+            "dcc.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.csv",
+              "sha256": "f655a3b8edb47d9723119a0a0b7214831ed62fab0415ce99aeaf63abe0a529de"
+            },
+            "dcc_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.json",
+              "sha256": "f8f7cfa11501c2151d12b901425f18d30fa306f9257e61868c0ded4ebf9a693d"
+            },
+            "riverside.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.json",
+              "sha256": "27eed4ac880f3fe3710f4eb234b84095bf807cadecc93ff37a20d654e5141ba4"
+            },
+            "riverside_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside_diagnostics.json",
+              "sha256": "7bc8a8c505a0983444a3c41cb8638fd063cd058083867021215c602e5680d61f"
+            },
+            "riverside.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.npz",
+              "sha256": "973b400289970beabd48505882ab4e8f49c7e28f64861609b33129f7537d9ed6"
+            },
+            "riverside.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.csv",
+              "sha256": "68361e600da28e69d932ce6237da2d95b0048b5c37cbf26f865ff6a727cc5997"
+            },
+            "riverside_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.json",
+              "sha256": "27eed4ac880f3fe3710f4eb234b84095bf807cadecc93ff37a20d654e5141ba4"
+            }
+          },
+          "validation": {
+            "F1": 0.862913622690159,
+            "Recall@1": 74.92753623188406,
+            "Recall@5": 87.68115942028986,
+            "Recall@10": 92.46376811594203,
+            "Recall@20": 95.21739130434783,
+            "Recall@1percent": 93.76811594202898
+          },
+          "validation_artifact": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+            "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+          },
+          "benchmarks": {
+            "dcc": {
+              "F1": 0.7488151658767773,
+              "Recall@1": 51.59574468085106,
+              "Recall@5": 72.87234042553192,
+              "Recall@10": 80.31914893617021,
+              "Recall@20": 88.29787234042553,
+              "Recall@1percent": 51.59574468085106
+            },
+            "riverside": {
+              "F1": 0.7890895121014213,
+              "Recall@1": 61.542923433874705,
+              "Recall@5": 75.75406032482599,
+              "Recall@10": 81.67053364269141,
+              "Recall@20": 86.3109048723898,
+              "Recall@1percent": 85.67285382830626
+            }
+          }
+        }
+      },
+      "2": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "2508a5fc2177e23ee0866eba73aa1172fd2250103098090a9b70c2463ebbeb52",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+            "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+          },
+          "artifacts": {
+            "seed_start": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/seed_start.json",
+              "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+            },
+            "mining.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/cache/cross_negatives_epoch_1.npz",
+              "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+            },
+            "mining.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/cache/cross_negatives_epoch_1.json",
+              "sha256": "7c6935549291ce1234578ffc04cfd8ebc97146b08651889bb5ce3ef91cff0b58"
+            },
+            "sejong.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong.json",
+              "sha256": "dd940b2a9cd665eb67738e2824f687b3ebd5cf54db21fa0de6b86943ab08c202"
+            },
+            "sejong_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong_diagnostics.json",
+              "sha256": "be976192198381b947ac21db0f7413837f1f3b2837276900acae7369d92a63a8"
+            },
+            "sejong.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong.npz",
+              "sha256": "4abd25833f4bcf0fa4633a8f6026d76de797ec5e9ea4340750dd1df1745afbd8"
+            },
+            "sejong.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong.csv",
+              "sha256": "24e7262c97983579448a042c566691cb92af8e19d44856fe14723a64f80d8e26"
+            },
+            "sejong_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong.json",
+              "sha256": "dd940b2a9cd665eb67738e2824f687b3ebd5cf54db21fa0de6b86943ab08c202"
+            },
+            "dcc.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/dcc.json",
+              "sha256": "ce245c1595ff5d1cf96c47657620f88f447fc16d9d696d5183fb7b9732ae9bc5"
+            },
+            "dcc_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/dcc_diagnostics.json",
+              "sha256": "ee218ed9b8477e3d4202d08a2ad87a736d21265192c0c8641f49c37dffe44c03"
+            },
+            "dcc.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/dcc.npz",
+              "sha256": "0e10976cf81b1f7690da2065070e3d1e823c94ea5b3abcc9bf4b2489c79d429f"
+            },
+            "dcc.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/dcc.csv",
+              "sha256": "af2ef711fb943790d821a685f57df9d06c46667c6d1d112311e725109f1eb2b5"
+            },
+            "dcc_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/dcc.json",
+              "sha256": "ce245c1595ff5d1cf96c47657620f88f447fc16d9d696d5183fb7b9732ae9bc5"
+            },
+            "riverside.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/riverside.json",
+              "sha256": "16263c503240655b5afaad3f16e8d7c3d9a8dcbc39a1f8ce6920eaa83d8bfca7"
+            },
+            "riverside_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/riverside_diagnostics.json",
+              "sha256": "076ceccf756056d29d831fc8bbd022543ad2d817d71ed1138941d54f60a3bb83"
+            },
+            "riverside.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/riverside.npz",
+              "sha256": "9d83b7bd4d3ea1a2338d9ec6edbf7c830280da14ba33585403b9ae55729c3671"
+            },
+            "riverside.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/riverside.csv",
+              "sha256": "0091a9a1286b965b08ce3b093eee5ae385cdf595c61fd7f2e2106b4be85a899b"
+            },
+            "riverside_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/riverside.json",
+              "sha256": "16263c503240655b5afaad3f16e8d7c3d9a8dcbc39a1f8ce6920eaa83d8bfca7"
+            }
+          },
+          "validation": {
+            "F1": 0.8599827139152982,
+            "Recall@1": 74.1304347826087,
+            "Recall@5": 86.95652173913044,
+            "Recall@10": 91.52173913043478,
+            "Recall@20": 95.07246376811594,
+            "Recall@1percent": 93.33333333333333
+          },
+          "validation_artifact": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong.json",
+            "sha256": "dd940b2a9cd665eb67738e2824f687b3ebd5cf54db21fa0de6b86943ab08c202"
+          },
+          "benchmarks": {
+            "dcc": {
+              "F1": 0.7372262773722629,
+              "Recall@1": 55.85106382978723,
+              "Recall@5": 73.93617021276596,
+              "Recall@10": 80.31914893617021,
+              "Recall@20": 90.95744680851064,
+              "Recall@1percent": 55.85106382978723
+            },
+            "riverside": {
+              "F1": 0.7733934611048477,
+              "Recall@1": 61.25290023201856,
+              "Recall@5": 75.69605568445475,
+              "Recall@10": 81.78654292343387,
+              "Recall@20": 87.29698375870069,
+              "Recall@1percent": 85.96287703016242
+            }
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+            "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+          },
+          "artifacts": {
+            "seed_start": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/seed_start.json",
+              "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+            },
+            "mining.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/cache/cross_negatives_epoch_1.npz",
+              "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+            },
+            "mining.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/cache/cross_negatives_epoch_1.json",
+              "sha256": "cdffc1f83f4e92c3560061820a3ab0363e1d96ac2679d97ce8cb3f59853eea18"
+            },
+            "sejong.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+              "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+            },
+            "sejong_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong_diagnostics.json",
+              "sha256": "169c614b4d69f63c7ccf10c7850ad4850cc704da764c9f8b9fe5b48226a5861e"
+            },
+            "sejong.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.npz",
+              "sha256": "415d2a5af24f8e21520293df1a5f617c1ca08beb168b326e91ea715054157f69"
+            },
+            "sejong.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.csv",
+              "sha256": "4444ea055f134e22f9fb28f9b2a9b2d03eff76220bd552dd4690586a67b42836"
+            },
+            "sejong_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+              "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+            },
+            "dcc.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.json",
+              "sha256": "2b5676331dcd2f12f373d136bbb1bb7bb28c3506551de1aeb054efa115235fab"
+            },
+            "dcc_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc_diagnostics.json",
+              "sha256": "d82c06da98517b28a0377624ba32d4574e33719ff1c3c160f4338cf4de37e537"
+            },
+            "dcc.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.npz",
+              "sha256": "56329dfbc8746e32db06fec675c307ca991ab2d92ff06229eb7345e1bf95f8c5"
+            },
+            "dcc.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.csv",
+              "sha256": "42d1867fc0b7c2d403438bd99e3ce1c50b7b8f7a08e2041c5aae0336c8852b45"
+            },
+            "dcc_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.json",
+              "sha256": "2b5676331dcd2f12f373d136bbb1bb7bb28c3506551de1aeb054efa115235fab"
+            },
+            "riverside.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.json",
+              "sha256": "03ef28da485d8184a72a7ae7e7173e32cceb8e865b0ca77e869ffe6e02a47e0c"
+            },
+            "riverside_diagnostics.json": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside_diagnostics.json",
+              "sha256": "512a72cabcae57f57283570c52b33b5bdfc23070d09b264993250ac434103f93"
+            },
+            "riverside.npz": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.npz",
+              "sha256": "18ac130ace8703819ac473295582b950fdf3c2878f0974d74e3f31c50f04ef46"
+            },
+            "riverside.csv": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.csv",
+              "sha256": "aa64e2a985c867e8e1372f0c16c5b102868dda29f924fc23a328a8961b80d6db"
+            },
+            "riverside_metrics": {
+              "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.json",
+              "sha256": "03ef28da485d8184a72a7ae7e7173e32cceb8e865b0ca77e869ffe6e02a47e0c"
+            }
+          },
+          "validation": {
+            "F1": 0.8676731793960923,
+            "Recall@1": 75.07246376811594,
+            "Recall@5": 87.7536231884058,
+            "Recall@10": 92.3913043478261,
+            "Recall@20": 96.15942028985506,
+            "Recall@1percent": 93.76811594202898
+          },
+          "validation_artifact": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+            "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+          },
+          "benchmarks": {
+            "dcc": {
+              "F1": 0.7464114832535886,
+              "Recall@1": 50.0,
+              "Recall@5": 72.87234042553192,
+              "Recall@10": 78.19148936170212,
+              "Recall@20": 88.82978723404256,
+              "Recall@1percent": 50.0
+            },
+            "riverside": {
+              "F1": 0.8001564333202972,
+              "Recall@1": 62.7030162412993,
+              "Recall@5": 76.16009280742459,
+              "Recall@10": 81.4385150812065,
+              "Recall@20": 86.42691415313224,
+              "Recall@1percent": 85.26682134570765
+            }
+          }
+        }
+      }
+    },
+    "selected_loss": "infonce",
+    "selection_sha256": "867b746b6556c7fa528a9875dd61f7347cb13778be3b2d349d69379523857029",
+    "finished_at": "2026-10-19T16:57:17.284819+08:00"
+  },
+  "summary": {
+    "selected_loss": "infonce",
+    "summary": {
+      "sejong": {
+        "signed": {
+          "F1": {
+            "mean": 0.8639458301913902,
+            "sd": 0.0034437147058282978
+          },
+          "Recall@1": {
+            "mean": 74.78260869565217,
+            "sd": 0.5751633284922991
+          }
+        },
+        "infonce": {
+          "F1": {
+            "mean": 0.8663548647460136,
+            "sd": 0.0030072347076499552
+          },
+          "Recall@1": {
+            "mean": 75.04830917874396,
+            "sd": 0.1106902341776772
+          }
+        },
+        "paired_infonce_minus_signed": {
+          "F1": {
+            "mean": 0.0024090345546234535
+          },
+          "Recall@1": {
+            "mean": 0.26570048309178657
+          }
+        }
+      },
+      "dcc": {
+        "signed": {
+          "F1": {
+            "mean": 0.7329524352634317,
+            "sd": 0.013388567540347054
+          },
+          "Recall@1": {
+            "mean": 55.31914893617021,
+            "sd": 0.9213036210472744
+          }
+        },
+        "infonce": {
+          "F1": {
+            "mean": 0.75802426765884,
+            "sd": 0.018072289031452207
+          },
+          "Recall@1": {
+            "mean": 50.88652482269504,
+            "sd": 0.8125134210914603
+          }
+        },
+        "paired_infonce_minus_signed": {
+          "F1": {
+            "mean": 0.025071832395408333
+          },
+          "Recall@1": {
+            "mean": -4.432624113475174
+          }
+        }
+      },
+      "riverside": {
+        "signed": {
+          "F1": {
+            "mean": 0.7826454788171586,
+            "sd": 0.008142732428369139
+          },
+          "Recall@1": {
+            "mean": 62.64501160092808,
+            "sd": 1.2056038103727709
+          }
+        },
+        "infonce": {
+          "F1": {
+            "mean": 0.7967829139327482,
+            "sd": 0.006679462894742876
+          },
+          "Recall@1": {
+            "mean": 62.20030935808198,
+            "sd": 0.5953133920472046
+          }
+        },
+        "paired_infonce_minus_signed": {
+          "F1": {
+            "mean": 0.01413743511558955
+          },
+          "Recall@1": {
+            "mean": -0.4447022428460983
+          }
+        }
+      }
+    },
+    "caveat": "Exploratory after earlier benchmark inspection; fixed seed-0 L5/R5, only cross stage replicated. No seed selection. Official F1 is per-split maximum over 1000 test thresholds; frozen validation threshold is a separate diagnostic."
+  },
+  "verification": {
+    "all_checks_passed": true,
+    "verified_at": "2026-10-19T17:02:39.468133+08:00",
+    "checkpoint_count": 6,
+    "new_training_checkpoints": 4,
+    "fixed_unary_seed": 0,
+    "cross_seeds": [
+      0,
+      1,
+      2
+    ],
+    "optimizer_updates_per_checkpoint": 2071,
+    "source_files": 89,
+    "teacher_frozen": true,
+    "paired_sampling_match": true,
+    "paired_mining_match": true,
+    "metric_checkpoint_binding_match": true,
+    "legacy_f1_parity": true,
+    "runtime_matches": true,
+    "regression_tests_passed": 99,
+    "checkpoints": {
+      "0": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+            "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+            "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+          }
+        }
+      },
+      "1": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "12587a5e7754190fb32fa22d4c6bf4557cbe68a98fb04d6cb82cef8a0537e8a9",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+            "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+            "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+          }
+        }
+      },
+      "2": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "2508a5fc2177e23ee0866eba73aa1172fd2250103098090a9b70c2463ebbeb52",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+            "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+            "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+          }
+        }
+      }
+    }
+  },
+  "error_analysis": {
+    "sejong": {
+      "paired_seed0": {
+        "both_correct": 960,
+        "signed_only_correct": 75,
+        "infonce_only_correct": 77,
+        "both_wrong": 268
+      },
+      "models": {
+        "signed": {
+          "best_threshold": {
+            "threshold": 2.4192256857325005,
+            "tp": 1010,
+            "fp": 287,
+            "fn": 25,
+            "tn": 58,
+            "precision": 0.7787201233616037,
+            "recall": 0.9758454106280193,
+            "F1": 0.8662092624356775
+          },
+          "queries": 1380,
+          "database": 1505,
+          "valid_queries": 1380,
+          "correct_top1": 1035,
+          "wrong_top1": 345,
+          "wrong_top1_median_m": 132.37110900878906,
+          "wrong_top1_p90_m": 6106.80576171875,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+            "sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "wrong_distance_buckets_m": {
+            "9_to_20": 78,
+            "20_to_50": 44,
+            "50_to_100": 41,
+            "above_100": 182
+          },
+          "top1_squared_l2_median_correct": 1.7738308906555176,
+          "top1_squared_l2_median_wrong": 2.08233904838562
+        },
+        "infonce": {
+          "best_threshold": {
+            "threshold": 2.9348929691601087,
+            "tp": 1007,
+            "fp": 275,
+            "fn": 30,
+            "tn": 68,
+            "precision": 0.7854914196567863,
+            "recall": 0.9710703953712633,
+            "F1": 0.8684777921517896
+          },
+          "queries": 1380,
+          "database": 1505,
+          "valid_queries": 1380,
+          "correct_top1": 1037,
+          "wrong_top1": 343,
+          "wrong_top1_median_m": 117.46463775634766,
+          "wrong_top1_p90_m": 6219.791796875,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+            "sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "wrong_distance_buckets_m": {
+            "9_to_20": 56,
+            "20_to_50": 53,
+            "50_to_100": 50,
+            "above_100": 184
+          },
+          "top1_squared_l2_median_correct": 2.4078116416931152,
+          "top1_squared_l2_median_wrong": 2.7123146057128906
+        },
+        "released_official": {
+          "best_threshold": {
+            "threshold": 2.8183419280582003,
+            "tp": 1013,
+            "fp": 214,
+            "fn": 54,
+            "tn": 99,
+            "precision": 0.8255908720456397,
+            "recall": 0.9493908153701968,
+            "F1": 0.8831734960767219
+          },
+          "queries": 1380,
+          "database": 1505,
+          "valid_queries": 1380,
+          "correct_top1": 1067,
+          "wrong_top1": 313,
+          "wrong_top1_median_m": 120.12442016601562,
+          "wrong_top1_p90_m": 6334.827343750001,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+            "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN"
+        }
+      }
+    },
+    "dcc": {
+      "paired_seed0": {
+        "both_correct": 89,
+        "signed_only_correct": 16,
+        "infonce_only_correct": 7,
+        "both_wrong": 76
+      },
+      "models": {
+        "signed": {
+          "best_threshold": {
+            "threshold": 2.19101076319411,
+            "tp": 103,
+            "fp": 69,
+            "fn": 2,
+            "tn": 14,
+            "precision": 0.5988372093023255,
+            "recall": 0.9809523809523809,
+            "F1": 0.7436823104693141
+          },
+          "queries": 188,
+          "database": 204,
+          "valid_queries": 188,
+          "correct_top1": 105,
+          "wrong_top1": 83,
+          "wrong_top1_median_m": 88.20856475830078,
+          "wrong_top1_p90_m": 300.43329467773435,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+            "sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.4192256857325005,
+            "tp": 105,
+            "fp": 80,
+            "fn": 0,
+            "tn": 3,
+            "precision": 0.5675675675675675,
+            "recall": 1.0,
+            "F1": 0.7241379310344828
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 22,
+            "20_to_50": 10,
+            "50_to_100": 12,
+            "above_100": 39
+          },
+          "top1_squared_l2_median_correct": 1.7496976852416992,
+          "top1_squared_l2_median_wrong": 1.8893086910247803
+        },
+        "infonce": {
+          "best_threshold": {
+            "threshold": 2.637264704489493,
+            "tp": 81,
+            "fp": 31,
+            "fn": 15,
+            "tn": 61,
+            "precision": 0.7232142857142857,
+            "recall": 0.84375,
+            "F1": 0.7788461538461539
+          },
+          "queries": 188,
+          "database": 204,
+          "valid_queries": 188,
+          "correct_top1": 96,
+          "wrong_top1": 92,
+          "wrong_top1_median_m": 83.40548706054688,
+          "wrong_top1_p90_m": 337.42414855957037,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+            "sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.9348929691601087,
+            "tp": 95,
+            "fp": 72,
+            "fn": 1,
+            "tn": 20,
+            "precision": 0.5688622754491018,
+            "recall": 0.9895833333333334,
+            "F1": 0.7224334600760456
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 23,
+            "20_to_50": 12,
+            "50_to_100": 16,
+            "above_100": 41
+          },
+          "top1_squared_l2_median_correct": 2.392030954360962,
+          "top1_squared_l2_median_wrong": 2.7298431396484375
+        },
+        "released_official": {
+          "best_threshold": {
+            "threshold": 2.7781566745406754,
+            "tp": 93,
+            "fp": 51,
+            "fn": 11,
+            "tn": 33,
+            "precision": 0.6458333333333334,
+            "recall": 0.8942307692307693,
+            "F1": 0.75
+          },
+          "queries": 188,
+          "database": 204,
+          "valid_queries": 188,
+          "correct_top1": 104,
+          "wrong_top1": 84,
+          "wrong_top1_median_m": 99.11802673339844,
+          "wrong_top1_p90_m": 385.22840576171876,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+            "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.8183419280582003,
+            "tp": 96,
+            "fp": 58,
+            "fn": 8,
+            "tn": 26,
+            "precision": 0.6233766233766234,
+            "recall": 0.9230769230769231,
+            "F1": 0.7441860465116279
+          }
+        }
+      }
+    },
+    "riverside": {
+      "paired_seed0": {
+        "both_correct": 973,
+        "signed_only_correct": 119,
+        "infonce_only_correct": 102,
+        "both_wrong": 530
+      },
+      "models": {
+        "signed": {
+          "best_threshold": {
+            "threshold": 2.1618922615910434,
+            "tp": 1077,
+            "fp": 562,
+            "fn": 15,
+            "tn": 70,
+            "precision": 0.6571079926784624,
+            "recall": 0.9862637362637363,
+            "F1": 0.7887220798242403
+          },
+          "queries": 1724,
+          "database": 1558,
+          "valid_queries": 1724,
+          "correct_top1": 1092,
+          "wrong_top1": 632,
+          "wrong_top1_median_m": 199.59085083007812,
+          "wrong_top1_p90_m": 700.6834167480467,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+            "sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.4192256857325005,
+            "tp": 1092,
+            "fp": 629,
+            "fn": 0,
+            "tn": 3,
+            "precision": 0.6345148169668797,
+            "recall": 1.0,
+            "F1": 0.7763953075008887
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 62,
+            "20_to_50": 57,
+            "50_to_100": 94,
+            "above_100": 419
+          },
+          "top1_squared_l2_median_correct": 1.6160966157913208,
+          "top1_squared_l2_median_wrong": 1.7946791648864746
+        },
+        "infonce": {
+          "best_threshold": {
+            "threshold": 2.6595513255985175,
+            "tp": 1017,
+            "fp": 447,
+            "fn": 58,
+            "tn": 202,
+            "precision": 0.694672131147541,
+            "recall": 0.946046511627907,
+            "F1": 0.8011027963765261
+          },
+          "queries": 1724,
+          "database": 1558,
+          "valid_queries": 1724,
+          "correct_top1": 1075,
+          "wrong_top1": 649,
+          "wrong_top1_median_m": 235.938720703125,
+          "wrong_top1_p90_m": 797.4036743164064,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+            "sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.9348929691601087,
+            "tp": 1072,
+            "fp": 609,
+            "fn": 3,
+            "tn": 40,
+            "precision": 0.6377156454491374,
+            "recall": 0.9972093023255814,
+            "F1": 0.7779390420899854
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 49,
+            "20_to_50": 64,
+            "50_to_100": 84,
+            "above_100": 452
+          },
+          "top1_squared_l2_median_correct": 2.255870819091797,
+          "top1_squared_l2_median_wrong": 2.4491631984710693
+        },
+        "released_official": {
+          "best_threshold": {
+            "threshold": 2.670759332024896,
+            "tp": 1084,
+            "fp": 465,
+            "fn": 41,
+            "tn": 134,
+            "precision": 0.6998063266623629,
+            "recall": 0.9635555555555556,
+            "F1": 0.8107703814510098
+          },
+          "queries": 1724,
+          "database": 1558,
+          "valid_queries": 1724,
+          "correct_top1": 1125,
+          "wrong_top1": 599,
+          "wrong_top1_median_m": 200.3900909423828,
+          "wrong_top1_p90_m": 891.6951293945319,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+            "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.8183419280582003,
+            "tp": 1111,
+            "fp": 542,
+            "fn": 14,
+            "tn": 57,
+            "precision": 0.6721113127646703,
+            "recall": 0.9875555555555555,
+            "F1": 0.7998560115190785
+          }
+        }
+      }
+    }
+  }
+}

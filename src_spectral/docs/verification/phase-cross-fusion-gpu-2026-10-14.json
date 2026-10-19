@@ -1,0 +1,27 @@
+{
+  "scope": "Synthetic execution checks only; no real dataset training or evaluation",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.1.0+cu121",
+  "checks": [
+    {
+      "geometry": [
+        50,
+        225
+      ],
+      "synthetic_stage_two_epochs": 2,
+      "old_unimodal_initialization": "PASS",
+      "fusion_parameter_update": "PASS",
+      "radar_teacher_no_gradient": "PASS",
+      "checkpoint_roundtrip": "PASS",
+      "independent_evaluation_descriptor": "PASS"
+    },
+    {
+      "geometry": [
+        100,
+        100
+      ],
+      "fusion_forward_backward": "PASS",
+      "finite_gradients": "PASS"
+    }
+  ]
+}

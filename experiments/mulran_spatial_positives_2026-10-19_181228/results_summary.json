@@ -1,0 +1,90 @@
+{
+  "selected_family": "multi",
+  "promoted": true,
+  "evaluated_seeds": [
+    0,
+    1,
+    2
+  ],
+  "summary": {
+    "sejong": {
+      "single": {
+        "F1": {
+          "mean": 0.8663548647460136,
+          "sd": 0.0030072347076499552,
+          "n": 3
+        },
+        "Recall@1": {
+          "mean": 75.04830917874396,
+          "sd": 0.1106902341776772,
+          "n": 3
+        }
+      },
+      "multi": {
+        "F1": {
+          "mean": 0.8665340373348905,
+          "sd": 0.0030417329209552345,
+          "n": 3
+        },
+        "Recall@1": {
+          "mean": 75.28985507246377,
+          "sd": 0.7354269250066842,
+          "n": 3
+        }
+      }
+    },
+    "dcc": {
+      "single": {
+        "F1": {
+          "mean": 0.75802426765884,
+          "sd": 0.018072289031452207,
+          "n": 3
+        },
+        "Recall@1": {
+          "mean": 50.88652482269504,
+          "sd": 0.8125134210914603,
+          "n": 3
+        }
+      },
+      "multi": {
+        "F1": {
+          "mean": 0.7547619047619047,
+          "sd": 0.014869042853329573,
+          "n": 3
+        },
+        "Recall@1": {
+          "mean": 53.01418439716312,
+          "sd": 0.8125134210914595,
+          "n": 3
+        }
+      }
+    },
+    "riverside": {
+      "single": {
+        "F1": {
+          "mean": 0.7967829139327482,
+          "sd": 0.006679462894742876,
+          "n": 3
+        },
+        "Recall@1": {
+          "mean": 62.20030935808198,
+          "sd": 0.5953133920472046,
+          "n": 3
+        }
+      },
+      "multi": {
+        "F1": {
+          "mean": 0.7920128578185472,
+          "sd": 0.0032552106562898676,
+          "n": 3
+        },
+        "Recall@1": {
+          "mean": 61.17556071152359,
+          "sd": 0.5198890046306582,
+          "n": 3
+        }
+      }
+    }
+  },
+  "caveat": "Exploratory after benchmark inspection. Fixed seed0 L5/R5; cross-stage replication only. Historical baselines reused after source/weight/metric verification. Gate stopping is disclosed; no test score controls promotion."
+}

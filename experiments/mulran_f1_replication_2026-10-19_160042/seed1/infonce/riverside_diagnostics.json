@@ -1,0 +1,34 @@
+{
+  "best_threshold": {
+    "threshold": 2.7130882234544726,
+    "tp": 1027,
+    "fp": 515,
+    "fn": 34,
+    "tn": 148,
+    "precision": 0.666018158236057,
+    "recall": 0.9679547596606974,
+    "F1": 0.7890895121014214
+  },
+  "queries": 1724,
+  "database": 1558,
+  "valid_queries": 1724,
+  "correct_top1": 1061,
+  "wrong_top1": 663,
+  "wrong_top1_median_m": 237.2196044921875,
+  "wrong_top1_p90_m": 799.5899169921878,
+  "checkpoint": {
+    "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+    "sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319"
+  },
+  "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+  "validation_frozen_threshold": {
+    "threshold": 2.930804513238214,
+    "tp": 1058,
+    "fp": 625,
+    "fn": 3,
+    "tn": 38,
+    "precision": 0.6286393345216874,
+    "recall": 0.9971724787935909,
+    "F1": 0.7711370262390671
+  }
+}

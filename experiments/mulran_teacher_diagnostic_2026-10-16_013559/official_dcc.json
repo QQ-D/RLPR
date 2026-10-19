@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+  "variant": "rlpr",
+  "split": "dcc",
+  "metrics": {
+    "R2L": {
+      "Recall@1": 55.319148936170215,
+      "Recall@5": 74.46808510638297,
+      "Recall@10": 82.4468085106383,
+      "Recall@20": 90.95744680851064
+    },
+    "R2R": {
+      "Recall@1": 73.40425531914893,
+      "Recall@5": 85.63829787234043,
+      "Recall@10": 89.8936170212766,
+      "Recall@20": 95.74468085106383
+    },
+    "L2L": {
+      "Recall@1": 75.53191489361703,
+      "Recall@5": 83.51063829787235,
+      "Recall@10": 86.70212765957447,
+      "Recall@20": 89.8936170212766
+    }
+  },
+  "note": "R2R diagnoses the fixed radar teacher; L2L uses the LiDAR branch after cross-modal alignment, not its unimodal initialization."
+}

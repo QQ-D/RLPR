@@ -1,0 +1,21 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "failure": "Historical epoch1 is not bitwise reproduced; never use this failed run for epoch selection.",
+  "sampling_rng_hashes_match_previous_control": true,
+  "loss_new": 1.6082407,
+  "loss_historical": 1.6081272,
+  "first_two_batch_losses_exactly_match": true,
+  "first_differing_batch_zero_based": 2,
+  "max_abs_checkpoint_difference": 0.2986462116241455,
+  "largest_difference_tensor": "layer1_l.1.bn1.running_var",
+  "strict_probe_without_cublas_workspace": "PyTorch raises because CuBLAS deterministic workspace is not configured.",
+  "three_batch_repetitions": {
+    "default_policy_max_state_difference": 0.0,
+    "strict_plus_workspace_max_state_difference": 0.0
+  },
+  "conclusion": "Historical setup does not guarantee bitwise GPU reproducibility. Exact historical allocator/kernel behavior cannot be reconstructed. Use fresh strict deterministic epoch1 as the control for its own epoch2..5 continuation.",
+  "probes": [
+    "/tmp/rlpr_repro_probe.py",
+    "/tmp/rlpr_repro_compare.py"
+  ]
+}

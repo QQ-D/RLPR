@@ -1,0 +1,9 @@
+{
+  "source": "/media/rwj/ZX1 2TB/RLPR/src",
+  "source_commit": "ad6478a5499bab227d7f063cb77d4843dc6f9b4a",
+  "backup": "/media/rwj/ZX1 2TB/RLPR/backups/rlpr_code_2026-10-14_201621",
+  "verified_files": 224,
+  "verification": "Copied files have matching SHA-256; source/backup Git HEAD match; both clean.",
+  "excluded": "Active .git/worktrees metadata only; all code and Git objects/history retained.",
+  "reason": "Earlier backup directory was absent at final verification; unmodified baseline copied again."
+}

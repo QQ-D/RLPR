@@ -1,0 +1,156 @@
+{
+  "status": "COMPLETE",
+  "protocol": {
+    "checkpoint": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+    "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc",
+    "paper": "/home/rwj/文档/xwechat_files/wxid_muwkj8wetvon22_070b/msg/file/2026-10/RLPR_2026.pdf",
+    "paper_table": 1,
+    "paper_riverside": {
+      "Recall@1": 64.85,
+      "Recall@5": 78.77,
+      "Recall@10": 84.22,
+      "F1": 0.8057
+    },
+    "paper_dcc": {
+      "Recall@1": 55.32,
+      "Recall@5": 73.94,
+      "Recall@10": 82.98,
+      "F1": 0.7419
+    },
+    "model": "Original RLPR, author-provided MulRan checkpoint",
+    "eval_source": "/media/rwj/ZX1 2TB/RLPR/src_spectral",
+    "model_variant": "rlpr",
+    "metric_arithmetic": "Zero/zero F1 made zero; independently count recall cutoffs; retain query-count-based top1percent convention",
+    "preprocessing_source": "/media/rwj/ZX1 2TB/RLPR/src",
+    "raw_sequences_required": [
+      "DCC01",
+      "DCC02",
+      "Riverside01",
+      "Riverside02"
+    ]
+  },
+  "splits": {
+    "dcc": {
+      "status": "COMPLETE",
+      "preprocessing": {
+        "status": "COMPLETE",
+        "split": "dcc",
+        "sequences": [
+          "DCC01",
+          "DCC02"
+        ],
+        "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+        "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+        "source_root": "/media/rwj/ZX1 2TB/RLPR/src",
+        "query_sequence": "DCC02",
+        "database_sequence": "DCC01",
+        "timestamp_pose_tolerance_s": 1.0,
+        "timestamp_lidar_tolerance_s": 0.05,
+        "database_query_spatial_sampling_m": 10.0,
+        "positive_threshold_m": 9.0,
+        "bev_height_width": [
+          50,
+          225
+        ],
+        "range_m": 80.0,
+        "lidar_voxel_m": 1.6,
+        "synchronized_frames": 4569,
+        "database_frames": 204,
+        "query_frames": 188,
+        "seconds": 18.442313072000616
+      },
+      "metrics": {
+        "Recall@1": 55.32,
+        "Recall@5": 74.47,
+        "Recall@10": 82.45,
+        "Recall@20": 90.96,
+        "Recall@1percent": 55.32,
+        "F1": 0.7500000000000001
+      },
+      "paper_metrics": {
+        "Recall@1": 55.32,
+        "Recall@5": 73.94,
+        "Recall@10": 82.98,
+        "F1": 0.7419
+      },
+      "difference": {
+        "Recall@1": 0.0,
+        "Recall@5": 0.5300000000000011,
+        "Recall@10": -0.5300000000000011,
+        "F1": 0.008100000000000107
+      },
+      "command": [
+        "/mnt/data300/envs/rlpr/bin/python",
+        "-u",
+        "test_cross_modal.py",
+        "--dataset",
+        "mulran",
+        "--model",
+        "rlpr",
+        "--no-cross-fusion"
+      ],
+      "evaluation_log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_official_eval_2026-10-14/dcc_evaluation.log"
+    },
+    "riverside": {
+      "status": "COMPLETE",
+      "preprocessing": {
+        "status": "COMPLETE",
+        "split": "riverside",
+        "sequences": [
+          "Riverside01",
+          "Riverside02"
+        ],
+        "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+        "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+        "source_root": "/media/rwj/ZX1 2TB/RLPR/src",
+        "query_sequence": "Riverside02",
+        "database_sequence": "Riverside01",
+        "timestamp_pose_tolerance_s": 1.0,
+        "timestamp_lidar_tolerance_s": 0.05,
+        "database_query_spatial_sampling_m": 1.0,
+        "positive_threshold_m": 9.0,
+        "bev_height_width": [
+          50,
+          225
+        ],
+        "range_m": 80.0,
+        "lidar_voxel_m": 1.6,
+        "synchronized_frames": 4939,
+        "database_frames": 1558,
+        "query_frames": 1724,
+        "seconds": 70.59450597599971
+      },
+      "metrics": {
+        "Recall@1": 65.26,
+        "Recall@5": 79.23,
+        "Recall@10": 84.4,
+        "Recall@20": 88.75,
+        "Recall@1percent": 87.59,
+        "F1": 0.8107703814510098
+      },
+      "paper_metrics": {
+        "Recall@1": 64.85,
+        "Recall@5": 78.77,
+        "Recall@10": 84.22,
+        "F1": 0.8057
+      },
+      "difference": {
+        "Recall@1": 0.4100000000000108,
+        "Recall@5": 0.46000000000000796,
+        "Recall@10": 0.18000000000000682,
+        "F1": 0.005070381451009798
+      },
+      "command": [
+        "/mnt/data300/envs/rlpr/bin/python",
+        "-u",
+        "test_cross_modal.py",
+        "--dataset",
+        "mulran",
+        "--model",
+        "rlpr",
+        "--no-cross-fusion"
+      ],
+      "evaluation_log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_official_eval_2026-10-14/riverside_evaluation.log"
+    }
+  }
+}

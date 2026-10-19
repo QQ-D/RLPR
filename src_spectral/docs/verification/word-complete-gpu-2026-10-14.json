@@ -1,0 +1,44 @@
+{
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.1.0+cu121",
+  "scope": "Synthetic optimization and one real BEV execution check; no real training epoch or evaluation",
+  "variant": "spectral_word",
+  "synthetic_alignment_losses": [
+    3.3923189640045166,
+    3.369718551635742
+  ],
+  "teacher_frozen": true,
+  "phase_transformer_updated": true,
+  "cross_attention_updated": true,
+  "real_bev_shape": [
+    1,
+    12,
+    3,
+    50,
+    225
+  ],
+  "real_bev_loss": 3.310734748840332,
+  "real_bev_components": {
+    "coherence_local": 1.5526626110076904,
+    "coherence_global": 1.5788331031799316,
+    "phase": 1.7923914194107056,
+    "phase_circular_independent": 0.9549535512924194,
+    "spectral_coherence_independent": 0.8376008868217468,
+    "phase_circular_fused": 0.9549480080604553,
+    "spectral_coherence_fused": 0.8372803926467896,
+    "coherence_local_independent": 1.5525622367858887,
+    "coherence_global_independent": 1.5788400173187256,
+    "phase_independent": 1.7925543785095215,
+    "coherence_local_fused": 1.5527629852294922,
+    "coherence_global_fused": 1.5788261890411377,
+    "phase_fused": 1.7922284603118896
+  },
+  "checkpoint_output_max_abs_error": [
+    0.0,
+    8.17328691482544e-06
+  ],
+  "checkpoint_roundtrip": true,
+  "independent_test_descriptors": true,
+  "cart_100x100_forward_backward": true,
+  "peak_gpu_allocated_mb": 302.9951171875
+}

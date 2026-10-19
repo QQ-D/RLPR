@@ -1,0 +1,125 @@
+{
+  "selected": "infonce",
+  "rule": "Mean Sejong F1 over seeds 0/1/2, then mean Sejong Recall@1, then signed; no seed selection",
+  "validation_stats": {
+    "signed": {
+      "F1": {
+        "mean": 0.8639458301913902,
+        "sd": 0.0034437147058282978
+      },
+      "Recall@1": {
+        "mean": 74.78260869565217,
+        "sd": 0.5751633284922991
+      }
+    },
+    "infonce": {
+      "F1": {
+        "mean": 0.8663548647460136,
+        "sd": 0.0030072347076499552
+      },
+      "Recall@1": {
+        "mean": 75.04830917874396,
+        "sd": 0.1106902341776772
+      }
+    }
+  },
+  "evidence": {
+    "0": {
+      "signed": {
+        "validation": {
+          "F1": 0.8662092624356775,
+          "Recall@1": 75.0,
+          "Recall@5": 87.31884057971014,
+          "Recall@10": 92.17391304347827,
+          "Recall@20": 95.79710144927536,
+          "Recall@1percent": 94.20289855072464
+        },
+        "checkpoint_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/signed/sejong.json",
+          "sha256": "ab59f7ee0c02b5d579f6249fb7a57a75df4ef15d3c99f4a572aef2b163378684"
+        }
+      },
+      "infonce": {
+        "validation": {
+          "F1": 0.8684777921517896,
+          "Recall@1": 75.14492753623189,
+          "Recall@5": 88.47826086956522,
+          "Recall@10": 92.97101449275362,
+          "Recall@20": 96.23188405797102,
+          "Recall@1percent": 94.4927536231884
+        },
+        "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+          "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+        }
+      }
+    },
+    "1": {
+      "signed": {
+        "validation": {
+          "F1": 0.8656455142231948,
+          "Recall@1": 75.21739130434783,
+          "Recall@5": 88.18840579710145,
+          "Recall@10": 92.02898550724638,
+          "Recall@20": 95.43478260869566,
+          "Recall@1percent": 93.84057971014492
+        },
+        "checkpoint_sha256": "12587a5e7754190fb32fa22d4c6bf4557cbe68a98fb04d6cb82cef8a0537e8a9",
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/sejong.json",
+          "sha256": "e7159f1acacf1a7c2191f93da1588cc1577f693a4fec9b4f203c4f7cbf4e918f"
+        }
+      },
+      "infonce": {
+        "validation": {
+          "F1": 0.862913622690159,
+          "Recall@1": 74.92753623188406,
+          "Recall@5": 87.68115942028986,
+          "Recall@10": 92.46376811594203,
+          "Recall@20": 95.21739130434783,
+          "Recall@1percent": 93.76811594202898
+        },
+        "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+          "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+        }
+      }
+    },
+    "2": {
+      "signed": {
+        "validation": {
+          "F1": 0.8599827139152982,
+          "Recall@1": 74.1304347826087,
+          "Recall@5": 86.95652173913044,
+          "Recall@10": 91.52173913043478,
+          "Recall@20": 95.07246376811594,
+          "Recall@1percent": 93.33333333333333
+        },
+        "checkpoint_sha256": "2508a5fc2177e23ee0866eba73aa1172fd2250103098090a9b70c2463ebbeb52",
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/sejong.json",
+          "sha256": "dd940b2a9cd665eb67738e2824f687b3ebd5cf54db21fa0de6b86943ab08c202"
+        }
+      },
+      "infonce": {
+        "validation": {
+          "F1": 0.8676731793960923,
+          "Recall@1": 75.07246376811594,
+          "Recall@5": 87.7536231884058,
+          "Recall@10": 92.3913043478261,
+          "Recall@20": 96.15942028985506,
+          "Recall@1percent": 93.76811594202898
+        },
+        "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+          "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+        }
+      }
+    }
+  },
+  "locked_at": "2026-10-19T16:52:24.099708+08:00"
+}

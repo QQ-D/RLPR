@@ -1,0 +1,56 @@
+{
+  "all_checks_passed": true,
+  "verified_at": "2026-10-19T19:04:10.737201+08:00",
+  "control_replay_bitwise_equal": true,
+  "paired_sampling_match": true,
+  "paired_mining_match": true,
+  "teacher_frozen": true,
+  "checkpoint_audits": {
+    "control": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/control/weights/1.pth.tar",
+      "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+        "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+      }
+    },
+    "0": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/weights/1.pth.tar",
+      "checkpoint_sha256": "26d71a1f74ec152306b2a2f6c7119e645bafb6951d045261ba0f472ab857f14f",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+        "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+      }
+    },
+    "1": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed1/weights/1.pth.tar",
+      "checkpoint_sha256": "f34fcd09e811cdde6c5d18399ef3cc536cb9abd5bf5d074b632524667b4f713c",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+        "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+      }
+    },
+    "2": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed2/weights/1.pth.tar",
+      "checkpoint_sha256": "064c35781ea1300296c0d31739e33a5a483282f6e9a278e1c017a7b4931961b5",
+      "optimizer_steps": 2071,
+      "all_finite": true,
+      "radar_unchanged": true,
+      "sampling": {
+        "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+        "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+      }
+    }
+  },
+  "regression_tests": 108,
+  "source_files": 95
+}

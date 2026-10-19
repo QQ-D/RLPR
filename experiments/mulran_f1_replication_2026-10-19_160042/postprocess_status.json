@@ -1,0 +1,12 @@
+{
+  "stage": "COMPLETE",
+  "time": "2026-10-19T17:08:53.908484+08:00",
+  "report": "/media/rwj/ZX1 2TB/RLPR/reports/2026-10-19/RLPR_F1优先多种子复验_2026-10-19.pdf",
+  "previous_failure": {
+    "stage": "FAILED",
+    "time": "2026-10-19T16:59:36.966466+08:00",
+    "error": "CalledProcessError(1, ['/mnt/data300/envs/rlpr/bin/python', '/media/rwj/ZX1 2TB/RLPR/reports/2026-10-19/audit_f1_replication.py'])"
+  },
+  "recovery": "Resolved the recorded abbreviated Git commit to its full object ID before runtime comparison; all model/source/environment/metric checks retained.",
+  "audit_log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/completion_audit.retry1.log"
+}

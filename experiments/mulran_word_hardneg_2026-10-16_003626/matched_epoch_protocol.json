@@ -1,0 +1,8 @@
+{
+  "declared_at": "2026-10-16T01:17:49.396940+08:00",
+  "rule": "After hard-negative selection is locked from Sejong validation, compare its checkpoint to the random-negative baseline at the identical epoch. If that baseline epoch lacks DCC/Riverside metrics, evaluate it once; never reselect epochs or methods from these results.",
+  "reason": "Separate the negative sampling change from different selected training durations.",
+  "status_at_declaration": "TRAINING_EPOCH_4",
+  "baseline_report_immutable": true,
+  "teacher_diagnostic": "After completing benchmarks, compare fixed official/selected Word R2L, R2R and L2L recall without training or checkpoint reselection."
+}

@@ -1,0 +1,488 @@
+{
+  "status": "COMPLETE",
+  "started_at": "2026-10-18T19:31:11.255529+08:00",
+  "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110",
+  "protocol_sha256": "a4d5cd471b242f02a950fa3b45c2821aacbeb158ea8742aa189531508daa06d1",
+  "arms": {
+    "pure_phase": {
+      "l": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/l/weights/1.pth.tar",
+            "checkpoint_sha256": "3f6089342329ee5e9b38f1ee2d092182149b5acdb3e50c39a3e28a0e55712683",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 0.20325784,
+            "validation": {
+              "Recall@1": 95.43478260869566,
+              "Recall@5": 97.7536231884058,
+              "Recall@10": 98.40579710144928,
+              "Recall@20": 98.98550724637681
+            }
+          },
+          "2": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/l/weights/2.pth.tar",
+            "checkpoint_sha256": "b36d779d1a433ac16b6d334e06476af339831f608cffdee5bef6b21213290c89",
+            "optimizer_steps": 4142,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+              "worker": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+            },
+            "loss": 0.18785095,
+            "validation": {
+              "Recall@1": 97.2463768115942,
+              "Recall@5": 98.69565217391305,
+              "Recall@10": 99.34782608695653,
+              "Recall@20": 99.4927536231884
+            }
+          },
+          "3": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/l/weights/3.pth.tar",
+            "checkpoint_sha256": "32800ae40d4b2c160d026d55d84a8b4dd66f35cff94b9e6cab519531f7904cd0",
+            "optimizer_steps": 6213,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+              "worker": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+            },
+            "loss": 0.14952624,
+            "validation": {
+              "Recall@1": 97.53623188405797,
+              "Recall@5": 98.91304347826086,
+              "Recall@10": 99.42028985507247,
+              "Recall@20": 99.71014492753623
+            }
+          },
+          "4": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/l/weights/4.pth.tar",
+            "checkpoint_sha256": "8a17c825875b324e6e1e485338aa2f1ab4dee4e7648ad97004ecbe0430cd26fd",
+            "optimizer_steps": 8284,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "779d02c6b4657b8caa28ade55dbb51e48da879dca61242e8390feeb6b1dee9be",
+              "worker": "42bff94b75a50eee252aefd27574074fc14f167d4ac7874088c2a17b99e44a0e"
+            },
+            "loss": 0.12161749,
+            "validation": {
+              "Recall@1": 97.7536231884058,
+              "Recall@5": 99.1304347826087,
+              "Recall@10": 99.56521739130434,
+              "Recall@20": 99.63768115942028
+            }
+          },
+          "5": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/l/weights/5.pth.tar",
+            "checkpoint_sha256": "04d2d8e5ecf038618e7a720b51a77989e680984d5add372e3fe6047cd8c3ecad",
+            "optimizer_steps": 10355,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "75db0b2a77982c73eb2758e3e8142ed2c4308117ac3044844f96f1df8ded9395",
+              "worker": "5c52c1215faecef801c977968a9dd4f490711187ef40b52e025a0ea7f8d1f4d4"
+            },
+            "loss": 0.10490548,
+            "validation": {
+              "Recall@1": 97.97101449275362,
+              "Recall@5": 99.27536231884058,
+              "Recall@10": 99.4927536231884,
+              "Recall@20": 99.63768115942028
+            }
+          }
+        },
+        "selected_epoch": 5,
+        "selection_locked_at": "2026-10-18T23:16:08.513047+08:00"
+      },
+      "r": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/r/weights/1.pth.tar",
+            "checkpoint_sha256": "b7380cd97405a158c26e129e149e849e73baa72cf5e981aaa732254f3f6c3d88",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 0.20365393,
+            "validation": {
+              "Recall@1": 91.44927536231884,
+              "Recall@5": 95.65217391304348,
+              "Recall@10": 96.66666666666667,
+              "Recall@20": 97.60869565217392
+            }
+          },
+          "2": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/r/weights/2.pth.tar",
+            "checkpoint_sha256": "4faa28361ac05f42f4251566bf9fc80f77138d21593414a4cfb17dba95286505",
+            "optimizer_steps": 4142,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+              "worker": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+            },
+            "loss": 0.22081275,
+            "validation": {
+              "Recall@1": 94.6376811594203,
+              "Recall@5": 98.33333333333333,
+              "Recall@10": 98.84057971014492,
+              "Recall@20": 99.20289855072464
+            }
+          },
+          "3": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/r/weights/3.pth.tar",
+            "checkpoint_sha256": "f7b9b6a6894d94fe29d0f54c36a360148e7e3a9b8341ed6e8f6d835ccbaf2e21",
+            "optimizer_steps": 6213,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+              "worker": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+            },
+            "loss": 0.17908408,
+            "validation": {
+              "Recall@1": 95.3623188405797,
+              "Recall@5": 98.33333333333333,
+              "Recall@10": 98.84057971014492,
+              "Recall@20": 99.34782608695653
+            }
+          },
+          "4": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/r/weights/4.pth.tar",
+            "checkpoint_sha256": "a3608da7f23d46cd8872513edf7115118a2cc2003faf36ca2dff97155e0fa66c",
+            "optimizer_steps": 8284,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "779d02c6b4657b8caa28ade55dbb51e48da879dca61242e8390feeb6b1dee9be",
+              "worker": "42bff94b75a50eee252aefd27574074fc14f167d4ac7874088c2a17b99e44a0e"
+            },
+            "loss": 0.1480327,
+            "validation": {
+              "Recall@1": 95.57971014492753,
+              "Recall@5": 98.40579710144928,
+              "Recall@10": 99.05797101449275,
+              "Recall@20": 99.56521739130434
+            }
+          },
+          "5": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/r/weights/5.pth.tar",
+            "checkpoint_sha256": "07eaa1761f048b5899f78da56f7e8f3e61d785d1522a740e7f8492b85963090e",
+            "optimizer_steps": 10355,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "75db0b2a77982c73eb2758e3e8142ed2c4308117ac3044844f96f1df8ded9395",
+              "worker": "5c52c1215faecef801c977968a9dd4f490711187ef40b52e025a0ea7f8d1f4d4"
+            },
+            "loss": 0.12922558,
+            "validation": {
+              "Recall@1": 96.08695652173913,
+              "Recall@5": 98.62318840579711,
+              "Recall@10": 99.05797101449275,
+              "Recall@20": 99.56521739130434
+            }
+          }
+        },
+        "selected_epoch": 5,
+        "selection_locked_at": "2026-10-19T00:38:54.882291+08:00"
+      },
+      "cross": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/pure_phase/cross/weights/1.pth.tar",
+            "checkpoint_sha256": "3ce2aa496c596be5bda87d6b7b3aed8b12b60fcbe137c7ee88aadb584c9fc6fc",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": true,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 1.6556544,
+            "validation": {
+              "F1": 0.848536274925753,
+              "Recall@1": 73.26086956521739,
+              "Recall@5": 86.81159420289855,
+              "Recall@10": 89.92753623188405,
+              "Recall@20": 92.89855072463769,
+              "Recall@1percent": 91.23188405797102
+            }
+          }
+        },
+        "selected_epoch": 1,
+        "selection_locked_at": "2026-10-19T00:49:10.763973+08:00",
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7280334728033473,
+            "Recall@1": 51.06382978723404,
+            "Recall@5": 72.3404255319149,
+            "Recall@10": 79.25531914893617,
+            "Recall@20": 85.1063829787234,
+            "Recall@1percent": 51.06382978723404
+          },
+          "riverside": {
+            "F1": 0.7137695704536331,
+            "Recall@1": 53.88631090487239,
+            "Recall@5": 71.63573085846868,
+            "Recall@10": 77.9582366589327,
+            "Recall@20": 84.97679814385151,
+            "Recall@1percent": 83.75870069605568
+          }
+        }
+      }
+    },
+    "amplitude": {
+      "l": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/l/weights/1.pth.tar",
+            "checkpoint_sha256": "51347a40ae13519e629ba468f67fa6f28fcfe2348684203f71b413ca16f5dd9b",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 0.18858723,
+            "validation": {
+              "Recall@1": 96.81159420289856,
+              "Recall@5": 98.91304347826086,
+              "Recall@10": 99.42028985507247,
+              "Recall@20": 99.42028985507247
+            }
+          },
+          "2": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/l/weights/2.pth.tar",
+            "checkpoint_sha256": "44247345c255cd51c27ff96305c10ce6f05f6bbacdef221c5d149240fbfa39b2",
+            "optimizer_steps": 4142,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+              "worker": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+            },
+            "loss": 0.14419548,
+            "validation": {
+              "Recall@1": 97.82608695652173,
+              "Recall@5": 99.05797101449275,
+              "Recall@10": 99.56521739130434,
+              "Recall@20": 99.63768115942028
+            }
+          },
+          "3": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/l/weights/3.pth.tar",
+            "checkpoint_sha256": "e3f739af18918010993cd89ae7f4b022c60af2b428c9775a9822e87c9ba6c021",
+            "optimizer_steps": 6213,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+              "worker": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+            },
+            "loss": 0.11500237,
+            "validation": {
+              "Recall@1": 98.04347826086956,
+              "Recall@5": 99.42028985507247,
+              "Recall@10": 99.56521739130434,
+              "Recall@20": 99.71014492753623
+            }
+          },
+          "4": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/l/weights/4.pth.tar",
+            "checkpoint_sha256": "f69b0cf4d190302ef80181f3625403fe8b55b12cfd2b2dde525dd9b2e8a4ad16",
+            "optimizer_steps": 8284,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "779d02c6b4657b8caa28ade55dbb51e48da879dca61242e8390feeb6b1dee9be",
+              "worker": "42bff94b75a50eee252aefd27574074fc14f167d4ac7874088c2a17b99e44a0e"
+            },
+            "loss": 0.09110457,
+            "validation": {
+              "Recall@1": 98.26086956521739,
+              "Recall@5": 99.34782608695653,
+              "Recall@10": 99.56521739130434,
+              "Recall@20": 99.56521739130434
+            }
+          },
+          "5": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/l/weights/5.pth.tar",
+            "checkpoint_sha256": "7680d5639dcb9feb84b8145bad88a4f714895b932339f2655d9d10c0c819a976",
+            "optimizer_steps": 10355,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "75db0b2a77982c73eb2758e3e8142ed2c4308117ac3044844f96f1df8ded9395",
+              "worker": "5c52c1215faecef801c977968a9dd4f490711187ef40b52e025a0ea7f8d1f4d4"
+            },
+            "loss": 0.07823967,
+            "validation": {
+              "Recall@1": 98.26086956521739,
+              "Recall@5": 99.27536231884058,
+              "Recall@10": 99.63768115942028,
+              "Recall@20": 99.78260869565217
+            }
+          }
+        },
+        "selected_epoch": 5,
+        "selection_locked_at": "2026-10-19T02:12:24.437801+08:00"
+      },
+      "r": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/r/weights/1.pth.tar",
+            "checkpoint_sha256": "20a1c25997af238d239729f72d84978003ecad9acc19f7bd99e7d1cde44361cd",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 0.19549385,
+            "validation": {
+              "Recall@1": 94.78260869565217,
+              "Recall@5": 97.97101449275362,
+              "Recall@10": 98.76811594202898,
+              "Recall@20": 99.05797101449275
+            }
+          },
+          "2": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/r/weights/2.pth.tar",
+            "checkpoint_sha256": "cfe431c57f38f64f533828c51ec4d7d780bf8c8355b434c3f71a0299299bf076",
+            "optimizer_steps": 4142,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+              "worker": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+            },
+            "loss": 0.1649907,
+            "validation": {
+              "Recall@1": 97.60869565217392,
+              "Recall@5": 98.76811594202898,
+              "Recall@10": 99.63768115942028,
+              "Recall@20": 99.92753623188406
+            }
+          },
+          "3": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/r/weights/3.pth.tar",
+            "checkpoint_sha256": "15640c13747090b35907c3354df2cd81277f833aad48668522c372ccaa69ab95",
+            "optimizer_steps": 6213,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+              "worker": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+            },
+            "loss": 0.13311653,
+            "validation": {
+              "Recall@1": 97.46376811594203,
+              "Recall@5": 98.98550724637681,
+              "Recall@10": 99.63768115942028,
+              "Recall@20": 99.85507246376811
+            }
+          },
+          "4": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/r/weights/4.pth.tar",
+            "checkpoint_sha256": "1d13839c8cbf2f4cb7ccb2877bb7c3dc8be97dca0c9dec5d29eb16812d1a086e",
+            "optimizer_steps": 8284,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "779d02c6b4657b8caa28ade55dbb51e48da879dca61242e8390feeb6b1dee9be",
+              "worker": "42bff94b75a50eee252aefd27574074fc14f167d4ac7874088c2a17b99e44a0e"
+            },
+            "loss": 0.10548555,
+            "validation": {
+              "Recall@1": 97.46376811594203,
+              "Recall@5": 99.05797101449275,
+              "Recall@10": 99.63768115942028,
+              "Recall@20": 99.92753623188406
+            }
+          },
+          "5": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/r/weights/5.pth.tar",
+            "checkpoint_sha256": "4d40dd60e10753286ad7d7bb17d17eea321e0dd9e545157547ba60dfe2549361",
+            "optimizer_steps": 10355,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "75db0b2a77982c73eb2758e3e8142ed2c4308117ac3044844f96f1df8ded9395",
+              "worker": "5c52c1215faecef801c977968a9dd4f490711187ef40b52e025a0ea7f8d1f4d4"
+            },
+            "loss": 0.08849887,
+            "validation": {
+              "Recall@1": 97.53623188405797,
+              "Recall@5": 98.98550724637681,
+              "Recall@10": 99.4927536231884,
+              "Recall@20": 99.85507246376811
+            }
+          }
+        },
+        "selected_epoch": 5,
+        "selection_locked_at": "2026-10-19T03:35:49.644266+08:00"
+      },
+      "cross": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110/amplitude/cross/weights/1.pth.tar",
+            "checkpoint_sha256": "9030163c126b90a806da942b42b749c1d071276bdeef59dc1e878adf1bbabdf0",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": true,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 1.5740494,
+            "validation": {
+              "F1": 0.8630490956072351,
+              "Recall@1": 74.34782608695653,
+              "Recall@5": 87.2463768115942,
+              "Recall@10": 92.2463768115942,
+              "Recall@20": 95.57971014492753,
+              "Recall@1percent": 93.91304347826087
+            }
+          }
+        },
+        "selected_epoch": 1,
+        "selection_locked_at": "2026-10-19T03:47:23.286372+08:00",
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7426470588235294,
+            "Recall@1": 55.319148936170215,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 82.4468085106383,
+            "Recall@20": 90.42553191489363,
+            "Recall@1percent": 55.319148936170215
+          },
+          "riverside": {
+            "F1": 0.7847730600292826,
+            "Recall@1": 62.81902552204176,
+            "Recall@5": 76.74013921113689,
+            "Recall@10": 82.25058004640371,
+            "Recall@20": 87.93503480278422,
+            "Recall@1percent": 86.65893271461717
+          }
+        }
+      }
+    }
+  },
+  "phase": "COMPLETE",
+  "paired_sampling_streams_match": true,
+  "selection_sha256": "405238c3020212ad066813704fbecba72ffaa9cca2ed3c745e7ef5519fb295a0",
+  "finished_at": "2026-10-19T03:49:42.835885+08:00"
+}

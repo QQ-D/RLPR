@@ -1,0 +1,23 @@
+{
+  "promoted": true,
+  "rule": "Seed0 candidate (Sejong F1, Recall@1) strictly exceeds seed0 baseline to promote; otherwise stop further seeds and retain baseline.",
+  "candidate": {
+    "F1": 0.8693424423569598,
+    "Recall@1": 75.94202898550725,
+    "Recall@5": 88.47826086956522,
+    "Recall@10": 92.89855072463769,
+    "Recall@20": 95.94202898550725,
+    "Recall@1percent": 94.20289855072464
+  },
+  "baseline": {
+    "F1": 0.8684777921517896,
+    "Recall@1": 75.14492753623189,
+    "Recall@5": 88.47826086956522,
+    "Recall@10": 92.97101449275362,
+    "Recall@20": 96.23188405797102,
+    "Recall@1percent": 94.4927536231884
+  },
+  "candidate_sha256": "26d71a1f74ec152306b2a2f6c7119e645bafb6951d045261ba0f472ab857f14f",
+  "baseline_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+  "locked_at": "2026-10-19T18:36:31.432639+08:00"
+}

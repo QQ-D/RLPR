@@ -1,0 +1,119 @@
+{
+  "all_checks_passed": true,
+  "verified_at": "2026-10-19T20:40:55.774520+08:00",
+  "checkpoint_count": 9,
+  "new_training_trials": 6,
+  "paired_sampling_match": true,
+  "paired_mining_match": true,
+  "teacher_frozen": true,
+  "metric_checkpoint_binding_match": true,
+  "regression_tests": 112,
+  "source_files": 98,
+  "checkpoint_audits": {
+    "tau_007": {
+      "0": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+        "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        }
+      },
+      "1": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+        "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+          "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+        }
+      },
+      "2": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/weights/1.pth.tar",
+        "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+          "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+        }
+      }
+    },
+    "tau_003": {
+      "0": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/weights/1.pth.tar",
+        "checkpoint_sha256": "3013a3e35f8f9395bc11c3bf24d3853babb9bd6232b0e2af8f11d9172a2fb3be",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        }
+      },
+      "1": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/weights/1.pth.tar",
+        "checkpoint_sha256": "e8d2ad1269adaa71b97563b98cd9cce40f2fe0edce1acb7227b2bd8251275078",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+          "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+        }
+      },
+      "2": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/weights/1.pth.tar",
+        "checkpoint_sha256": "c1a3f40723c5f9a949a2f507913151627554ac61c92dbf595fb2cf7cd3c25ada",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+          "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+        }
+      }
+    },
+    "tau_010": {
+      "0": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/weights/1.pth.tar",
+        "checkpoint_sha256": "ec828bcd30bf3097de6240fe4333c0da7503226ddb542481a60e545302d4f652",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        }
+      },
+      "1": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/weights/1.pth.tar",
+        "checkpoint_sha256": "7c5681ce451b9a0d2af3131b82fac384f73b9feb9352a7f7c1514f683f2f9627",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+          "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+        }
+      },
+      "2": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/weights/1.pth.tar",
+        "checkpoint_sha256": "abe25048266a971ea2d3d4b8ba16e093a9a6c1341647f67181b5aceef1547cf4",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+          "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+        }
+      }
+    }
+  }
+}

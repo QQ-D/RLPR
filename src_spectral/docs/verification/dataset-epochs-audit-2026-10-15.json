@@ -1,0 +1,104 @@
+{
+  "source_commit_audited": "ad6478a5499bab227d7f063cb77d4843dc6f9b4a",
+  "mulran_index_audit": "mulran-data-audit-2026-10-15.json",
+  "epoch_configuration": {
+    "mulran_defaults": {
+      "lidar": 5,
+      "radar": 5,
+      "cross_modal": 1
+    },
+    "nuScenes_defaults": {
+      "lidar": 5,
+      "radar": 5,
+      "cross_modal": 3
+    },
+    "snail_defaults": {
+      "lidar": 5,
+      "radar": 5,
+      "cross_modal": 4
+    },
+    "hercules_finetuning": 1,
+    "override_bug": "build_params(epochs) gives the explicit stage default precedence over RLPR_EPOCHS. Both public training entry points always supply an argument; changing RLPR_EPOCHS or params_full.epochs alone does not change these defaults.",
+    "resume_semantics": "epochs is target total count, not additional epochs. Resuming epoch1 with target1 executes zero updates.",
+    "paper_limitation": "Provided PDF does not specify MulRan epoch counts; public script defaults are not proof of the complete training history of released weights."
+  },
+  "actual_completed_epochs": {
+    "l_mulran": {
+      "completed_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "losses": {
+        "1": 0.20305797,
+        "2": 0.19150352,
+        "3": 0.1509417,
+        "4": 0.12155832,
+        "5": 0.10698099
+      }
+    },
+    "r_mulran": {
+      "completed_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "losses": {
+        "1": 0.20459646,
+        "2": 0.2234814,
+        "3": 0.17805886,
+        "4": 0.15134342,
+        "5": 0.13081431
+      }
+    },
+    "r2l_mulran": {
+      "completed_epochs": [
+        1
+      ],
+      "losses": {
+        "1": 2.2367485
+      }
+    },
+    "ablation_control": {
+      "completed_epochs": [
+        1
+      ],
+      "iterations": 2071
+    },
+    "ablation_no_fusion": {
+      "completed_epochs": [
+        1
+      ],
+      "iterations": 2071
+    },
+    "ablation_no_frequency_aux": {
+      "completed_epochs": [
+        1
+      ],
+      "iterations": 2071
+    },
+    "ablation_infonce": {
+      "completed_epochs": [
+        1
+      ],
+      "iterations": 2071
+    }
+  },
+  "cross_modal_control_training_curve": {
+    "logged_iterations": 2071,
+    "first_10_percent_mean_loss": 2.0001110437411618,
+    "last_10_percent_mean_loss": 1.4392575970018544,
+    "interpretation": "Training loss is still lower at the end of epoch1, supporting a longer-training experiment but not guaranteeing validation or test recall improvement."
+  },
+  "static_dataset_notes": {
+    "mulran": "gen_bev concatenates train/test indexes only for independent BEV preprocessing. Training loaders use sejong and kaist train indexes. Sejong02 train-region queries are explicitly included in training; its geographic test region is separate.",
+    "nuScenes": "gen_info merges official trainval and test metadata. BS uses bs_db.npy for both training and test database, and names bs_test_query.npy as validation. Current trainers discard that validation loader; no backward path through it was found. BS train/test indexes are not present locally, so their actual query intersections are unverified. gen_index.py does not generate the BS indexes used by training.",
+    "snail_hercules_boreas": "Static configuration: Snail uses separate train/test sequence lists; Hercules trains RiverIsland and tests SportsComplex; Boreas is evaluation-only. Actual data intersections beyond MulRan were not checked."
+  },
+  "no_training_started_in_this_audit": true,
+  "source_code_changed_in_this_audit": false
+}

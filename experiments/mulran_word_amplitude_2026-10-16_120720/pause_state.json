@@ -1,0 +1,18 @@
+{
+  "paused_at": "2026-10-16T13:12:12+0800",
+  "method": "SIGSTOP; process memory retained",
+  "processes": [
+    {
+      "pid": 283944,
+      "state": "State:\tT (stopped)"
+    },
+    {
+      "pid": 302613,
+      "state": "State:\tT (stopped)"
+    },
+    {
+      "pid": 302764,
+      "state": "State:\tT (stopped)"
+    }
+  ]
+}

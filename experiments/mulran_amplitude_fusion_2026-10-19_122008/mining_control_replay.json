@@ -1,0 +1,27 @@
+{
+  "control_mined_negatives_equal_reference": true,
+  "arrays": {
+    "hard_indices": {
+      "shape": [
+        16568,
+        5
+      ],
+      "dtype": "int64",
+      "sha256": "0c53db70c62abf8d6e54ed1f0bdf96f541b27af5b109e01044c743ee9c5d08e7"
+    },
+    "database_frame_ids": {
+      "shape": [
+        16602
+      ],
+      "dtype": "int64",
+      "sha256": "45c32e4ae71029ef11ba5df57291cdea54f3322687759e70d5c3bbde22c694c1"
+    },
+    "query_frame_ids": {
+      "shape": [
+        16568
+      ],
+      "dtype": "int64",
+      "sha256": "9793209c95dee3cce40fbc8099e4a4802237be39fdefc654420fd7c355dc2f83"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "runtime_source_snapshot_commit": "2cd8f483a9b6d5e4fbaa854a01fe80e858c0521f",
+  "all_runtime_python_hashes_match_protocol": true,
+  "runtime_python_files": 84,
+  "original_protocol_commit_is_base_before_pending_changes": "c945c37b9cee260e5abcfa54570830770f60a9bb",
+  "note": "This commit contains the exact runtime Python source, including newly tracked helpers. The original frozen protocol remains immutable."
+}

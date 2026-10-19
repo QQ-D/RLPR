@@ -1,0 +1,5 @@
+method,epoch,split,Recall@1,Recall@5,Recall@10,Recall@20,Recall@1percent,F1
+random_negatives,2,dcc,54.26,70.21,80.85,86.7,54.26,0.7401574803149605
+hard_negatives,2,dcc,55.32,69.15,81.38,87.23,55.32,0.7392996108949417
+random_negatives,2,riverside,55.45,71.87,79.99,85.79,84.51,0.722521137586472
+hard_negatives,2,riverside,56.09,72.45,79.47,85.85,84.34,0.7310344827586208

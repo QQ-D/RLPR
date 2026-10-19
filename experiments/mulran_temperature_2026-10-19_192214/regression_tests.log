@@ -1,0 +1,123 @@
+test_infonce_ablation_keeps_fused_supervision_and_auxiliary_losses (test_alignment_ablation.AlignmentAblationTests) ... ok
+test_infonce_ablation_uses_original_teacher_to_student_direction (test_alignment_ablation.AlignmentAblationTests) ... ok
+test_word_loss_choice_defaults_to_signed_and_rejects_unknown_values (test_alignment_ablation.AlignmentAblationTests) ... ok
+test_zero_auxiliary_weight_removes_spectral_supervision (test_alignment_ablation.AlignmentAblationTests) ... ok
+test_audit_validates_the_saved_objective_and_rejects_replaced_checkpoint (test_alignment_loss_protocol.AlignmentLossProtocolTests) ... ok
+test_both_validations_required_and_test_scores_cannot_select_the_model (test_alignment_loss_protocol.AlignmentLossProtocolTests) ... ok
+test_only_objective_changes_and_training_never_uses_validation_root (test_alignment_loss_protocol.AlignmentLossProtocolTests) ... ok
+test_published_lock_recovers_and_refuses_a_changed_validation_snapshot (test_alignment_loss_protocol.AlignmentLossProtocolTests) ... ok
+test_equal_budget_and_explicit_modes_override_inherited_settings (test_amplitude_protocol.AmplitudeProtocolTests) ... ok
+test_failed_flush_leaves_previous_status_record_readable (test_amplitude_protocol.AmplitudeProtocolTests) ... ok
+test_isolation_guard_includes_training_database (test_amplitude_protocol.AmplitudeProtocolTests) ... ok
+test_official_code_schedule_is_five_total_unary_epochs_then_one_alignment (test_amplitude_protocol.AmplitudeProtocolTests) ... ok
+test_sampling_audit_is_recoverable_from_atomic_checkpoint_alone (test_amplitude_protocol.AmplitudeProtocolTests) ... ok
+test_selection_uses_only_validation_and_fixed_tie_breaks (test_amplitude_protocol.AmplitudeProtocolTests) ... ok
+test_successful_save_roundtrips_and_interrupted_write_preserves_previous_file (test_atomic_checkpoint.AtomicCheckpointTests) ... ok
+test_alignment_matches_signed_cosine_ranking_and_detaches_teacher (test_coherence.CoherenceTests) ... ok
+test_alignment_penalizes_sign_reversal_seen_by_euclidean_retrieval (test_coherence.CoherenceTests) ... ok
+test_alignment_zero_descriptors_have_finite_gradients (test_coherence.CoherenceTests) ... ok
+test_complex_frequency_coherence_averages_before_normalization (test_coherence.CoherenceTests) ... ok
+test_correct_pairs_beat_permuted_pairs_and_teacher_is_detached (test_coherence.CoherenceTests) ... ok
+test_identical_collapsed_descriptors_pay_negative_margin (test_coherence.CoherenceTests) ... ok
+test_welch_estimator_matches_scipy_and_is_not_trivially_one (test_coherence.CoherenceTests) ... ok
+test_zero_energy_is_finite_and_short_input_is_rejected (test_coherence.CoherenceTests) ... ok
+test_cache_uses_lidar_database_and_radar_query_offsets_without_advancing_training_rng (test_cross_mining_cache.CrossMiningCacheTests) ... Cross-modal training cache:   0%|          | 0/3 [00:00<?, ?it/s]Cross-modal training cache: 100%|██████████| 3/3 [00:00<00:00, 3569.62it/s]
+ok
+test_geographically_invalid_negative_cannot_enter_the_cache (test_cross_mining_cache.CrossMiningCacheTests) ... Cross-modal training cache:   0%|          | 0/3 [00:00<?, ?it/s]Cross-modal training cache: 100%|██████████| 3/3 [00:00<00:00, 5086.06it/s]
+ok
+test_legacy_random_sampling_checkpoint_cannot_silently_resume_with_hard_mining (test_cross_mining_cache.CrossMiningCacheTests) ... ok
+test_mining_option_defaults_off_and_validates_tuple_capacity (test_cross_mining_cache.CrossMiningCacheTests) ... ok
+test_misordered_cache_metadata_is_rejected (test_cross_mining_cache.CrossMiningCacheTests) ... ok
+test_triplet_sampling_uses_mixed_cache_only_when_enabled (test_cross_mining_cache.CrossMiningCacheTests) ... ok
+test_insufficient_candidates_and_invalid_descriptors_fail (test_cross_negatives.CrossNegativeTests) ... ok
+test_mining_does_not_change_later_positive_sampling_random_stream (test_cross_negatives.CrossNegativeTests) ... ok
+test_mixed_sampling_keeps_hard_examples_and_draws_distinct_allowed_randoms (test_cross_negatives.CrossNegativeTests) ... ok
+test_mixed_sampling_rejects_positive_or_duplicate_hard_indices (test_cross_negatives.CrossNegativeTests) ... ok
+test_radar_queries_rank_lidar_database_with_geographic_exclusions (test_cross_negatives.CrossNegativeTests) ... ok
+test_ties_are_stable_and_candidate_order_does_not_change_ranking (test_cross_negatives.CrossNegativeTests) ... ok
+test_empty_or_all_zero_curve_has_zero_f1 (test_eval_metrics.EvaluationMetricTests) ... ok
+test_mismatched_query_counts_are_not_silently_dropped (test_eval_metrics.EvaluationMetricTests) ... ok
+test_no_valid_queries_is_an_error (test_eval_metrics.EvaluationMetricTests) ... ok
+test_queries_without_ground_truth_are_excluded (test_eval_metrics.EvaluationMetricTests) ... ok
+test_unsorted_thresholds_are_counted_independently (test_eval_metrics.EvaluationMetricTests) ... ok
+test_zero_precision_recall_does_not_poison_max_f1 (test_eval_metrics.EvaluationMetricTests) ... ok
+test_audit_rejects_wrong_seed_and_unbound_seed_provenance (test_f1_priority_replication.F1PriorityTests) ... ok
+test_cached_metrics_must_match_bound_json_and_checkpoint (test_f1_priority_replication.F1PriorityTests) ... ok
+test_environment_pairs_true_seed_and_sampler_without_validation_training (test_f1_priority_replication.F1PriorityTests) ... ok
+test_pr_uses_original_conditional_recall_and_strict_threshold (test_f1_priority_replication.F1PriorityTests) ... ok
+test_selection_lock_and_bound_artifact_refuse_changed_evidence (test_f1_priority_replication.F1PriorityTests) ... ok
+test_selects_mean_validation_f1_without_using_test_or_best_seed (test_f1_priority_replication.F1PriorityTests) ... ok
+test_control_replay_rejects_changed_or_missing_model_tensors (test_fusion_weight_protocol.FusionWeightProtocolTests) ... ok
+test_requested_weight_reaches_trainer_without_inherited_experiment_flags (test_fusion_weight_protocol.FusionWeightProtocolTests) ... ok
+test_resume_recovers_a_published_selection_before_status_was_saved (test_fusion_weight_protocol.FusionWeightProtocolTests) ... ok
+test_resume_rejects_changed_checkpoint_before_reusing_cached_metrics (test_fusion_weight_protocol.FusionWeightProtocolTests) ... ok
+test_training_never_uses_the_held_out_validation_root (test_fusion_weight_protocol.FusionWeightProtocolTests) ... ok
+test_validation_selection_ignores_test_scores_and_requires_every_configuration (test_fusion_weight_protocol.FusionWeightProtocolTests) ... ok
+test_full_checkpoint_requires_matching_fusion_mode (test_phase_cross_fusion.PhaseCrossFusionTests) ... ok
+test_old_unimodal_weights_load_without_freezing_new_fusion (test_phase_cross_fusion.PhaseCrossFusionTests) ... ok
+test_other_modality_changes_output_and_teacher_has_no_gradient (test_phase_cross_fusion.PhaseCrossFusionTests) ... ok
+test_training_fuses_both_geometries_but_evaluation_stays_independent (test_phase_cross_fusion.PhaseCrossFusionTests) ... ok
+test_zero_context_leaves_student_unchanged (test_phase_cross_fusion.PhaseCrossFusionTests) ... ok
+test_orphaned_lock_recovers_but_changed_checkpoint_snapshot_is_rejected (test_phase_weight_protocol.PhaseWeightProtocolTests) ... ok
+test_phase_checkpoint_audit_checks_actual_weights_and_rejects_changed_record (test_phase_weight_protocol.PhaseWeightProtocolTests) ... ok
+test_phase_weight_is_only_changed_training_setting_and_roots_stay_isolated (test_phase_weight_protocol.PhaseWeightProtocolTests) ... ok
+test_selection_uses_validation_requires_every_arm_and_prefers_control_on_exact_ties (test_phase_weight_protocol.PhaseWeightProtocolTests) ... ok
+test_candidate_checkpoint_audit_records_geographic_objective_and_seed (test_spatial_positive_protocol.SpatialProtocolTests) ... ok
+test_published_lock_recovers_and_changed_validation_is_rejected (test_spatial_positive_protocol.SpatialProtocolTests) ... ok
+test_report_uses_frozen_official_comparison_instead_of_mutable_history (test_spatial_positive_protocol.SpatialProtocolTests) ... ok
+test_screening_and_selection_never_use_test_scores_or_best_seed (test_spatial_positive_protocol.SpatialProtocolTests) ... ok
+test_geographic_masks_respect_boundaries_and_reject_nonfinite_coordinates (test_spatial_positives.SpatialPositiveTests) ... ok
+test_positive_mass_excludes_ambiguous_pairs_and_all_positive_loss_is_zero (test_spatial_positives.SpatialPositiveTests) ... ok
+test_single_positive_matches_existing_infonce_and_teacher_is_detached (test_spatial_positives.SpatialPositiveTests) ... ok
+test_trainer_changes_alignment_only_and_keeps_phase_and_fusion_paths (test_spatial_positives.SpatialPositiveTests) ... ok
+test_tuple_metadata_preserves_actual_sampling_and_collation_order (test_spatial_positives.SpatialPositiveTests) ... ok
+test_circular_phase_and_teacher_detach (test_spectral.PhaseLossTests) ... ok
+test_weights_ignore_unreliable_bins (test_spectral.PhaseLossTests) ... ok
+test_amplitude_mask_precedes_phase_attention (test_spectral.SpectralLayerTests) ... ok
+test_mask_changes_with_input_and_attenuates_high_frequencies (test_spectral.SpectralLayerTests) ... ok
+test_phase_loss_trains_features_and_attention (test_spectral.SpectralLayerTests) ... ok
+test_shapes_real_reconstruction_and_gradients (test_spectral.SpectralLayerTests) ... ok
+test_zero_input_is_finite_and_has_no_phase_confidence (test_spectral.SpectralLayerTests) ... ok
+test_cross_checkpoint_cannot_be_used_as_unimodal_teacher (test_spectral_models.SpectralModelTests) ... ok
+test_freeze_radar_includes_netvlad_on_resume (test_spectral_models.SpectralModelTests) ... ok
+test_incomplete_teacher_checkpoint_is_rejected_before_loading (test_spectral_models.SpectralModelTests) ... ok
+test_old_checkpoint_cannot_silently_supply_untrained_spectral_teacher (test_spectral_models.SpectralModelTests) ... ok
+test_original_trainer_loss_is_unchanged (test_spectral_models.SpectralModelTests) ... ok
+test_polar_and_4d_shapes_and_independent_descriptors (test_spectral_models.SpectralModelTests) ... ok
+test_trainer_uses_local_global_and_phase_losses (test_spectral_models.SpectralModelTests) ... ok
+test_unimodal_loading_and_frozen_teacher_stats (test_spectral_models.SpectralModelTests) ... ok
+test_wrong_geometry_checkpoint_is_rejected_before_loading (test_spectral_models.SpectralModelTests) ... ok
+test_all_nine_validations_are_required_and_test_scores_do_not_select (test_temperature_ablation.TemperatureTests) ... ok
+test_checkpoint_audit_rejects_wrong_temperature_and_wrong_seed (test_temperature_ablation.TemperatureTests) ... ok
+test_temperature_changes_real_local_global_loss_and_keeps_teacher_detached (test_temperature_ablation.TemperatureTests) ... ok
+test_temperature_is_saved_in_actual_training_settings (test_temperature_ablation.TemperatureTests) ... ok
+test_completed_target_is_rejected_instead_of_silently_skipping_training (test_training_control.TrainingControlTests) ... ok
+test_defaults_are_unchanged_and_invalid_epoch_counts_are_rejected (test_training_control.TrainingControlTests) ... ok
+test_environment_overrides_stage_default_and_cli_overrides_environment (test_training_control.TrainingControlTests) ... ok
+test_resume_matches_uninterrupted_shuffled_stochastic_training (test_training_control.TrainingControlTests) ... ok
+test_resume_settings_allow_more_epochs_but_reject_changed_objective (test_training_control.TrainingControlTests) ... ok
+test_strict_reproducibility_requires_workspace_and_enables_deterministic_algorithms (test_training_control.TrainingControlTests) ... ok
+test_both_attention_stages_retain_measured_magnitude (test_word_amplitude.WordAmplitudeTests) ... ok
+test_default_config_is_compatible_but_mode_mismatch_is_rejected (test_word_amplitude.WordAmplitudeTests) ... ok
+test_even_width_boundary_phase_cancellation_keeps_magnitude_and_real_signal (test_word_amplitude.WordAmplitudeTests) ... ok
+test_explicit_unary_warmstart_allows_only_amplitude_delta (test_word_amplitude.WordAmplitudeTests) ... ok
+test_raw_magnitude_retains_scale_without_changing_phase_content (test_word_amplitude.WordAmplitudeTests) ... ok
+test_trainer_warmstart_does_not_resume_optimizer_or_epoch (test_word_amplitude.WordAmplitudeTests) ... ok
+test_both_geometries_use_phase_encoder_and_test_descriptors_are_independent (test_word_models.WordModelTests) ... ok
+test_evaluation_restores_frozen_teacher_after_loading_checkpoint (test_word_models.WordModelTests) ... ok
+test_prior_teacher_is_rejected_instead_of_frozen_untrained_word_modules (test_word_models.WordModelTests) ... ok
+test_word_checkpoint_roundtrip_and_configuration_validation (test_word_models.WordModelTests) ... ok
+test_word_teachers_load_and_coherence_trains_all_student_modules (test_word_models.WordModelTests) ... ok
+test_mask_and_phase_transformer_are_trainable_for_both_shapes (test_word_spectral.WordSpectralTests) ... ok
+test_measured_amplitude_is_discarded_and_mask_remains_dynamic (test_word_spectral.WordSpectralTests) ... ok
+test_transformer_qk_read_circular_phase_not_input_amplitude (test_word_spectral.WordSpectralTests) ... ok
+test_zero_input_is_zero_and_backward_is_finite (test_word_spectral.WordSpectralTests) ... ok
+
+----------------------------------------------------------------------
+Ran 112 tests in 6.024s
+
+OK
+
+Fine-tuning model weights from /tmp/tmpybg1ysll/initial.pth; fresh optimizer, scheduler and epoch
+
+Resuming from /tmp/tmp_8ip60qu/cross.pth

@@ -1,0 +1,455 @@
+{
+  "root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042",
+  "selection": "infonce",
+  "verification": {
+    "all_checks_passed": true,
+    "verified_at": "2026-10-19T17:02:39.468133+08:00",
+    "checkpoint_count": 6,
+    "new_training_checkpoints": 4,
+    "fixed_unary_seed": 0,
+    "cross_seeds": [
+      0,
+      1,
+      2
+    ],
+    "optimizer_updates_per_checkpoint": 2071,
+    "source_files": 89,
+    "teacher_frozen": true,
+    "paired_sampling_match": true,
+    "paired_mining_match": true,
+    "metric_checkpoint_binding_match": true,
+    "legacy_f1_parity": true,
+    "runtime_matches": true,
+    "regression_tests_passed": 99,
+    "checkpoints": {
+      "0": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+            "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+            "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+          }
+        }
+      },
+      "1": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "12587a5e7754190fb32fa22d4c6bf4557cbe68a98fb04d6cb82cef8a0537e8a9",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+            "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+            "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+          }
+        }
+      },
+      "2": {
+        "signed": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/signed/weights/1.pth.tar",
+          "checkpoint_sha256": "2508a5fc2177e23ee0866eba73aa1172fd2250103098090a9b70c2463ebbeb52",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+            "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+          }
+        },
+        "infonce": {
+          "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/weights/1.pth.tar",
+          "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+          "optimizer_steps": 2071,
+          "all_finite": true,
+          "radar_unchanged": true,
+          "sampling": {
+            "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+            "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "sejong": {
+      "paired_seed0": {
+        "both_correct": 960,
+        "signed_only_correct": 75,
+        "infonce_only_correct": 77,
+        "both_wrong": 268
+      },
+      "models": {
+        "signed": {
+          "best_threshold": {
+            "threshold": 2.4192256857325005,
+            "tp": 1010,
+            "fp": 287,
+            "fn": 25,
+            "tn": 58,
+            "precision": 0.7787201233616037,
+            "recall": 0.9758454106280193,
+            "F1": 0.8662092624356775
+          },
+          "queries": 1380,
+          "database": 1505,
+          "valid_queries": 1380,
+          "correct_top1": 1035,
+          "wrong_top1": 345,
+          "wrong_top1_median_m": 132.37110900878906,
+          "wrong_top1_p90_m": 6106.80576171875,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+            "sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "wrong_distance_buckets_m": {
+            "9_to_20": 78,
+            "20_to_50": 44,
+            "50_to_100": 41,
+            "above_100": 182
+          },
+          "top1_squared_l2_median_correct": 1.7738308906555176,
+          "top1_squared_l2_median_wrong": 2.08233904838562
+        },
+        "infonce": {
+          "best_threshold": {
+            "threshold": 2.9348929691601087,
+            "tp": 1007,
+            "fp": 275,
+            "fn": 30,
+            "tn": 68,
+            "precision": 0.7854914196567863,
+            "recall": 0.9710703953712633,
+            "F1": 0.8684777921517896
+          },
+          "queries": 1380,
+          "database": 1505,
+          "valid_queries": 1380,
+          "correct_top1": 1037,
+          "wrong_top1": 343,
+          "wrong_top1_median_m": 117.46463775634766,
+          "wrong_top1_p90_m": 6219.791796875,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+            "sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "wrong_distance_buckets_m": {
+            "9_to_20": 56,
+            "20_to_50": 53,
+            "50_to_100": 50,
+            "above_100": 184
+          },
+          "top1_squared_l2_median_correct": 2.4078116416931152,
+          "top1_squared_l2_median_wrong": 2.7123146057128906
+        },
+        "released_official": {
+          "best_threshold": {
+            "threshold": 2.8183419280582003,
+            "tp": 1013,
+            "fp": 214,
+            "fn": 54,
+            "tn": 99,
+            "precision": 0.8255908720456397,
+            "recall": 0.9493908153701968,
+            "F1": 0.8831734960767219
+          },
+          "queries": 1380,
+          "database": 1505,
+          "valid_queries": 1380,
+          "correct_top1": 1067,
+          "wrong_top1": 313,
+          "wrong_top1_median_m": 120.12442016601562,
+          "wrong_top1_p90_m": 6334.827343750001,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+            "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN"
+        }
+      }
+    },
+    "dcc": {
+      "paired_seed0": {
+        "both_correct": 89,
+        "signed_only_correct": 16,
+        "infonce_only_correct": 7,
+        "both_wrong": 76
+      },
+      "models": {
+        "signed": {
+          "best_threshold": {
+            "threshold": 2.19101076319411,
+            "tp": 103,
+            "fp": 69,
+            "fn": 2,
+            "tn": 14,
+            "precision": 0.5988372093023255,
+            "recall": 0.9809523809523809,
+            "F1": 0.7436823104693141
+          },
+          "queries": 188,
+          "database": 204,
+          "valid_queries": 188,
+          "correct_top1": 105,
+          "wrong_top1": 83,
+          "wrong_top1_median_m": 88.20856475830078,
+          "wrong_top1_p90_m": 300.43329467773435,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+            "sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.4192256857325005,
+            "tp": 105,
+            "fp": 80,
+            "fn": 0,
+            "tn": 3,
+            "precision": 0.5675675675675675,
+            "recall": 1.0,
+            "F1": 0.7241379310344828
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 22,
+            "20_to_50": 10,
+            "50_to_100": 12,
+            "above_100": 39
+          },
+          "top1_squared_l2_median_correct": 1.7496976852416992,
+          "top1_squared_l2_median_wrong": 1.8893086910247803
+        },
+        "infonce": {
+          "best_threshold": {
+            "threshold": 2.637264704489493,
+            "tp": 81,
+            "fp": 31,
+            "fn": 15,
+            "tn": 61,
+            "precision": 0.7232142857142857,
+            "recall": 0.84375,
+            "F1": 0.7788461538461539
+          },
+          "queries": 188,
+          "database": 204,
+          "valid_queries": 188,
+          "correct_top1": 96,
+          "wrong_top1": 92,
+          "wrong_top1_median_m": 83.40548706054688,
+          "wrong_top1_p90_m": 337.42414855957037,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+            "sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.9348929691601087,
+            "tp": 95,
+            "fp": 72,
+            "fn": 1,
+            "tn": 20,
+            "precision": 0.5688622754491018,
+            "recall": 0.9895833333333334,
+            "F1": 0.7224334600760456
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 23,
+            "20_to_50": 12,
+            "50_to_100": 16,
+            "above_100": 41
+          },
+          "top1_squared_l2_median_correct": 2.392030954360962,
+          "top1_squared_l2_median_wrong": 2.7298431396484375
+        },
+        "released_official": {
+          "best_threshold": {
+            "threshold": 2.7781566745406754,
+            "tp": 93,
+            "fp": 51,
+            "fn": 11,
+            "tn": 33,
+            "precision": 0.6458333333333334,
+            "recall": 0.8942307692307693,
+            "F1": 0.75
+          },
+          "queries": 188,
+          "database": 204,
+          "valid_queries": 188,
+          "correct_top1": 104,
+          "wrong_top1": 84,
+          "wrong_top1_median_m": 99.11802673339844,
+          "wrong_top1_p90_m": 385.22840576171876,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+            "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.8183419280582003,
+            "tp": 96,
+            "fp": 58,
+            "fn": 8,
+            "tn": 26,
+            "precision": 0.6233766233766234,
+            "recall": 0.9230769230769231,
+            "F1": 0.7441860465116279
+          }
+        }
+      }
+    },
+    "riverside": {
+      "paired_seed0": {
+        "both_correct": 973,
+        "signed_only_correct": 119,
+        "infonce_only_correct": 102,
+        "both_wrong": 530
+      },
+      "models": {
+        "signed": {
+          "best_threshold": {
+            "threshold": 2.1618922615910434,
+            "tp": 1077,
+            "fp": 562,
+            "fn": 15,
+            "tn": 70,
+            "precision": 0.6571079926784624,
+            "recall": 0.9862637362637363,
+            "F1": 0.7887220798242403
+          },
+          "queries": 1724,
+          "database": 1558,
+          "valid_queries": 1724,
+          "correct_top1": 1092,
+          "wrong_top1": 632,
+          "wrong_top1_median_m": 199.59085083007812,
+          "wrong_top1_p90_m": 700.6834167480467,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/signed/weights/1.pth.tar",
+            "sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.4192256857325005,
+            "tp": 1092,
+            "fp": 629,
+            "fn": 0,
+            "tn": 3,
+            "precision": 0.6345148169668797,
+            "recall": 1.0,
+            "F1": 0.7763953075008887
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 62,
+            "20_to_50": 57,
+            "50_to_100": 94,
+            "above_100": 419
+          },
+          "top1_squared_l2_median_correct": 1.6160966157913208,
+          "top1_squared_l2_median_wrong": 1.7946791648864746
+        },
+        "infonce": {
+          "best_threshold": {
+            "threshold": 2.6595513255985175,
+            "tp": 1017,
+            "fp": 447,
+            "fn": 58,
+            "tn": 202,
+            "precision": 0.694672131147541,
+            "recall": 0.946046511627907,
+            "F1": 0.8011027963765261
+          },
+          "queries": 1724,
+          "database": 1558,
+          "valid_queries": 1724,
+          "correct_top1": 1075,
+          "wrong_top1": 649,
+          "wrong_top1_median_m": 235.938720703125,
+          "wrong_top1_p90_m": 797.4036743164064,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+            "sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.9348929691601087,
+            "tp": 1072,
+            "fp": 609,
+            "fn": 3,
+            "tn": 40,
+            "precision": 0.6377156454491374,
+            "recall": 0.9972093023255814,
+            "F1": 0.7779390420899854
+          },
+          "wrong_distance_buckets_m": {
+            "9_to_20": 49,
+            "20_to_50": 64,
+            "50_to_100": 84,
+            "above_100": 452
+          },
+          "top1_squared_l2_median_correct": 2.255870819091797,
+          "top1_squared_l2_median_wrong": 2.4491631984710693
+        },
+        "released_official": {
+          "best_threshold": {
+            "threshold": 2.670759332024896,
+            "tp": 1084,
+            "fp": 465,
+            "fn": 41,
+            "tn": 134,
+            "precision": 0.6998063266623629,
+            "recall": 0.9635555555555556,
+            "F1": 0.8107703814510098
+          },
+          "queries": 1724,
+          "database": 1558,
+          "valid_queries": 1724,
+          "correct_top1": 1125,
+          "wrong_top1": 599,
+          "wrong_top1_median_m": 200.3900909423828,
+          "wrong_top1_p90_m": 891.6951293945319,
+          "checkpoint": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+            "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+          },
+          "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN",
+          "validation_frozen_threshold": {
+            "threshold": 2.8183419280582003,
+            "tp": 1111,
+            "fp": 542,
+            "fn": 14,
+            "tn": 57,
+            "precision": 0.6721113127646703,
+            "recall": 0.9875555555555555,
+            "F1": 0.7998560115190785
+          }
+        }
+      }
+    }
+  }
+}

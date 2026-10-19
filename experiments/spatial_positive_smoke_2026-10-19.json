@@ -1,0 +1,13 @@
+{
+  "loss": 2.492455005645752,
+  "tuple_positions_shape": [
+    1,
+    12,
+    2
+  ],
+  "positive_pairs_per_anchor": 1.3333333730697632,
+  "ignored_pairs_per_anchor": 0.3333333432674408,
+  "teacher_gradients_absent": true,
+  "one_gpu_update_finite": true,
+  "training_queries": 16568
+}

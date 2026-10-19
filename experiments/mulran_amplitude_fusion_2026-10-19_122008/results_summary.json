@@ -1,0 +1,114 @@
+{
+  "selected_configuration": "fusion_00",
+  "comparisons": [
+    {
+      "dataset": "dcc",
+      "configuration": "paper",
+      "selected": false,
+      "Recall@1": 55.32,
+      "Recall@5": 73.94,
+      "Recall@10": 82.98,
+      "F1": 0.7419
+    },
+    {
+      "dataset": "dcc",
+      "configuration": "released_official",
+      "selected": false,
+      "Recall@1": 55.32,
+      "Recall@5": 74.47,
+      "Recall@10": 82.45,
+      "Recall@20": 90.96,
+      "Recall@1percent": 55.32,
+      "F1": 0.7500000000000001
+    },
+    {
+      "dataset": "dcc",
+      "configuration": "fusion_05",
+      "selected": false,
+      "F1": 0.7426470588235294,
+      "Recall@1": 55.319148936170215,
+      "Recall@5": 73.40425531914893,
+      "Recall@10": 82.4468085106383,
+      "Recall@20": 90.42553191489363,
+      "Recall@1percent": 55.319148936170215
+    },
+    {
+      "dataset": "dcc",
+      "configuration": "fusion_01",
+      "selected": false,
+      "F1": 0.7375886524822695,
+      "Recall@1": 55.319148936170215,
+      "Recall@5": 75.0,
+      "Recall@10": 81.38297872340425,
+      "Recall@20": 91.48936170212765,
+      "Recall@1percent": 55.319148936170215
+    },
+    {
+      "dataset": "dcc",
+      "configuration": "fusion_00",
+      "selected": true,
+      "F1": 0.7436823104693141,
+      "Recall@1": 55.85106382978723,
+      "Recall@5": 74.46808510638297,
+      "Recall@10": 82.97872340425532,
+      "Recall@20": 90.42553191489363,
+      "Recall@1percent": 55.85106382978723
+    },
+    {
+      "dataset": "riverside",
+      "configuration": "paper",
+      "selected": false,
+      "Recall@1": 64.85,
+      "Recall@5": 78.77,
+      "Recall@10": 84.22,
+      "F1": 0.8057
+    },
+    {
+      "dataset": "riverside",
+      "configuration": "released_official",
+      "selected": false,
+      "Recall@1": 65.26,
+      "Recall@5": 79.23,
+      "Recall@10": 84.4,
+      "Recall@20": 88.75,
+      "Recall@1percent": 87.59,
+      "F1": 0.8107703814510098
+    },
+    {
+      "dataset": "riverside",
+      "configuration": "fusion_05",
+      "selected": false,
+      "F1": 0.7847730600292826,
+      "Recall@1": 62.81902552204176,
+      "Recall@5": 76.74013921113689,
+      "Recall@10": 82.25058004640371,
+      "Recall@20": 87.93503480278422,
+      "Recall@1percent": 86.65893271461717
+    },
+    {
+      "dataset": "riverside",
+      "configuration": "fusion_01",
+      "selected": false,
+      "F1": 0.7856093979441996,
+      "Recall@1": 63.10904872389791,
+      "Recall@5": 76.79814385150812,
+      "Recall@10": 82.54060324825986,
+      "Recall@20": 88.2830626450116,
+      "Recall@1percent": 86.83294663573086
+    },
+    {
+      "dataset": "riverside",
+      "configuration": "fusion_00",
+      "selected": true,
+      "F1": 0.7887220798242401,
+      "Recall@1": 63.341067285382834,
+      "Recall@5": 77.08816705336426,
+      "Recall@10": 83.0046403712297,
+      "Recall@20": 88.39907192575406,
+      "Recall@1percent": 87.47099767981439
+    }
+  ],
+  "control_replay_bitwise_equal": true,
+  "paired_sampling_streams_match": true,
+  "caveat": "Single-seed exploratory comparison; DCC/Riverside have already been inspected"
+}

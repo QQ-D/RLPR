@@ -1,0 +1,29 @@
+{
+  "checkpoint": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+  "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc",
+  "paper": "/home/rwj/文档/xwechat_files/wxid_muwkj8wetvon22_070b/msg/file/2026-10/RLPR_2026.pdf",
+  "paper_table": 1,
+  "paper_riverside": {
+    "Recall@1": 64.85,
+    "Recall@5": 78.77,
+    "Recall@10": 84.22,
+    "F1": 0.8057
+  },
+  "paper_dcc": {
+    "Recall@1": 55.32,
+    "Recall@5": 73.94,
+    "Recall@10": 82.98,
+    "F1": 0.7419
+  },
+  "model": "Original RLPR, author-provided MulRan checkpoint",
+  "eval_source": "/media/rwj/ZX1 2TB/RLPR/src_spectral",
+  "model_variant": "rlpr",
+  "metric_arithmetic": "Zero/zero F1 made zero; independently count recall cutoffs; retain query-count-based top1percent convention",
+  "preprocessing_source": "/media/rwj/ZX1 2TB/RLPR/src",
+  "raw_sequences_required": [
+    "DCC01",
+    "DCC02",
+    "Riverside01",
+    "Riverside02"
+  ]
+}

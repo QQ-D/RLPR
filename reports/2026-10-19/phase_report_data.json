@@ -1,0 +1,256 @@
+{
+  "summary": {
+    "selected_configuration": "phase_01",
+    "comparisons": [
+      {
+        "dataset": "dcc",
+        "configuration": "paper",
+        "selected": false,
+        "Recall@1": 55.32,
+        "Recall@5": 73.94,
+        "Recall@10": 82.98,
+        "F1": 0.7419
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "released_official",
+        "selected": false,
+        "Recall@1": 55.32,
+        "Recall@5": 74.47,
+        "Recall@10": 82.45,
+        "Recall@20": 90.96,
+        "Recall@1percent": 55.32,
+        "F1": 0.7500000000000001
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "phase_01",
+        "selected": true,
+        "F1": 0.7436823104693141,
+        "Recall@1": 55.85106382978723,
+        "Recall@5": 74.46808510638297,
+        "Recall@10": 82.97872340425532,
+        "Recall@20": 90.42553191489363,
+        "Recall@1percent": 55.85106382978723
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "phase_003",
+        "selected": false,
+        "F1": 0.7407407407407408,
+        "Recall@1": 54.78723404255319,
+        "Recall@5": 73.40425531914893,
+        "Recall@10": 81.38297872340425,
+        "Recall@20": 90.42553191489363,
+        "Recall@1percent": 54.78723404255319
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "phase_00",
+        "selected": false,
+        "F1": 0.7509293680297398,
+        "Recall@1": 54.78723404255319,
+        "Recall@5": 75.0,
+        "Recall@10": 82.97872340425532,
+        "Recall@20": 90.42553191489363,
+        "Recall@1percent": 54.78723404255319
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "paper",
+        "selected": false,
+        "Recall@1": 64.85,
+        "Recall@5": 78.77,
+        "Recall@10": 84.22,
+        "F1": 0.8057
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "released_official",
+        "selected": false,
+        "Recall@1": 65.26,
+        "Recall@5": 79.23,
+        "Recall@10": 84.4,
+        "Recall@20": 88.75,
+        "Recall@1percent": 87.59,
+        "F1": 0.8107703814510098
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "phase_01",
+        "selected": true,
+        "F1": 0.7887220798242401,
+        "Recall@1": 63.341067285382834,
+        "Recall@5": 77.08816705336426,
+        "Recall@10": 83.0046403712297,
+        "Recall@20": 88.39907192575406,
+        "Recall@1percent": 87.47099767981439
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "phase_003",
+        "selected": false,
+        "F1": 0.784735087069285,
+        "Recall@1": 62.64501160092807,
+        "Recall@5": 77.3201856148492,
+        "Recall@10": 82.25058004640371,
+        "Recall@20": 88.4570765661253,
+        "Recall@1percent": 86.89095127610209
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "phase_00",
+        "selected": false,
+        "F1": 0.7830609212481426,
+        "Recall@1": 62.41299303944315,
+        "Recall@5": 76.97215777262181,
+        "Recall@10": 82.01856148491879,
+        "Recall@20": 87.70301624129931,
+        "Recall@1percent": 86.42691415313224
+      }
+    ],
+    "control_replay_bitwise_equal": true,
+    "paired_sampling_streams_match": true,
+    "caveat": "Single-seed exploratory comparison; DCC/Riverside have already been inspected"
+  },
+  "verification": {
+    "all_checks_passed": true,
+    "checkpoints_verified": 3,
+    "optimizer_steps_each": 2071,
+    "source_protocol_selection_initialization_hashes_verified": true,
+    "teachers_unchanged": true,
+    "control_replay_bitwise_equal": true,
+    "paired_sampling_streams_match": true,
+    "mined_negative_arrays_identical": true,
+    "runtime_matches_launch": true,
+    "selected_configuration": "phase_01",
+    "finished_at": "2026-10-19T13:44:59.886339+08:00"
+  },
+  "run": {
+    "status": "COMPLETE",
+    "started_at": "2026-10-19T13:05:36.402133+08:00",
+    "phase": "COMPLETE",
+    "protocol_sha256": "b6484a4c47e6a0063a1c72459cbbd561a43c1557674b07abf24ffab8d06b6514",
+    "configurations": {
+      "phase_01": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_phase_2026-10-19_130536/phase_01/weights/1.pth.tar",
+        "checkpoint_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "weight": 0.1,
+        "validation": {
+          "F1": 0.8662092624356775,
+          "Recall@1": 75.0,
+          "Recall@5": 87.31884057971014,
+          "Recall@10": 92.17391304347827,
+          "Recall@20": 95.79710144927536,
+          "Recall@1percent": 94.20289855072464
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7436823104693141,
+            "Recall@1": 55.85106382978723,
+            "Recall@5": 74.46808510638297,
+            "Recall@10": 82.97872340425532,
+            "Recall@20": 90.42553191489363,
+            "Recall@1percent": 55.85106382978723
+          },
+          "riverside": {
+            "F1": 0.7887220798242401,
+            "Recall@1": 63.341067285382834,
+            "Recall@5": 77.08816705336426,
+            "Recall@10": 83.0046403712297,
+            "Recall@20": 88.39907192575406,
+            "Recall@1percent": 87.47099767981439
+          }
+        }
+      },
+      "phase_003": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_phase_2026-10-19_130536/phase_003/weights/1.pth.tar",
+        "checkpoint_sha256": "833b1c52be91d6a5d9ebb7ed10be55dae90547545ef9b689a64d4dc67fa61675",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "weight": 0.03,
+        "validation": {
+          "F1": 0.8596112311015118,
+          "Recall@1": 74.05797101449275,
+          "Recall@5": 87.60869565217392,
+          "Recall@10": 92.2463768115942,
+          "Recall@20": 95.57971014492753,
+          "Recall@1percent": 93.84057971014492
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7407407407407408,
+            "Recall@1": 54.78723404255319,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 81.38297872340425,
+            "Recall@20": 90.42553191489363,
+            "Recall@1percent": 54.78723404255319
+          },
+          "riverside": {
+            "F1": 0.784735087069285,
+            "Recall@1": 62.64501160092807,
+            "Recall@5": 77.3201856148492,
+            "Recall@10": 82.25058004640371,
+            "Recall@20": 88.4570765661253,
+            "Recall@1percent": 86.89095127610209
+          }
+        }
+      },
+      "phase_00": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_phase_2026-10-19_130536/phase_00/weights/1.pth.tar",
+        "checkpoint_sha256": "123b0b913a2582d38edd90234dc229252f162e2f71378ae0bedd6e450db91baa",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "weight": 0.0,
+        "validation": {
+          "F1": 0.8602620087336246,
+          "Recall@1": 74.1304347826087,
+          "Recall@5": 87.7536231884058,
+          "Recall@10": 92.31884057971016,
+          "Recall@20": 95.79710144927536,
+          "Recall@1percent": 93.84057971014492
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7509293680297398,
+            "Recall@1": 54.78723404255319,
+            "Recall@5": 75.0,
+            "Recall@10": 82.97872340425532,
+            "Recall@20": 90.42553191489363,
+            "Recall@1percent": 54.78723404255319
+          },
+          "riverside": {
+            "F1": 0.7830609212481426,
+            "Recall@1": 62.41299303944315,
+            "Recall@5": 76.97215777262181,
+            "Recall@10": 82.01856148491879,
+            "Recall@20": 87.70301624129931,
+            "Recall@1percent": 86.42691415313224
+          }
+        }
+      }
+    },
+    "control_replay_bitwise_equal": true,
+    "selected_configuration": "phase_01",
+    "selection_sha256": "0c019635864e770a55e006a7ed319bd83a7865e9a273c03dd7eceb4ba6135307",
+    "finished_at": "2026-10-19T13:44:59.886339+08:00",
+    "paired_sampling_streams_match": true
+  }
+}

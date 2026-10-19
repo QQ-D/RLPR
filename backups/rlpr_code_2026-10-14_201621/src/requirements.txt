@@ -1,0 +1,18 @@
+# Tested with conda env `rlpr` (Python 3.10, CUDA 12.1).
+# Install PyTorch first, then: pip install -r requirements.txt
+# Example: pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cu121
+
+torch>=2.1.0
+torchvision>=0.16.0
+numpy>=1.24.0,<2.0
+opencv-python>=4.7.0
+faiss-cpu>=1.7.4
+scikit-learn>=1.2.0
+scipy>=1.10.0
+tqdm>=4.65.0
+tensorboardX>=2.6.0
+nuscenes-devkit>=1.1.10
+open3d>=0.17.0
+einops>=0.6.0
+mamba-ssm>=2.0.0
+Pillow>=9.5.0

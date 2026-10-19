@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "status": "COMPLETE",
+    "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110",
+    "protocol_sha256": "a4d5cd471b242f02a950fa3b45c2821aacbeb158ea8742aa189531508daa06d1",
+    "evidence_verified": true,
+    "comparison": [
+      {
+        "dataset": "dcc",
+        "method": "paper",
+        "Recall@1": 55.32,
+        "Recall@5": 73.94,
+        "Recall@10": 82.98,
+        "F1": 0.7419
+      },
+      {
+        "dataset": "dcc",
+        "method": "released_official_model",
+        "Recall@1": 55.32,
+        "Recall@5": 74.47,
+        "Recall@10": 82.45,
+        "Recall@20": 90.96,
+        "Recall@1percent": 55.32,
+        "F1": 0.7500000000000001
+      },
+      {
+        "dataset": "dcc",
+        "method": "previous_validation_selected_hardneg",
+        "cross_epoch": 2,
+        "Recall@1": 55.32,
+        "Recall@5": 69.15,
+        "Recall@10": 81.38,
+        "Recall@20": 87.23,
+        "Recall@1percent": 55.32,
+        "F1": 0.7392996108949417
+      },
+      {
+        "dataset": "dcc",
+        "method": "pure_phase",
+        "cross_epoch": 1,
+        "lidar_epoch": 5,
+        "radar_epoch": 5,
+        "F1": 0.7280334728033473,
+        "Recall@1": 51.06382978723404,
+        "Recall@5": 72.3404255319149,
+        "Recall@10": 79.25531914893617,
+        "Recall@20": 85.1063829787234,
+        "Recall@1percent": 51.06382978723404
+      },
+      {
+        "dataset": "dcc",
+        "method": "amplitude",
+        "cross_epoch": 1,
+        "lidar_epoch": 5,
+        "radar_epoch": 5,
+        "F1": 0.7426470588235294,
+        "Recall@1": 55.319148936170215,
+        "Recall@5": 73.40425531914893,
+        "Recall@10": 82.4468085106383,
+        "Recall@20": 90.42553191489363,
+        "Recall@1percent": 55.319148936170215
+      },
+      {
+        "dataset": "riverside",
+        "method": "paper",
+        "Recall@1": 64.85,
+        "Recall@5": 78.77,
+        "Recall@10": 84.22,
+        "F1": 0.8057
+      },
+      {
+        "dataset": "riverside",
+        "method": "released_official_model",
+        "Recall@1": 65.26,
+        "Recall@5": 79.23,
+        "Recall@10": 84.4,
+        "Recall@20": 88.75,
+        "Recall@1percent": 87.59,
+        "F1": 0.8107703814510098
+      },
+      {
+        "dataset": "riverside",
+        "method": "previous_validation_selected_hardneg",
+        "cross_epoch": 2,
+        "Recall@1": 56.09,
+        "Recall@5": 72.45,
+        "Recall@10": 79.47,
+        "Recall@20": 85.85,
+        "Recall@1percent": 84.34,
+        "F1": 0.7310344827586208
+      },
+      {
+        "dataset": "riverside",
+        "method": "pure_phase",
+        "cross_epoch": 1,
+        "lidar_epoch": 5,
+        "radar_epoch": 5,
+        "F1": 0.7137695704536331,
+        "Recall@1": 53.88631090487239,
+        "Recall@5": 71.63573085846868,
+        "Recall@10": 77.9582366589327,
+        "Recall@20": 84.97679814385151,
+        "Recall@1percent": 83.75870069605568
+      },
+      {
+        "dataset": "riverside",
+        "method": "amplitude",
+        "cross_epoch": 1,
+        "lidar_epoch": 5,
+        "radar_epoch": 5,
+        "F1": 0.7847730600292826,
+        "Recall@1": 62.81902552204176,
+        "Recall@5": 76.74013921113689,
+        "Recall@10": 82.25058004640371,
+        "Recall@20": 87.93503480278422,
+        "Recall@1percent": 86.65893271461717
+      }
+    ],
+    "amplitude_minus_matched_pure_phase": {
+      "dcc": {
+        "Recall@1": 4.255319148936174,
+        "Recall@5": 1.0638297872340274,
+        "Recall@10": 3.191489361702139,
+        "F1": 0.014613586020182145
+      },
+      "riverside": {
+        "Recall@1": 8.932714617169374,
+        "Recall@5": 5.104408352668216,
+        "Recall@10": 4.292343387471007,
+        "F1": 0.0710034895756495
+      }
+    },
+    "caveat": "Single seed; exploratory benchmark comparison; teacher selection and cross selection use Sejong only",
+    "training": "Each modified-model arm starts from identical seed0 ResNet18 initialization, trains LiDAR5/Radar5/cross1 total epochs, uses fixed unaryepoch5; strict determinism. Epoch budget is from official code, not an explicit MulRan count in the paper."
+  },
+  "verification": {
+    "all_checkpoints_verified": 22,
+    "optimizer_steps_per_epoch": 2071,
+    "frozen_teachers_unchanged": true,
+    "hashes_verified": true,
+    "paired_sampling_streams_match": true
+  },
+  "finished_at": "2026-10-19T03:49:42.835885+08:00"
+}

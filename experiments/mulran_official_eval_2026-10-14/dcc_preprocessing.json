@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "split": "dcc",
+  "sequences": [
+    "DCC01",
+    "DCC02"
+  ],
+  "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+  "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+  "source_root": "/media/rwj/ZX1 2TB/RLPR/src",
+  "query_sequence": "DCC02",
+  "database_sequence": "DCC01",
+  "timestamp_pose_tolerance_s": 1.0,
+  "timestamp_lidar_tolerance_s": 0.05,
+  "database_query_spatial_sampling_m": 10.0,
+  "positive_threshold_m": 9.0,
+  "bev_height_width": [
+    50,
+    225
+  ],
+  "range_m": 80.0,
+  "lidar_voxel_m": 1.6,
+  "synchronized_frames": 4569,
+  "database_frames": 204,
+  "query_frames": 188,
+  "seconds": 18.442313072000616
+}

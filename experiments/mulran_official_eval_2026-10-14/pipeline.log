@@ -1,0 +1,54 @@
+Waiting for dcc archive extraction
+Preprocessing dcc using original author functions
+dcc database 204 query 188
+Evaluating author checkpoint on dcc
+{
+  "split": "dcc",
+  "metrics": {
+    "Recall@1": 55.32,
+    "Recall@5": 74.47,
+    "Recall@10": 82.45,
+    "Recall@20": 90.96,
+    "Recall@1percent": 55.32,
+    "F1": 0.7500000000000001
+  },
+  "paper": {
+    "Recall@1": 55.32,
+    "Recall@5": 73.94,
+    "Recall@10": 82.98,
+    "F1": 0.7419
+  },
+  "difference": {
+    "Recall@1": 0.0,
+    "Recall@5": 0.5300000000000011,
+    "Recall@10": -0.5300000000000011,
+    "F1": 0.008100000000000107
+  }
+}
+Waiting for riverside archive extraction
+Preprocessing riverside using original author functions
+riverside database 1558 query 1724
+Evaluating author checkpoint on riverside
+{
+  "split": "riverside",
+  "metrics": {
+    "Recall@1": 65.26,
+    "Recall@5": 79.23,
+    "Recall@10": 84.4,
+    "Recall@20": 88.75,
+    "Recall@1percent": 87.59,
+    "F1": 0.8107703814510098
+  },
+  "paper": {
+    "Recall@1": 64.85,
+    "Recall@5": 78.77,
+    "Recall@10": 84.22,
+    "F1": 0.8057
+  },
+  "difference": {
+    "Recall@1": 0.4100000000000108,
+    "Recall@5": 0.46000000000000796,
+    "Recall@10": 0.18000000000000682,
+    "F1": 0.005070381451009798
+  }
+}

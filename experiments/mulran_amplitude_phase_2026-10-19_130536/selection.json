@@ -1,0 +1,36 @@
+{
+  "selected": "phase_01",
+  "rule": "Sejong Recall@1, then F1, then configuration order .1/.03/0",
+  "validation": {
+    "phase_01": {
+      "F1": 0.8662092624356775,
+      "Recall@1": 75.0,
+      "Recall@5": 87.31884057971014,
+      "Recall@10": 92.17391304347827,
+      "Recall@20": 95.79710144927536,
+      "Recall@1percent": 94.20289855072464
+    },
+    "phase_003": {
+      "F1": 0.8596112311015118,
+      "Recall@1": 74.05797101449275,
+      "Recall@5": 87.60869565217392,
+      "Recall@10": 92.2463768115942,
+      "Recall@20": 95.57971014492753,
+      "Recall@1percent": 93.84057971014492
+    },
+    "phase_00": {
+      "F1": 0.8602620087336246,
+      "Recall@1": 74.1304347826087,
+      "Recall@5": 87.7536231884058,
+      "Recall@10": 92.31884057971016,
+      "Recall@20": 95.79710144927536,
+      "Recall@1percent": 93.84057971014492
+    }
+  },
+  "checkpoints": {
+    "phase_01": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+    "phase_003": "833b1c52be91d6a5d9ebb7ed10be55dae90547545ef9b689a64d4dc67fa61675",
+    "phase_00": "123b0b913a2582d38edd90234dc229252f162e2f71378ae0bedd6e450db91baa"
+  },
+  "locked_at": "2026-10-19T13:41:29.368943+08:00"
+}

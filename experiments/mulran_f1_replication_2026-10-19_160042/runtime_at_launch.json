@@ -1,0 +1,9 @@
+{
+  "python": "3.10.22",
+  "torch": "2.1.0+cu121",
+  "cuda": "12.1",
+  "cudnn": 8902,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "source_commit": "d997816",
+  "pid": 342978
+}

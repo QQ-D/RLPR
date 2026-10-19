@@ -1,0 +1,7 @@
+{
+  "l_changed_tensors": 87,
+  "r_changed_tensors": 0,
+  "checkpoint_all_finite": true,
+  "unimodal_weights_unchanged": true,
+  "alignment_loss": "signed_coherency_v2"
+}

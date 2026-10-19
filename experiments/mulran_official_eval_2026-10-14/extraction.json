@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE",
+  "sequences": {
+    "DCC01": {
+      "Ouster": {
+        "files": 5542,
+        "bytes": 5811208192,
+        "skipped_existing": 5542,
+        "seconds": 15.345538860000488,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/DCC01/Ouster.tar.gz"
+      },
+      "polar": {
+        "files": 2213,
+        "bytes": 2986655948,
+        "skipped_existing": 0,
+        "seconds": 17.592837039999722,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/DCC01/polar.tar.gz"
+      },
+      "status": "COMPLETE"
+    },
+    "DCC02": {
+      "Ouster": {
+        "files": 7561,
+        "bytes": 7928283136,
+        "skipped_existing": 0,
+        "seconds": 87.86686430999998,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/DCC02/Ouster.tar.gz"
+      },
+      "polar": {
+        "files": 3026,
+        "bytes": 4083877496,
+        "skipped_existing": 0,
+        "seconds": 38.63709003199983,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/DCC02/polar.tar.gz"
+      },
+      "status": "COMPLETE"
+    },
+    "Riverside01": {
+      "Ouster": {
+        "files": 5537,
+        "bytes": 5805965312,
+        "skipped_existing": 0,
+        "seconds": 60.67400912100038,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/Riverside01/Ouster.tar.gz"
+      },
+      "polar": {
+        "files": 2215,
+        "bytes": 2989355140,
+        "skipped_existing": 0,
+        "seconds": 26.90968171700024,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/Riverside01/polar.tar.gz"
+      },
+      "status": "COMPLETE"
+    },
+    "Riverside02": {
+      "Ouster": {
+        "files": 8157,
+        "bytes": 8552340096,
+        "skipped_existing": 0,
+        "seconds": 111.72288723300062,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/Riverside02/Ouster.tar.gz"
+      },
+      "polar": {
+        "files": 3253,
+        "bytes": 4390235788,
+        "skipped_existing": 0,
+        "seconds": 28.966230961999827,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/Riverside02/polar.tar.gz"
+      },
+      "status": "COMPLETE"
+    }
+  }
+}

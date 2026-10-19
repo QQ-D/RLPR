@@ -1,0 +1,8 @@
+{
+  "loss_tau003": 2.806915283203125,
+  "loss_tau010": 3.23260498046875,
+  "phase_auxiliary_unchanged": true,
+  "teacher_gradients_absent": true,
+  "one_gpu_update_finite": true,
+  "actual_saved_temperature": 0.1
+}

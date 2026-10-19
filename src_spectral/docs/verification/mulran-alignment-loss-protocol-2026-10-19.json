@@ -1,0 +1,29 @@
+{
+  "scope": "Amplitude model, fusion supervision0, phase auxiliary .1; signed_coherency_v2 versus existing Word infonce; fresh seed0 cross1 each",
+  "reference": "runs/mulran_amplitude_phase_2026-10-19_130536/phase_01/weights/1.pth.tar",
+  "reference_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+  "initialization": "Same original amplitude L5/R5 in both arms; not continued training from the aligned checkpoint",
+  "model_trainer_loss_code_changes": false,
+  "objective_semantics": "Use the existing implementations unchanged. Signed pull/ranking treats geographic nearby positives explicitly. Word InfoNCE uses separate local/global teacher-to-student 12-way diagonal synchronized matches, temperature .07; nearby positives remain separate instances in its softmax. No new multi-positive mask. This compares objective options, not only algebra with identical positive rules.",
+  "selection": "Both Sejong validations complete then lock R1/F1/signed-control-on-exact-tie before DCC/Riverside evaluation; no benchmark reselection",
+  "tests": {"command": "python -m unittest discover -s tests -q", "passed": 93, "log": "runs/alignment_loss_regression_2026-10-19.log"},
+  "preflight": "Preceding phase protocol/selection, original L5/R5/control hashes and all85 source hashes verified unchanged",
+  "review": {"reviewer": "alignment_loss_review", "blocking_findings": 0, "important_findings": 0,
+    "minor_deferred": "An orphaned Sejong metrics file before its first checkpoint digest is saved assumes no manual checkpoint/metrics replacement. Ordinary crash recovery preserves the same files; recorded checkpoints are hash-guarded."},
+  "status": "COMPLETE",
+  "run_root": "runs/mulran_amplitude_alignment_2026-10-19_135238",
+  "source_commit": "bc72755",
+  "finished_at": "2026-10-19T14:19:13.669853+08:00",
+  "selected_configuration": "infonce",
+  "validation": {
+    "signed": {"Recall@1": 75.0, "F1": 0.8662092624356775},
+    "infonce": {"Recall@1": 75.14492753623189, "F1": 0.8684777921517896}
+  },
+  "benchmarks": {
+    "signed": {"dcc": {"Recall@1": 55.85106382978723, "F1": 0.7436823104693141}, "riverside": {"Recall@1": 63.341067285382834, "F1": 0.7887220798242401}},
+    "infonce": {"dcc": {"Recall@1": 51.06382978723404, "F1": 0.778846153846154}, "riverside": {"Recall@1": 62.35498839907193, "F1": 0.8011027963765261}}
+  },
+  "completed_checks": ["Both checkpoint hashes and finite model/optimizer states", "Frozen radar teachers", "2071 steps per arm", "Signed control model bytes equal preceding phase_01", "Actual mined-negative/frame-ID arrays equal", "Paired sampler/worker RNG states", "Source/protocol/initialization/selection hashes", "Runtime matches launch", "Metrics files match records"],
+  "conclusion": "InfoNCE selected by Sejong before tests; benchmark R@1 decreased by4.79pp DCC/.99pp Riverside, while F1 increased .0352/.0124. Did not achieve higher R@1. Keep old checkpoints; do not rewrite the selection or claim overall superiority.",
+  "caveat": "Single-seed exploratory comparison; benchmark scenes have been inspected before; no promised accuracy gain"
+}

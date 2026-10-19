@@ -1,0 +1,256 @@
+{
+  "summary": {
+    "selected_configuration": "fusion_00",
+    "comparisons": [
+      {
+        "dataset": "dcc",
+        "configuration": "paper",
+        "selected": false,
+        "Recall@1": 55.32,
+        "Recall@5": 73.94,
+        "Recall@10": 82.98,
+        "F1": 0.7419
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "released_official",
+        "selected": false,
+        "Recall@1": 55.32,
+        "Recall@5": 74.47,
+        "Recall@10": 82.45,
+        "Recall@20": 90.96,
+        "Recall@1percent": 55.32,
+        "F1": 0.7500000000000001
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "fusion_05",
+        "selected": false,
+        "F1": 0.7426470588235294,
+        "Recall@1": 55.319148936170215,
+        "Recall@5": 73.40425531914893,
+        "Recall@10": 82.4468085106383,
+        "Recall@20": 90.42553191489363,
+        "Recall@1percent": 55.319148936170215
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "fusion_01",
+        "selected": false,
+        "F1": 0.7375886524822695,
+        "Recall@1": 55.319148936170215,
+        "Recall@5": 75.0,
+        "Recall@10": 81.38297872340425,
+        "Recall@20": 91.48936170212765,
+        "Recall@1percent": 55.319148936170215
+      },
+      {
+        "dataset": "dcc",
+        "configuration": "fusion_00",
+        "selected": true,
+        "F1": 0.7436823104693141,
+        "Recall@1": 55.85106382978723,
+        "Recall@5": 74.46808510638297,
+        "Recall@10": 82.97872340425532,
+        "Recall@20": 90.42553191489363,
+        "Recall@1percent": 55.85106382978723
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "paper",
+        "selected": false,
+        "Recall@1": 64.85,
+        "Recall@5": 78.77,
+        "Recall@10": 84.22,
+        "F1": 0.8057
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "released_official",
+        "selected": false,
+        "Recall@1": 65.26,
+        "Recall@5": 79.23,
+        "Recall@10": 84.4,
+        "Recall@20": 88.75,
+        "Recall@1percent": 87.59,
+        "F1": 0.8107703814510098
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "fusion_05",
+        "selected": false,
+        "F1": 0.7847730600292826,
+        "Recall@1": 62.81902552204176,
+        "Recall@5": 76.74013921113689,
+        "Recall@10": 82.25058004640371,
+        "Recall@20": 87.93503480278422,
+        "Recall@1percent": 86.65893271461717
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "fusion_01",
+        "selected": false,
+        "F1": 0.7856093979441996,
+        "Recall@1": 63.10904872389791,
+        "Recall@5": 76.79814385150812,
+        "Recall@10": 82.54060324825986,
+        "Recall@20": 88.2830626450116,
+        "Recall@1percent": 86.83294663573086
+      },
+      {
+        "dataset": "riverside",
+        "configuration": "fusion_00",
+        "selected": true,
+        "F1": 0.7887220798242401,
+        "Recall@1": 63.341067285382834,
+        "Recall@5": 77.08816705336426,
+        "Recall@10": 83.0046403712297,
+        "Recall@20": 88.39907192575406,
+        "Recall@1percent": 87.47099767981439
+      }
+    ],
+    "control_replay_bitwise_equal": true,
+    "paired_sampling_streams_match": true,
+    "caveat": "Single-seed exploratory comparison; DCC/Riverside have already been inspected"
+  },
+  "verification": {
+    "all_checks_passed": true,
+    "checkpoints_verified": 3,
+    "optimizer_steps_each": 2071,
+    "source_protocol_selection_initialization_hashes_verified": true,
+    "teachers_unchanged": true,
+    "control_replay_bitwise_equal": true,
+    "paired_sampling_streams_match": true,
+    "mined_negative_arrays_identical": true,
+    "runtime_matches_launch": true,
+    "selected_configuration": "fusion_00",
+    "finished_at": "2026-10-19T12:58:56.322236+08:00"
+  },
+  "run": {
+    "status": "COMPLETE",
+    "started_at": "2026-10-19T12:20:08.393647+08:00",
+    "phase": "COMPLETE",
+    "protocol_sha256": "b4f30f459982c8c1efcb855a549e6500f23c702fa8a460b934f6baefe93b5a24",
+    "configurations": {
+      "fusion_05": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_122008/fusion_05/weights/1.pth.tar",
+        "checkpoint_sha256": "9030163c126b90a806da942b42b749c1d071276bdeef59dc1e878adf1bbabdf0",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "weight": 0.5,
+        "validation": {
+          "F1": 0.8630490956072351,
+          "Recall@1": 74.34782608695653,
+          "Recall@5": 87.2463768115942,
+          "Recall@10": 92.2463768115942,
+          "Recall@20": 95.57971014492753,
+          "Recall@1percent": 93.91304347826087
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7426470588235294,
+            "Recall@1": 55.319148936170215,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 82.4468085106383,
+            "Recall@20": 90.42553191489363,
+            "Recall@1percent": 55.319148936170215
+          },
+          "riverside": {
+            "F1": 0.7847730600292826,
+            "Recall@1": 62.81902552204176,
+            "Recall@5": 76.74013921113689,
+            "Recall@10": 82.25058004640371,
+            "Recall@20": 87.93503480278422,
+            "Recall@1percent": 86.65893271461717
+          }
+        }
+      },
+      "fusion_01": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_122008/fusion_01/weights/1.pth.tar",
+        "checkpoint_sha256": "2bcca721dc667d83fa845810706d9cb893594948d1752346f48a89342ee830d0",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "weight": 0.1,
+        "validation": {
+          "F1": 0.8660245183887917,
+          "Recall@1": 74.56521739130434,
+          "Recall@5": 86.81159420289855,
+          "Recall@10": 92.2463768115942,
+          "Recall@20": 95.65217391304348,
+          "Recall@1percent": 93.84057971014492
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7375886524822695,
+            "Recall@1": 55.319148936170215,
+            "Recall@5": 75.0,
+            "Recall@10": 81.38297872340425,
+            "Recall@20": 91.48936170212765,
+            "Recall@1percent": 55.319148936170215
+          },
+          "riverside": {
+            "F1": 0.7856093979441996,
+            "Recall@1": 63.10904872389791,
+            "Recall@5": 76.79814385150812,
+            "Recall@10": 82.54060324825986,
+            "Recall@20": 88.2830626450116,
+            "Recall@1percent": 86.83294663573086
+          }
+        }
+      },
+      "fusion_00": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_122008/fusion_00/weights/1.pth.tar",
+        "checkpoint_sha256": "6f965c96220ae0e2155b14c5e09738bb8904862e9afc3d8250e4b2aa57e8db5f",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "weight": 0.0,
+        "validation": {
+          "F1": 0.8662092624356775,
+          "Recall@1": 75.0,
+          "Recall@5": 87.31884057971014,
+          "Recall@10": 92.17391304347827,
+          "Recall@20": 95.79710144927536,
+          "Recall@1percent": 94.20289855072464
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7436823104693141,
+            "Recall@1": 55.85106382978723,
+            "Recall@5": 74.46808510638297,
+            "Recall@10": 82.97872340425532,
+            "Recall@20": 90.42553191489363,
+            "Recall@1percent": 55.85106382978723
+          },
+          "riverside": {
+            "F1": 0.7887220798242401,
+            "Recall@1": 63.341067285382834,
+            "Recall@5": 77.08816705336426,
+            "Recall@10": 83.0046403712297,
+            "Recall@20": 88.39907192575406,
+            "Recall@1percent": 87.47099767981439
+          }
+        }
+      }
+    },
+    "control_replay_bitwise_equal": true,
+    "selected_configuration": "fusion_00",
+    "selection_sha256": "7369dd72664fb5a7bf4320cd3b77dda47ad11da74ab43e4df1f21fb6c731408f",
+    "finished_at": "2026-10-19T12:58:56.322236+08:00",
+    "paired_sampling_streams_match": true
+  }
+}

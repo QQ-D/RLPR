@@ -1,0 +1,10 @@
+Cross-modal training cache:   0%|          | 0/3 [00:00<?, ?it/s]Cross-modal training cache: 100%|██████████| 3/3 [00:00<00:00, 2805.55it/s]
+Cross-modal training cache:   0%|          | 0/3 [00:00<?, ?it/s]Cross-modal training cache: 100%|██████████| 3/3 [00:00<00:00, 5146.39it/s]
+----------------------------------------------------------------------
+Ran 89 tests in 5.809s
+
+OK
+
+Fine-tuning model weights from /tmp/tmpx_rdhru2/initial.pth; fresh optimizer, scheduler and epoch
+
+Resuming from /tmp/tmpte65xd_4/cross.pth

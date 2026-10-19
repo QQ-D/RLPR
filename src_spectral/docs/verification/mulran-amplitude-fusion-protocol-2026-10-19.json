@@ -1,0 +1,36 @@
+{
+  "scope": "Fixed amplitude L5/R5, fusion supervision weight .5/.1/0, fresh seed0 cross1epoch",
+  "source_changes": ["scripts/fusion_weight_ablation.py", "tests/test_fusion_weight_protocol.py"],
+  "model_and_trainer_changes": false,
+  "tests": {"suite": "python -m unittest discover -s tests -q", "passed": 85, "log": "runs/fusion_weight_regression_2026-10-19.log"},
+  "initial_launch_failure": {
+    "run": "runs/mulran_amplitude_fusion_2026-10-19_121853",
+    "cause": "New dispatcher selected validation root for train because split defaulted to sejong",
+    "impact": "Missing KAIST metadata stopped loading before optimization; no weights generated",
+    "fix": "Execution environment selects held-out root only for evaluate+sejong; train always uses full training root; RED/GREEN regression added"
+  },
+  "review": {
+    "reviewer": "fusion_weight_review",
+    "important_fixed_red_green": [
+      "Recover a published selection lock before its hash was saved to status, only when its complete validation/rule/checkpoint snapshot matches",
+      "Reject changed recorded checkpoints before reusing cached validation or benchmark metrics"
+    ],
+    "minor_fixed_red_green": "Control replay compares tensor dtype, shape and raw bytes including signed zeros",
+    "completed_runtime_audits": [
+      "Saved hard-negative arrays and database/query frame ID arrays are identical across all three arms and control versus previous amplitude run",
+      "Python/PyTorch/CUDA/cuDNN/GPU/driver versions recorded at launch and completion match"
+    ]
+  },
+  "status": "COMPLETE",
+  "run_root": "runs/mulran_amplitude_fusion_2026-10-19_122008",
+  "source_commit": "95ad928",
+  "finished_at": "2026-10-19T12:58:56.322236+08:00",
+  "selected_configuration": "fusion_00",
+  "validation_recall_at_1": {"fusion_05": 74.34782608695653, "fusion_01": 74.56521739130434, "fusion_00": 75.0},
+  "test_recall_at_1": {
+    "fusion_05": {"dcc": 55.319148936170215, "riverside": 62.81902552204176},
+    "fusion_01": {"dcc": 55.319148936170215, "riverside": 63.10904872389791},
+    "fusion_00": {"dcc": 55.85106382978723, "riverside": 63.341067285382834}
+  },
+  "accuracy_claim": "Selected fusion supervision weight0 via Sejong before benchmarks. Relative to .5 control, DCC R@1 +.53pp and Riverside +.52pp; Riverside remains below paper64.85 and released official65.26. Single seed; DCC change corresponds to one additional correct query. Fusion computation remains enabled even at weight0."
+}

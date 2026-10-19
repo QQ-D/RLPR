@@ -1,0 +1,11 @@
+{
+  "status": "FAILED",
+  "phase": "TRAINING_EPOCH_1",
+  "started_at": "2026-10-15T23:25:54.366349+08:00",
+  "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_232554",
+  "epochs": {},
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "protocol_sha256": "55d85ae3b8249a0e2511c34dda2212e95161c7a853689f413196f867e8b121ff",
+  "error": "ValueError('Epoch1 did not exactly reproduce the controlled baseline: 0.2986462116241455')",
+  "failed_at": "2026-10-15T23:34:41.044670+08:00"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "step": 0,
+    "loss": 2.5812058448791504,
+    "batch": "c81a6c04c3a220a24ce66da10129138bb36d3ef7c47fd1dc9b45bf0986362fdd"
+  },
+  {
+    "step": 1,
+    "loss": 2.567347526550293,
+    "batch": "a0727e124a03170c6c5d091d8af976834a71b5d00b9aaa297f8f5980b51ebf66"
+  },
+  {
+    "step": 2,
+    "loss": 2.5194320678710938,
+    "batch": "5efe5605fceaf18cbfd5891279c58eca8027f12d79fbb4d6fe6de65c51624995"
+  }
+]

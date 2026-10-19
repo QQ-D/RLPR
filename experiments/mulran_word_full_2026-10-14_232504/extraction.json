@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "sequences": {
+    "KAIST01": {
+      "Ouster": {
+        "files": 8226,
+        "bytes": 8624754000,
+        "skipped_existing": 0,
+        "seconds": 138.83784726299928,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/KAIST01/Ouster.tar.gz"
+      },
+      "polar": {
+        "files": 3299,
+        "bytes": 4452317204,
+        "skipped_existing": 0,
+        "seconds": 136.03493890699974,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/KAIST01/polar.tar.gz"
+      },
+      "status": "COMPLETE"
+    },
+    "KAIST02": {
+      "Ouster": {
+        "files": 8941,
+        "bytes": 9375318016,
+        "skipped_existing": 0,
+        "seconds": 156.8372443799999,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/KAIST02/Ouster.tar.gz"
+      },
+      "polar": {
+        "files": 3587,
+        "bytes": 4841000852,
+        "skipped_existing": 0,
+        "seconds": 72.88567374500053,
+        "archive": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan/KAIST02/polar.tar.gz"
+      },
+      "status": "COMPLETE"
+    }
+  }
+}

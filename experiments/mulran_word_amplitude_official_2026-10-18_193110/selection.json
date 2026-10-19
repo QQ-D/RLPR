@@ -1,0 +1,12 @@
+{
+  "pure_phase": {
+    "l": 5,
+    "r": 5,
+    "cross": 1
+  },
+  "amplitude": {
+    "l": 5,
+    "r": 5,
+    "cross": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "phase": "READY",
+  "groups": {
+    "sejong": {
+      "synchronized_frames": 17471,
+      "database_frames": 14316,
+      "query_frames": 14316,
+      "train_seq01_frames": 7114,
+      "train_seq02_frames": 7202,
+      "reused_bev_files": 2048,
+      "frames_requiring_generation": 13292,
+      "status": "COMPLETE"
+    },
+    "kaist": {
+      "synchronized_frames": 6818,
+      "database_frames": 2286,
+      "query_frames": 2252,
+      "reused_bev_files": 0,
+      "frames_requiring_generation": 4538,
+      "status": "COMPLETE"
+    }
+  },
+  "processed_root": "/media/rwj/ZX1 2TB/RLPR/processed/mulran_official",
+  "raw_root": "/media/rwj/ZX1 2TB/RLPR_dataset/MulRan",
+  "training_scope": "Full Sejong training regions and KAIST01/02; no Riverside/DCC training",
+  "preprocessing": "Original author synchronization, indices, 80m range, 1.6m LiDAR voxels, 50x225 BEV",
+  "total_database_frames": 16602,
+  "total_query_frames": 16568
+}

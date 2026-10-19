@@ -1,0 +1,24 @@
+{
+  "best_threshold": {
+    "threshold": 2.8183419280582003,
+    "tp": 1013,
+    "fp": 214,
+    "fn": 54,
+    "tn": 99,
+    "precision": 0.8255908720456397,
+    "recall": 0.9493908153701968,
+    "F1": 0.8831734960767219
+  },
+  "queries": 1380,
+  "database": 1505,
+  "valid_queries": 1380,
+  "correct_top1": 1067,
+  "wrong_top1": 313,
+  "wrong_top1_median_m": 120.12442016601562,
+  "wrong_top1_p90_m": 6334.827343750001,
+  "checkpoint": {
+    "path": "/media/rwj/ZX1 2TB/RLPR/pretrained/mulran.pth.tar",
+    "sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc"
+  },
+  "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN"
+}

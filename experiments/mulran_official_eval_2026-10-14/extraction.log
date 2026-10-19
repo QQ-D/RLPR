@@ -1,0 +1,38 @@
+Extracting DCC01 Ouster
+DCC01 Ouster 2000 files 1.95 GiB
+DCC01 Ouster 4000 files 3.91 GiB
+Traceback (most recent call last):
+  File "/tmp/rlpr_extract_mulran_tests.py", line 66, in <module>
+    raise ValueError(f'Unexpected outer member: {extra.name}')
+ValueError: Unexpected outer member: Ouster.tar
+Extracting DCC01 Ouster
+DCC01 Ouster 2000 files 1.95 GiB
+DCC01 Ouster 4000 files 3.91 GiB
+Completed DCC01 Ouster 5542 files
+Extracting DCC01 polar
+DCC01 polar 2000 files 2.51 GiB
+Completed DCC01 polar 2213 files
+Extracting DCC02 Ouster
+DCC02 Ouster 2000 files 1.95 GiB
+DCC02 Ouster 4000 files 3.91 GiB
+DCC02 Ouster 6000 files 5.86 GiB
+Completed DCC02 Ouster 7561 files
+Extracting DCC02 polar
+DCC02 polar 2000 files 2.51 GiB
+Completed DCC02 polar 3026 files
+Extracting Riverside01 Ouster
+Riverside01 Ouster 2000 files 1.95 GiB
+Riverside01 Ouster 4000 files 3.91 GiB
+Completed Riverside01 Ouster 5537 files
+Extracting Riverside01 polar
+Riverside01 polar 2000 files 2.51 GiB
+Completed Riverside01 polar 2215 files
+Extracting Riverside02 Ouster
+Riverside02 Ouster 2000 files 1.95 GiB
+Riverside02 Ouster 4000 files 3.91 GiB
+Riverside02 Ouster 6000 files 5.86 GiB
+Riverside02 Ouster 8000 files 7.81 GiB
+Completed Riverside02 Ouster 8157 files
+Extracting Riverside02 polar
+Riverside02 polar 2000 files 2.51 GiB
+Completed Riverside02 polar 3253 files

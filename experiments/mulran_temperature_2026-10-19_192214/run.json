@@ -1,0 +1,1021 @@
+{
+  "status": "COMPLETE",
+  "phase": "COMPLETE",
+  "started_at": "2026-10-19T19:22:15.026553+08:00",
+  "protocol_sha256": "a425b0a9226cb32667df7733170c7f6d70cb1488295b5227cece73d1871ed839",
+  "configurations": {
+    "tau_007": {
+      "0": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_alignment_2026-10-19_135238/infonce/weights/1.pth.tar",
+        "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "alignment_loss": "infonce",
+        "validation": {
+          "F1": 0.8684777921517896,
+          "Recall@1": 75.14492753623189,
+          "Recall@5": 88.47826086956522,
+          "Recall@10": 92.97101449275362,
+          "Recall@20": 96.23188405797102,
+          "Recall@1percent": 94.4927536231884
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.778846153846154,
+            "Recall@1": 51.06382978723404,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 78.72340425531915,
+            "Recall@20": 89.8936170212766,
+            "Recall@1percent": 51.06382978723404
+          },
+          "riverside": {
+            "F1": 0.8011027963765261,
+            "Recall@1": 62.35498839907193,
+            "Recall@5": 75.46403712296984,
+            "Recall@10": 81.2645011600928,
+            "Recall@20": 86.77494199535964,
+            "Recall@1percent": 85.5568445475638
+          }
+        },
+        "artifacts": {
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+            "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong_diagnostics.json",
+            "sha256": "c98ae6d86e3fdf68f62fe37dc065fe48fab3a79be00ac7cf3ac5594be1756a3a"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.npz",
+            "sha256": "80487cd750820f0962e797602375c6716995031992a41b12948973f2534e7042"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.csv",
+            "sha256": "e49e8cf2482cce2b397843f38ad888824c7cacf23a8547cbb2df5cc4807ef355"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+            "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.json",
+            "sha256": "959564200f3ca2e6635afda8927dd653617500918e8b75e653a6f784cd5de386"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc_diagnostics.json",
+            "sha256": "a9c3f31f641977e99fd01a2d85a43f38746097ee6ce0ee7a5ffc2a68127303ea"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.npz",
+            "sha256": "aa6a4dec31d546944e6d9a4d2a98432049c5393cdc82e04b99ec847c5e1cd8d4"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.csv",
+            "sha256": "2e56ed5dc4ded06c278e187c67dffdf15d732f6401ceb5bc0a0a99da6701d3d1"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/dcc.json",
+            "sha256": "959564200f3ca2e6635afda8927dd653617500918e8b75e653a6f784cd5de386"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.json",
+            "sha256": "4e5a094af1c03e35a508d51503989f8a2f210f7692759788c73cae53e66936ff"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside_diagnostics.json",
+            "sha256": "9c79495c211f604f3432234e4aae9557e8e4c82ccd09f81f9d3dd15679cd9ff8"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.npz",
+            "sha256": "56bbd55481a98700633d412da061bfd51e90661b672e850b812c00cbe6fa4d32"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.csv",
+            "sha256": "03ce7b55858fb65be07cb49f211c3a29663957badb614044f26a94195fe71cc9"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/riverside.json",
+            "sha256": "4e5a094af1c03e35a508d51503989f8a2f210f7692759788c73cae53e66936ff"
+          }
+        },
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed0/infonce/sejong.json",
+          "sha256": "e39f7032e6c055b3e21e6c60d4fc7f591e036d6cd2f6d2d345b69578419787e9"
+        }
+      },
+      "1": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/weights/1.pth.tar",
+        "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+          "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/seed_start.json",
+            "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/cache/cross_negatives_epoch_1.json",
+            "sha256": "9e804276686c76c98eea7a7e69941d81cdb4f1c919c54f26154885e2b44cc3bb"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+            "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong_diagnostics.json",
+            "sha256": "970816ca4bfbdbd780bab721513bbb26793336b45ec719f871aa8fb7525d4218"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.npz",
+            "sha256": "94421c5a608b932022b92f87fbdf11563ae9a43dcb344dd9111de069e014eb64"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.csv",
+            "sha256": "039772883a944cf42796d3529d9a4eadd76b2c2afb56e151e1070b4f9f07f991"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+            "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.json",
+            "sha256": "f8f7cfa11501c2151d12b901425f18d30fa306f9257e61868c0ded4ebf9a693d"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc_diagnostics.json",
+            "sha256": "06d020596f83d1c480ecb9ca48c935a679b3188065e4708ae8317f91ed9a08fa"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.npz",
+            "sha256": "c3b3d72f53251a071d87b0346bb5174e1659d5a3ab42356b4137290dd7177f49"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.csv",
+            "sha256": "f655a3b8edb47d9723119a0a0b7214831ed62fab0415ce99aeaf63abe0a529de"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/dcc.json",
+            "sha256": "f8f7cfa11501c2151d12b901425f18d30fa306f9257e61868c0ded4ebf9a693d"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.json",
+            "sha256": "27eed4ac880f3fe3710f4eb234b84095bf807cadecc93ff37a20d654e5141ba4"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside_diagnostics.json",
+            "sha256": "7bc8a8c505a0983444a3c41cb8638fd063cd058083867021215c602e5680d61f"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.npz",
+            "sha256": "973b400289970beabd48505882ab4e8f49c7e28f64861609b33129f7537d9ed6"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.csv",
+            "sha256": "68361e600da28e69d932ce6237da2d95b0048b5c37cbf26f865ff6a727cc5997"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/riverside.json",
+            "sha256": "27eed4ac880f3fe3710f4eb234b84095bf807cadecc93ff37a20d654e5141ba4"
+          }
+        },
+        "validation": {
+          "F1": 0.862913622690159,
+          "Recall@1": 74.92753623188406,
+          "Recall@5": 87.68115942028986,
+          "Recall@10": 92.46376811594203,
+          "Recall@20": 95.21739130434783,
+          "Recall@1percent": 93.76811594202898
+        },
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed1/infonce/sejong.json",
+          "sha256": "4ecada94e99c77748b5a993fd7544866efafb7c28170d239e8b7ec0ac25d1563"
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7488151658767773,
+            "Recall@1": 51.59574468085106,
+            "Recall@5": 72.87234042553192,
+            "Recall@10": 80.31914893617021,
+            "Recall@20": 88.29787234042553,
+            "Recall@1percent": 51.59574468085106
+          },
+          "riverside": {
+            "F1": 0.7890895121014213,
+            "Recall@1": 61.542923433874705,
+            "Recall@5": 75.75406032482599,
+            "Recall@10": 81.67053364269141,
+            "Recall@20": 86.3109048723898,
+            "Recall@1percent": 85.67285382830626
+          }
+        }
+      },
+      "2": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/weights/1.pth.tar",
+        "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+          "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/seed_start.json",
+            "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/cache/cross_negatives_epoch_1.json",
+            "sha256": "cdffc1f83f4e92c3560061820a3ab0363e1d96ac2679d97ce8cb3f59853eea18"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+            "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong_diagnostics.json",
+            "sha256": "169c614b4d69f63c7ccf10c7850ad4850cc704da764c9f8b9fe5b48226a5861e"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.npz",
+            "sha256": "415d2a5af24f8e21520293df1a5f617c1ca08beb168b326e91ea715054157f69"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.csv",
+            "sha256": "4444ea055f134e22f9fb28f9b2a9b2d03eff76220bd552dd4690586a67b42836"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+            "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.json",
+            "sha256": "2b5676331dcd2f12f373d136bbb1bb7bb28c3506551de1aeb054efa115235fab"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc_diagnostics.json",
+            "sha256": "d82c06da98517b28a0377624ba32d4574e33719ff1c3c160f4338cf4de37e537"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.npz",
+            "sha256": "56329dfbc8746e32db06fec675c307ca991ab2d92ff06229eb7345e1bf95f8c5"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.csv",
+            "sha256": "42d1867fc0b7c2d403438bd99e3ce1c50b7b8f7a08e2041c5aae0336c8852b45"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/dcc.json",
+            "sha256": "2b5676331dcd2f12f373d136bbb1bb7bb28c3506551de1aeb054efa115235fab"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.json",
+            "sha256": "03ef28da485d8184a72a7ae7e7173e32cceb8e865b0ca77e869ffe6e02a47e0c"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside_diagnostics.json",
+            "sha256": "512a72cabcae57f57283570c52b33b5bdfc23070d09b264993250ac434103f93"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.npz",
+            "sha256": "18ac130ace8703819ac473295582b950fdf3c2878f0974d74e3f31c50f04ef46"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.csv",
+            "sha256": "aa64e2a985c867e8e1372f0c16c5b102868dda29f924fc23a328a8961b80d6db"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/riverside.json",
+            "sha256": "03ef28da485d8184a72a7ae7e7173e32cceb8e865b0ca77e869ffe6e02a47e0c"
+          }
+        },
+        "validation": {
+          "F1": 0.8676731793960923,
+          "Recall@1": 75.07246376811594,
+          "Recall@5": 87.7536231884058,
+          "Recall@10": 92.3913043478261,
+          "Recall@20": 96.15942028985506,
+          "Recall@1percent": 93.76811594202898
+        },
+        "validation_artifact": {
+          "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_f1_replication_2026-10-19_160042/seed2/infonce/sejong.json",
+          "sha256": "6935574427c72e69ca5a2333daf3d2475ecd3fa8db38c1c858dd6002bfc30cc6"
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7464114832535886,
+            "Recall@1": 50.0,
+            "Recall@5": 72.87234042553192,
+            "Recall@10": 78.19148936170212,
+            "Recall@20": 88.82978723404256,
+            "Recall@1percent": 50.0
+          },
+          "riverside": {
+            "F1": 0.8001564333202972,
+            "Recall@1": 62.7030162412993,
+            "Recall@5": 76.16009280742459,
+            "Recall@10": 81.4385150812065,
+            "Recall@20": 86.42691415313224,
+            "Recall@1percent": 85.26682134570765
+          }
+        }
+      }
+    },
+    "tau_003": {
+      "0": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/weights/1.pth.tar",
+        "checkpoint_sha256": "3013a3e35f8f9395bc11c3bf24d3853babb9bd6232b0e2af8f11d9172a2fb3be",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/seed_start.json",
+            "sha256": "4f21e868e18abd6d2891553aab1655e75972504c51776f52d4e0c7c039aeb5df"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/cache/cross_negatives_epoch_1.json",
+            "sha256": "f1cd0c1505915bb4c2c12eb55b5a8fd2b2046eb1b9216a564d53dbfefa5e8dd7"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/sejong.json",
+            "sha256": "052021fc6eb05faad15ba5087e0fccc76d4462eea9a8721bc4a6cc2550c03509"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/sejong_diagnostics.json",
+            "sha256": "7c3bf2d277af7370e9b34c07b02d5d333890d035b338bb39635b83e15014b4c1"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/sejong.npz",
+            "sha256": "7c48b3e8239b001cd0c6e61123a40d2537543650de98c9fae35be0f26e4cd512"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/sejong.csv",
+            "sha256": "12e91a10f14fc7278732bab9ba89058c76be80c060fb5672518e286fbbfb69be"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/sejong.json",
+            "sha256": "052021fc6eb05faad15ba5087e0fccc76d4462eea9a8721bc4a6cc2550c03509"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/dcc.json",
+            "sha256": "5a55cd17f9e49d6e52725e4a9bb0b3a9c993b45a21d0206052a010931c5a60c1"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/dcc_diagnostics.json",
+            "sha256": "307114bde4b50e100681c88aebee103a22787b6e7eb17bdc0d4ae3e4515e4ca8"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/dcc.npz",
+            "sha256": "0eea0ba9daa36835d0b192a03baef3975f731e34444dcf49e0f456906d66ddb4"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/dcc.csv",
+            "sha256": "c7e7f51abfd94ff6f5a08115b584cf7b0cf9edbd00582e78c5b98e410302aff0"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/dcc.json",
+            "sha256": "5a55cd17f9e49d6e52725e4a9bb0b3a9c993b45a21d0206052a010931c5a60c1"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/riverside.json",
+            "sha256": "e3a82bee7b5d03a127a330699fe61912dd4777f1552c0b3ff76af1a604057bb0"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/riverside_diagnostics.json",
+            "sha256": "bf335c510a998a1e0fac2ff773626352598055dca01a9be4c3923cbe9594539a"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/riverside.npz",
+            "sha256": "eddba8269b53b7c76fc83f0223198ff4800cb8cea087211496a79b67d07a5297"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/riverside.csv",
+            "sha256": "abe196cb79865c1c74013ad1168c9e1c98821c0024b93314967b3b1bf8e8aaf5"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed0/riverside.json",
+            "sha256": "e3a82bee7b5d03a127a330699fe61912dd4777f1552c0b3ff76af1a604057bb0"
+          }
+        },
+        "validation": {
+          "F1": 0.8472412220702235,
+          "Recall@1": 72.2463768115942,
+          "Recall@5": 85.21739130434783,
+          "Recall@10": 90.8695652173913,
+          "Recall@20": 94.42028985507245,
+          "Recall@1percent": 92.53623188405797
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7510917030567684,
+            "Recall@1": 52.659574468085104,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 79.7872340425532,
+            "Recall@20": 87.7659574468085,
+            "Recall@1percent": 52.659574468085104
+          },
+          "riverside": {
+            "F1": 0.7828723001136794,
+            "Recall@1": 61.31090487238979,
+            "Recall@5": 75.0,
+            "Recall@10": 80.2784222737819,
+            "Recall@20": 85.7308584686775,
+            "Recall@1percent": 84.5707656612529
+          }
+        }
+      },
+      "1": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/weights/1.pth.tar",
+        "checkpoint_sha256": "e8d2ad1269adaa71b97563b98cd9cce40f2fe0edce1acb7227b2bd8251275078",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+          "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/seed_start.json",
+            "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/cache/cross_negatives_epoch_1.json",
+            "sha256": "3e3e9e1a3491f2300aad53676e70068a96aab3e763366e77a98213cd50a640e3"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/sejong.json",
+            "sha256": "d86bcd984b58f91fd6a7f647a555dcc26ae6920eae496194036da103bd1fe38c"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/sejong_diagnostics.json",
+            "sha256": "4f94877a4e84f2892268f09622701cc339eed82f170058aef73ff00ef4c83b84"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/sejong.npz",
+            "sha256": "8c2dbea1220b071159fb9a48e3c9ed3ad42cb9fdd23f196093d133980a0e7c5a"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/sejong.csv",
+            "sha256": "db16b42ef9b272d8f1cb2b19824d02902feb4c30965ea28d722cf3e8e86b9dfe"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/sejong.json",
+            "sha256": "d86bcd984b58f91fd6a7f647a555dcc26ae6920eae496194036da103bd1fe38c"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/dcc.json",
+            "sha256": "4eac8f8198aaabf30da096cbf6faed6e0293f4caf31a0ae805d273c48283ef98"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/dcc_diagnostics.json",
+            "sha256": "bd6687f29c048c1140a1f530f91e9ebe838cb49670dcbc481781ebfa3a2ba08e"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/dcc.npz",
+            "sha256": "1a0cc24554a4b44a900b0d0d5b7518291dc3bf684342c1adc8075ccf3153f1dd"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/dcc.csv",
+            "sha256": "3462034048579ad137d7d66e0480c2c945ecf5014d97155593cdc06e975d92b2"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/dcc.json",
+            "sha256": "4eac8f8198aaabf30da096cbf6faed6e0293f4caf31a0ae805d273c48283ef98"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/riverside.json",
+            "sha256": "6410df46c4012a0daf8e730c386e8aa6c23e1d1106359c9f4364cece48595563"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/riverside_diagnostics.json",
+            "sha256": "bccf5443fd82ee0e9ae71654d044efa9e88a986fdb544eb190623a61cfdd512d"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/riverside.npz",
+            "sha256": "d6f689536705dbf0093c981d7d4ff651eddd26bdaf4df51f7bfefc7846417f33"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/riverside.csv",
+            "sha256": "25c7019aae2cfd2c920f810383182bdbe11fc756368fe565498318f98bb76acd"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed1/riverside.json",
+            "sha256": "6410df46c4012a0daf8e730c386e8aa6c23e1d1106359c9f4364cece48595563"
+          }
+        },
+        "validation": {
+          "F1": 0.8451612903225807,
+          "Recall@1": 71.66666666666667,
+          "Recall@5": 85.0,
+          "Recall@10": 90.07246376811594,
+          "Recall@20": 93.98550724637681,
+          "Recall@1percent": 91.66666666666666
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7398373983739839,
+            "Recall@1": 52.659574468085104,
+            "Recall@5": 71.27659574468085,
+            "Recall@10": 80.85106382978722,
+            "Recall@20": 86.17021276595744,
+            "Recall@1percent": 52.659574468085104
+          },
+          "riverside": {
+            "F1": 0.7908597986057321,
+            "Recall@1": 61.60092807424594,
+            "Recall@5": 75.23201856148492,
+            "Recall@10": 81.55452436194895,
+            "Recall@20": 86.02088167053364,
+            "Recall@1percent": 84.91879350348029
+          }
+        }
+      },
+      "2": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/weights/1.pth.tar",
+        "checkpoint_sha256": "c1a3f40723c5f9a949a2f507913151627554ac61c92dbf595fb2cf7cd3c25ada",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+          "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/seed_start.json",
+            "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/cache/cross_negatives_epoch_1.json",
+            "sha256": "d80aee95034da9fd31f2e4c7e6b7d79512075ecdb0d6139c9f37fad471b99900"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/sejong.json",
+            "sha256": "4e6edb4d9d054058e9c6758ad4aa1964b1dbf425c7ecaf8e7b8b914dd83df335"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/sejong_diagnostics.json",
+            "sha256": "1524776eddf97e08e45fcadfb252971fb95f694eed05afc25bbb5e6679d21877"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/sejong.npz",
+            "sha256": "255bf52386fb20b22de1313f92d157c6932a025aa2e5a5e7bb488eff72a865c0"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/sejong.csv",
+            "sha256": "1a0bd2dd6e1d1af1c4faa1978dc58873e9fc01ee569f8e9c1b9f40a29866e301"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/sejong.json",
+            "sha256": "4e6edb4d9d054058e9c6758ad4aa1964b1dbf425c7ecaf8e7b8b914dd83df335"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/dcc.json",
+            "sha256": "3df2b51c1353907250917f717ab3f75ae842f9479463d57e49e25ed513b69b72"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/dcc_diagnostics.json",
+            "sha256": "d725ba1f0f16fc132d6fd7741d7ed051df329984aed6d3968cf739dc7daada20"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/dcc.npz",
+            "sha256": "ee3cf23da2eaaf76cd37baab246a140e6c8c33690510ae7a9a8d67709c29e38c"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/dcc.csv",
+            "sha256": "7122f288b2aa7793edd9e1cfb531bcc371c70270f26c204907d0fdc037c96200"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/dcc.json",
+            "sha256": "3df2b51c1353907250917f717ab3f75ae842f9479463d57e49e25ed513b69b72"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/riverside.json",
+            "sha256": "1b7f42feaebf94be6ededf37085b6ac2161b4022d5a886a8c7c1ae490ae92d53"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/riverside_diagnostics.json",
+            "sha256": "d7149e72f63cecd7f24b59c51acd417eea3222324dcd6412128aff507c2e00ec"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/riverside.npz",
+            "sha256": "f54f2dbce3c4a8b62737b3962d5608d2dd486a5eb5e9c24c711a89fa0ae28fd6"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/riverside.csv",
+            "sha256": "699ea320a0eae57cb3d063445ea64cb5b29771c9a3780dec312fccd4e011a3d4"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_003/seed2/riverside.json",
+            "sha256": "1b7f42feaebf94be6ededf37085b6ac2161b4022d5a886a8c7c1ae490ae92d53"
+          }
+        },
+        "validation": {
+          "F1": 0.8401084010840109,
+          "Recall@1": 71.30434782608695,
+          "Recall@5": 85.28985507246377,
+          "Recall@10": 90.72463768115942,
+          "Recall@20": 94.6376811594203,
+          "Recall@1percent": 92.02898550724638
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7272727272727274,
+            "Recall@1": 51.06382978723404,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 81.38297872340425,
+            "Recall@20": 86.70212765957447,
+            "Recall@1percent": 51.06382978723404
+          },
+          "riverside": {
+            "F1": 0.7965571205007824,
+            "Recall@1": 61.832946635730856,
+            "Recall@5": 74.94199535962876,
+            "Recall@10": 80.56844547563806,
+            "Recall@20": 85.03480278422273,
+            "Recall@1percent": 84.22273781902551
+          }
+        }
+      }
+    },
+    "tau_010": {
+      "0": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/weights/1.pth.tar",
+        "checkpoint_sha256": "ec828bcd30bf3097de6240fe4333c0da7503226ddb542481a60e545302d4f652",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+          "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/seed_start.json",
+            "sha256": "4f21e868e18abd6d2891553aab1655e75972504c51776f52d4e0c7c039aeb5df"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/cache/cross_negatives_epoch_1.json",
+            "sha256": "0cb90e3cc2ef71aaeb51cdfe338c6cdf6af18ea4958b23f5383a1a6a65b334bb"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/sejong.json",
+            "sha256": "24912b080ed11de2e75efae91a5098b43e8533c2268461ce6bfc0dd1175f23a9"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/sejong_diagnostics.json",
+            "sha256": "a87054c3221c11d4ff66e41d4e6bd1acda89cfd8bfc889e3bdf5a29b0085fb49"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/sejong.npz",
+            "sha256": "ddce12aea226a1911cdb16c278964af32845d308b15d6f44d22f47d6fabebacd"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/sejong.csv",
+            "sha256": "08f8961ee981fa314390d3d0a132db52ba75a7536fd1d750d8813a5206108507"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/sejong.json",
+            "sha256": "24912b080ed11de2e75efae91a5098b43e8533c2268461ce6bfc0dd1175f23a9"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/dcc.json",
+            "sha256": "6d63eaf5003bf08d795a69665a5285014e2372267c48f7cb297ce7867f744389"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/dcc_diagnostics.json",
+            "sha256": "a9116deb2183e55e9e08c0aebcb05c609e3de0f886bbd754f2ed73d16980b90b"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/dcc.npz",
+            "sha256": "dc3d8feadce5571482848728b30ac459647d82af793fc453b66bf56126ac3ea3"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/dcc.csv",
+            "sha256": "ed2de513ef3998bec58cda80a93ab2fea6b23d2299136662c3be7989566e033d"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/dcc.json",
+            "sha256": "6d63eaf5003bf08d795a69665a5285014e2372267c48f7cb297ce7867f744389"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/riverside.json",
+            "sha256": "419e6bf7347bfdc72a4faad60542d75a0d4a49f3d8c183f9bc7a01048120ab24"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/riverside_diagnostics.json",
+            "sha256": "ff651e71b671ca4ab8683a4f469abaaed95a4eec43b4c9be29b2a1c9b1574ba9"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/riverside.npz",
+            "sha256": "a5f1b377ad0164d481ab53834022f6909ecb080dce3aaa5ba0a16d7bac426369"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/riverside.csv",
+            "sha256": "61af32c6523fea986bd9d7861417088676427a65f175516314d980271d966b9c"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed0/riverside.json",
+            "sha256": "419e6bf7347bfdc72a4faad60542d75a0d4a49f3d8c183f9bc7a01048120ab24"
+          }
+        },
+        "validation": {
+          "F1": 0.8719753629564452,
+          "Recall@1": 75.65217391304347,
+          "Recall@5": 89.56521739130436,
+          "Recall@10": 93.33333333333333,
+          "Recall@20": 96.30434782608695,
+          "Recall@1percent": 94.6376811594203
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7557603686635944,
+            "Recall@1": 50.53191489361703,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 80.85106382978722,
+            "Recall@20": 89.8936170212766,
+            "Recall@1percent": 50.53191489361703
+          },
+          "riverside": {
+            "F1": 0.7950558213716109,
+            "Recall@1": 61.658932714617166,
+            "Recall@5": 75.5800464037123,
+            "Recall@10": 81.49651972157773,
+            "Recall@20": 86.19489559164734,
+            "Recall@1percent": 85.03480278422273
+          }
+        }
+      },
+      "1": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/weights/1.pth.tar",
+        "checkpoint_sha256": "7c5681ce451b9a0d2af3131b82fac384f73b9feb9352a7f7c1514f683f2f9627",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "bd7a1d775c4433c7e845ac6fa8024956b4815f5a8921985752621e1d5287a31b",
+          "worker": "18d1daf37bd0e44c5fab7a019b2b2f6c47ad1f32e68d21647daec0be14941277"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/seed_start.json",
+            "sha256": "a04c885ebe845d013fe9a44ca200bde60cdaa857258ebbe1ca85ae0a3cf2f408"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/cache/cross_negatives_epoch_1.json",
+            "sha256": "e42b0d0d84a34b63725d81dbdcf99c0887859b484ead65f793a31a9ae2226c46"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/sejong.json",
+            "sha256": "674b00bbd7a13576480412a5ce5eb3f665ee9367c046bc2db3bb77cbcb01c4fb"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/sejong_diagnostics.json",
+            "sha256": "fc90d8f049dd00a09a1c321cec954f66c7aa1685b312d531b8c86d5d70abef81"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/sejong.npz",
+            "sha256": "9dfc18defa0662b4bee7f6469f606de40ab16ffbd994cab6d756a1bbe304cc7a"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/sejong.csv",
+            "sha256": "df0e0662754f6032772cb965eec9b23368ebfe97253df028d9884aacf4ac857e"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/sejong.json",
+            "sha256": "674b00bbd7a13576480412a5ce5eb3f665ee9367c046bc2db3bb77cbcb01c4fb"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/dcc.json",
+            "sha256": "6a3ce48d0ff2a7b7e283f3b02bae759385d7919806dd00994e073edb17fd38f0"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/dcc_diagnostics.json",
+            "sha256": "abc6a3a9af7c8757a1c72e4dfbf1474123e3c8928e6220a4810d123a3208c4fc"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/dcc.npz",
+            "sha256": "d082939e4e87c5940b0edf7894bcf4ac79a03e69ec0171c3d91b9e6325ea8cf5"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/dcc.csv",
+            "sha256": "c6d51e7c3b98bc3503fd7645c1827b88dcac489d1639a0ab5b69f8e6cfa3c4a1"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/dcc.json",
+            "sha256": "6a3ce48d0ff2a7b7e283f3b02bae759385d7919806dd00994e073edb17fd38f0"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/riverside.json",
+            "sha256": "2713cc6304376913d0fc15f39bcbf7885b128f61cb163918f9b0cbf692b5bd88"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/riverside_diagnostics.json",
+            "sha256": "407b8870bf219bc798bce5a56e7e91b7e4beb260b9238a8d1ebc59ac11e22b34"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/riverside.npz",
+            "sha256": "6288d0917f518215448046a152c0858bab5cef9dea1c3c7240997c1d0d99f860"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/riverside.csv",
+            "sha256": "1604e8a2f7d57e9cda6441e6f0f5da96511a3dca31b22a008c3f9d2a65788ca5"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed1/riverside.json",
+            "sha256": "2713cc6304376913d0fc15f39bcbf7885b128f61cb163918f9b0cbf692b5bd88"
+          }
+        },
+        "validation": {
+          "F1": 0.8642495784148397,
+          "Recall@1": 75.21739130434783,
+          "Recall@5": 89.20289855072464,
+          "Recall@10": 93.18840579710145,
+          "Recall@20": 96.01449275362319,
+          "Recall@1percent": 94.20289855072464
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7358490566037736,
+            "Recall@1": 51.59574468085106,
+            "Recall@5": 72.3404255319149,
+            "Recall@10": 81.91489361702128,
+            "Recall@20": 88.82978723404256,
+            "Recall@1percent": 51.59574468085106
+          },
+          "riverside": {
+            "F1": 0.7874203821656052,
+            "Recall@1": 61.368909512761014,
+            "Recall@5": 74.76798143851508,
+            "Recall@10": 81.14849187935035,
+            "Recall@20": 86.5429234338747,
+            "Recall@1percent": 85.1508120649652
+          }
+        }
+      },
+      "2": {
+        "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/weights/1.pth.tar",
+        "checkpoint_sha256": "abe25048266a971ea2d3d4b8ba16e093a9a6c1341647f67181b5aceef1547cf4",
+        "optimizer_steps": 2071,
+        "all_finite": true,
+        "radar_unchanged": true,
+        "sampling": {
+          "sampler": "020df1c8453019d08df88188c96f86742ae04980aa8f27009968d4392410e88e",
+          "worker": "a5a6f7af978814064dfbbcdcf74ed5715338ceee543c138e1f242cbe513b6393"
+        },
+        "artifacts": {
+          "seed_start": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/seed_start.json",
+            "sha256": "8dd0b440cb22d9c09e31babe451823c6d4411b5725aa1c0587b6f628f35afd2b"
+          },
+          "mining.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/cache/cross_negatives_epoch_1.json",
+            "sha256": "c3e1fc68f7fad66a4d543ea9a7f95cc151102832b3bc0ae0fa29618c075f308f"
+          },
+          "mining.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/cache/cross_negatives_epoch_1.npz",
+            "sha256": "cdea4e08f2fb35d2e3b676c1d493436724f5a9dedbaa093698150a9b92bb40bd"
+          },
+          "sejong.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/sejong.json",
+            "sha256": "9d059be86f86b0de3b5c14af2e56368d5c05717927aed23b44380687a6eee9b3"
+          },
+          "sejong_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/sejong_diagnostics.json",
+            "sha256": "8023ecf43aef4b28e6cc227a114a611f10134f9f66ba80d968b7449b391528c3"
+          },
+          "sejong.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/sejong.npz",
+            "sha256": "c0cf6c9a388ac9606e1063aea620cd8cfdb68968ac7788aec92a1293dabba009"
+          },
+          "sejong.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/sejong.csv",
+            "sha256": "5d4a780f16354d1ebabb7d2fa7f543e56db8f0ef436b58ad010d715288a3d7d9"
+          },
+          "sejong_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/sejong.json",
+            "sha256": "9d059be86f86b0de3b5c14af2e56368d5c05717927aed23b44380687a6eee9b3"
+          },
+          "dcc.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/dcc.json",
+            "sha256": "256756e2f1932ecdd00f7e4f5f5acaaf3ab2ea5a80952a861fc45a24526ced64"
+          },
+          "dcc_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/dcc_diagnostics.json",
+            "sha256": "8491e0f12e607550cedc5699d3c85d57ec3d9a36e3d19fdf880735b676320ad9"
+          },
+          "dcc.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/dcc.npz",
+            "sha256": "1e33085c6fc5769785e5fe384f356f2944b8797a6044c9edb3cd265ad702e44f"
+          },
+          "dcc.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/dcc.csv",
+            "sha256": "965d829742e5e64349264a99036c51a5dcb3dc8a343841aa2ab6c62211cab9da"
+          },
+          "dcc_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/dcc.json",
+            "sha256": "256756e2f1932ecdd00f7e4f5f5acaaf3ab2ea5a80952a861fc45a24526ced64"
+          },
+          "riverside.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/riverside.json",
+            "sha256": "0ce61dd0e1ca046421d690656c2439281e70473038d397fc3dab57526b5de139"
+          },
+          "riverside_diagnostics.json": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/riverside_diagnostics.json",
+            "sha256": "53548c950f9b23aee4a6d95d30e53427270392e31ade6becb49d5999051a730a"
+          },
+          "riverside.npz": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/riverside.npz",
+            "sha256": "775838f9620f01bacacdf1212fbb6a9e398cf585eabd7568812794db16368966"
+          },
+          "riverside.csv": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/riverside.csv",
+            "sha256": "21ca25d4a0cc8a4d0f790ea033514c80fd29ff5cee3c691a52c9706fb000dd1f"
+          },
+          "riverside_metrics": {
+            "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_temperature_2026-10-19_192214/tau_010/seed2/riverside.json",
+            "sha256": "0ce61dd0e1ca046421d690656c2439281e70473038d397fc3dab57526b5de139"
+          }
+        },
+        "validation": {
+          "F1": 0.8730090400344382,
+          "Recall@1": 76.37681159420289,
+          "Recall@5": 88.55072463768116,
+          "Recall@10": 92.6086956521739,
+          "Recall@20": 96.44927536231884,
+          "Recall@1percent": 94.1304347826087
+        },
+        "benchmarks": {
+          "dcc": {
+            "F1": 0.7476635514018691,
+            "Recall@1": 50.0,
+            "Recall@5": 73.40425531914893,
+            "Recall@10": 80.85106382978722,
+            "Recall@20": 89.8936170212766,
+            "Recall@1percent": 50.0
+          },
+          "riverside": {
+            "F1": 0.7961759082217973,
+            "Recall@1": 62.7030162412993,
+            "Recall@5": 76.21809744779581,
+            "Recall@10": 82.07656612529001,
+            "Recall@20": 86.77494199535964,
+            "Recall@1percent": 86.07888631090486
+          }
+        }
+      }
+    }
+  },
+  "training_status": "COMPLETE",
+  "evaluation_status": "COMPLETE",
+  "report_status": "COMPLETE",
+  "selection_sha256": "022b7657c5461f577947216f48b101eddffb353c0ac28105cbb3b45bb3b31427",
+  "selected_configuration": "tau_010",
+  "results_finished_at": "2026-10-19T20:40:55.783208+08:00",
+  "finished_at": "2026-10-19T20:40:55.997181+08:00"
+}

@@ -1,0 +1,7 @@
+{
+  "all_checkpoints_verified": 22,
+  "optimizer_steps_per_epoch": 2071,
+  "frozen_teachers_unchanged": true,
+  "hashes_verified": true,
+  "paired_sampling_streams_match": true
+}

@@ -1,0 +1,10 @@
+{
+  "pid": 391981,
+  "started_at": "2026-10-19_181227",
+  "log": "/media/rwj/ZX1 2TB/RLPR/runs/spatial_positive_launch_2026-10-19_181227.log",
+  "script": "/media/rwj/ZX1 2TB/RLPR/src_spectral/scripts/spatial_positive_ablation.py",
+  "source_commit": "20918a8a672a25be6bcd2b7afa24fec4e9493565",
+  "report_builder_sha256": "a1935c4b424b52d1616aa80de3633248a2ac04953271ede836f3fccfb7d4ef58",
+  "tests_passed": 108,
+  "smoke_test": "/media/rwj/ZX1 2TB/RLPR/runs/spatial_positive_smoke_2026-10-19.json"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "task": "stage-two phase cross-fusion training",
+  "code_commit": "91cf7a5e2eb031efa691f2e796ed606aeaa902b9",
+  "code_status": " M scripts/sejong_cross_fusion_train.sh\n",
+  "init_root": "/media/rwj/ZX1 2TB/RLPR/runs/sejong_spectral_2026-10-14_202056",
+  "seed": 0,
+  "batch_size": 1,
+  "cross_fusion_enabled": true,
+  "epochs": 2,
+  "database_frames": 1024,
+  "query_frames": 256,
+  "pretrain_l": "/media/rwj/ZX1 2TB/RLPR/runs/sejong_spectral_2026-10-14_202056/l_mulran/weights/2.pth.tar",
+  "pretrain_r": "/media/rwj/ZX1 2TB/RLPR/runs/sejong_spectral_2026-10-14_202056/r_mulran/weights/2.pth.tar",
+  "phase_loss_weight": 0.1,
+  "cross_fusion_loss_weight": 0.5,
+  "scope": "Existing Sejong training indices; no test-region data used for training",
+  "test_policy": "Independent descriptors; paired fusion used only during training"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "started_at": "2026-10-19T12:18:53.339666+08:00",
+  "phase": "fusion_05/TRAIN",
+  "protocol_sha256": "e46e5531c14c09cdb0000f1810db002c3b8d2ec89c509564ecdb55c1396b63f9",
+  "configurations": {},
+  "error": "CalledProcessError(1, ['/mnt/data300/envs/rlpr/bin/python', '-u', '/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_121853/driver.py', '--child', 'train', '--root', '/media/rwj/ZX1 2TB/RLPR/runs/mulran_amplitude_fusion_2026-10-19_121853', '--arm', 'fusion_05', '--split', 'sejong'])",
+  "failed_at": "2026-10-19T12:18:57.508865+08:00"
+}

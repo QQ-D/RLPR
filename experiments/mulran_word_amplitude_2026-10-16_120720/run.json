@@ -1,0 +1,91 @@
+{
+  "status": "SUPERSEDED",
+  "started_at": "2026-10-16T12:07:20.174103+08:00",
+  "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_2026-10-16_120720",
+  "protocol_sha256": "c41121cc44fa300c316236b794867177544705283dca64286a40e85f2a2ba5d4",
+  "arms": {
+    "pure_phase": {
+      "l": {
+        "epochs": {
+          "1": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_2026-10-16_120720/pure_phase/l/weights/1.pth.tar",
+            "checkpoint_sha256": "d399dabeea79b8f490da7627c12586a72d9fa1f62924ee17fea5623843284948",
+            "optimizer_steps": 2071,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+              "worker": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+            },
+            "loss": 0.10276613,
+            "validation": {
+              "Recall@1": 98.62318840579711,
+              "Recall@5": 99.27536231884058,
+              "Recall@10": 99.56521739130434,
+              "Recall@20": 100.0
+            }
+          },
+          "2": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_2026-10-16_120720/pure_phase/l/weights/2.pth.tar",
+            "checkpoint_sha256": "bb095dc7f357c2bec3a5b085f1e70dcc1a9dd35f847f54888f92b637645e553c",
+            "optimizer_steps": 4142,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+              "worker": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+            },
+            "loss": 0.08364125,
+            "validation": {
+              "Recall@1": 98.18840579710145,
+              "Recall@5": 99.34782608695653,
+              "Recall@10": 99.56521739130434,
+              "Recall@20": 99.92753623188406
+            }
+          },
+          "3": {
+            "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_2026-10-16_120720/pure_phase/l/weights/3.pth.tar",
+            "checkpoint_sha256": "d928f32f47f01003f1d1421638538b05b5410b97b17850358e0adb7841711f94",
+            "optimizer_steps": 6213,
+            "all_finite": true,
+            "radar_unchanged": false,
+            "sampling": {
+              "sampler": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+              "worker": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+            },
+            "loss": 0.07363871,
+            "validation": {
+              "Recall@1": 98.40579710144928,
+              "Recall@5": 99.34782608695653,
+              "Recall@10": 99.78260869565217,
+              "Recall@20": 100.0
+            }
+          }
+        },
+        "selected_epoch": 1,
+        "selection_recovered_at": "2026-10-18T19:24:17.681794+08:00"
+      },
+      "r": {
+        "epochs": {}
+      }
+    },
+    "amplitude": {}
+  },
+  "phase": "pure_phase/r/epoch1",
+  "paused_at": "2026-10-16T13:12:12+0800",
+  "pause_method": "Processes no longer exist after host restart; resume from disk checkpoints only",
+  "record_recovered_at": "2026-10-18T19:24:17.681794+08:00",
+  "recovery_note": "Empty run.json reconstructed from complete checkpoint states, training logs and validation JSON; no training started. Original selection timestamp unavailable.",
+  "recovery_source_and_initialization_hashes_verified": true,
+  "incomplete_epoch_progress": {
+    "arm": "pure_phase",
+    "stage": "r",
+    "epoch": 1,
+    "last_logged_step": 1377,
+    "total_steps": 2071,
+    "saved_epoch_checkpoint": false,
+    "must_restart_current_epoch": true
+  },
+  "superseded_by": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_amplitude_official_2026-10-18_193110",
+  "superseded_reason": "User requested total author-code5+5+1 instead of historicalL5/R5 plus extra fine-tuning"
+}

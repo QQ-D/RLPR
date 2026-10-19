@@ -1,0 +1,335 @@
+{
+  "status": "COMPLETE",
+  "phase": "COMPLETE",
+  "started_at": "2026-10-16T00:36:26.601737+08:00",
+  "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626",
+  "epochs": {
+    "1": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/1.pth.tar",
+      "checkpoint_sha256": "32c205cb7eec2cf140b88f310030d1519aa24ee09ed64ea4ae05e9e64d311d14",
+      "loss": 1.6580013,
+      "seconds": 599.3843452840001,
+      "learning_rate_next": 4e-05,
+      "optimizer_steps": 2071,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+        "worker_sha256": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+      },
+      "mining": {
+        "epoch": 1,
+        "hard_count": 5,
+        "database_frames": 16602,
+        "query_frames": 16568,
+        "direction": "radar query to lidar database",
+        "minimum_negative_distance_m": 12.002603530883789,
+        "cache_path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/cache/cross_negatives_epoch_1.npz",
+        "cache_sha256": "f240ea27e6d4ca246fd7d80e14ba01cfefcbfde9291db67fa323a5e98b62fda5",
+        "seconds": 37.62635032900016
+      },
+      "epoch1_control_max_abs_diff": 0.4301023483276367,
+      "epoch1_control_bitwise_identical": false,
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.83,
+          "Recall@5": 86.52,
+          "Recall@10": 90.58,
+          "Recall@20": 92.54,
+          "Recall@1percent": 91.52,
+          "F1": 0.8523872098116513
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_1_sejong.log",
+        "completed_at": "2026-10-16T00:47:12.323437+08:00"
+      },
+      "benchmarks": {
+        "dcc": {
+          "metrics": {
+            "Recall@1": 54.26,
+            "Recall@5": 69.68,
+            "Recall@10": 82.45,
+            "Recall@20": 85.64,
+            "Recall@1percent": 54.26,
+            "F1": 0.734375
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_1_dcc.log",
+          "completed_at": "2026-10-16T01:30:31.663068+08:00"
+        },
+        "riverside": {
+          "metrics": {
+            "Recall@1": 56.55,
+            "Recall@5": 72.8,
+            "Recall@10": 80.34,
+            "Recall@20": 86.43,
+            "Recall@1percent": 85.5,
+            "F1": 0.733511246664125
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_1_riverside.log",
+          "completed_at": "2026-10-16T01:31:31.195556+08:00"
+        }
+      }
+    },
+    "2": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/2.pth.tar",
+      "checkpoint_sha256": "e4e1c1cd464e5f3746e8eaa3524fbf2fff0b90ccb5e4423eb3b164185abe59ea",
+      "loss": 1.4696172,
+      "seconds": 605.937726393,
+      "learning_rate_next": 3.2000000000000005e-05,
+      "optimizer_steps": 4142,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+        "worker_sha256": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+      },
+      "mining": {
+        "epoch": 2,
+        "hard_count": 5,
+        "database_frames": 16602,
+        "query_frames": 16568,
+        "direction": "radar query to lidar database",
+        "minimum_negative_distance_m": 12.000041007995605,
+        "cache_path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/cache/cross_negatives_epoch_2.npz",
+        "cache_sha256": "ad14f42c23b7193ecb6a2b0b5d014fed2562488085041f7fd007221871ab28a5",
+        "seconds": 37.324412445000235
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 73.48,
+          "Recall@5": 88.12,
+          "Recall@10": 91.88,
+          "Recall@20": 93.33,
+          "Recall@1percent": 92.39,
+          "F1": 0.861098704778919
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_2_sejong.log",
+        "completed_at": "2026-10-16T00:58:03.717516+08:00"
+      },
+      "benchmarks": {
+        "dcc": {
+          "metrics": {
+            "Recall@1": 55.32,
+            "Recall@5": 69.15,
+            "Recall@10": 81.38,
+            "Recall@20": 87.23,
+            "Recall@1percent": 55.32,
+            "F1": 0.7392996108949417
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_2_dcc.log",
+          "completed_at": "2026-10-16T01:31:40.529736+08:00"
+        },
+        "riverside": {
+          "metrics": {
+            "Recall@1": 56.09,
+            "Recall@5": 72.45,
+            "Recall@10": 79.47,
+            "Recall@20": 85.85,
+            "Recall@1percent": 84.34,
+            "F1": 0.7310344827586208
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_2_riverside.log",
+          "completed_at": "2026-10-16T01:32:38.357890+08:00"
+        }
+      }
+    },
+    "3": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/3.pth.tar",
+      "checkpoint_sha256": "c7388ba39f0c35508e1a3168a0cfe260d3157eced3c91a415d23fbf427159ff0",
+      "loss": 1.3842536,
+      "seconds": 601.3748228200002,
+      "learning_rate_next": 2.5600000000000006e-05,
+      "optimizer_steps": 6213,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+        "worker_sha256": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+      },
+      "mining": {
+        "epoch": 3,
+        "hard_count": 5,
+        "database_frames": 16602,
+        "query_frames": 16568,
+        "direction": "radar query to lidar database",
+        "minimum_negative_distance_m": 12.000041007995605,
+        "cache_path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/cache/cross_negatives_epoch_3.npz",
+        "cache_sha256": "50cbfa1b020ccffe42d97bd277d64fe0fd8d382e9f5bc35e97c5624303ce0cb1",
+        "seconds": 37.50469095100016
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.68,
+          "Recall@5": 87.54,
+          "Recall@10": 91.88,
+          "Recall@20": 94.57,
+          "Recall@1percent": 92.68,
+          "F1": 0.8562472010747872
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_3_sejong.log",
+        "completed_at": "2026-10-16T01:08:50.493995+08:00"
+      }
+    },
+    "4": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/4.pth.tar",
+      "checkpoint_sha256": "a5a4db2f8fadd15836a956ab8a7c2789571cc3a7e8758ba4c7566bdd38a4493e",
+      "loss": 1.3343748,
+      "seconds": 599.3785777630001,
+      "learning_rate_next": 2.0480000000000007e-05,
+      "optimizer_steps": 8284,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "779d02c6b4657b8caa28ade55dbb51e48da879dca61242e8390feeb6b1dee9be",
+        "worker_sha256": "42bff94b75a50eee252aefd27574074fc14f167d4ac7874088c2a17b99e44a0e"
+      },
+      "mining": {
+        "epoch": 4,
+        "hard_count": 5,
+        "database_frames": 16602,
+        "query_frames": 16568,
+        "direction": "radar query to lidar database",
+        "minimum_negative_distance_m": 12.000041007995605,
+        "cache_path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/cache/cross_negatives_epoch_4.npz",
+        "cache_sha256": "ccf2a82f70b198d4a97bad7a076c3c92a5790c42e8cbbd3e64e838357a01e69e",
+        "seconds": 37.47673089900127
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.83,
+          "Recall@5": 87.83,
+          "Recall@10": 91.59,
+          "Recall@20": 94.64,
+          "Recall@1percent": 92.39,
+          "F1": 0.853202846975089
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_4_sejong.log",
+        "completed_at": "2026-10-16T01:19:35.761922+08:00"
+      }
+    },
+    "5": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/weights/5.pth.tar",
+      "checkpoint_sha256": "4135d693d331bee85ffbbf4f1bdea860c54e592758ebd37b5c712f59b3b6cae6",
+      "loss": 1.2985636,
+      "seconds": 600.1787857189993,
+      "learning_rate_next": 1.6384000000000008e-05,
+      "optimizer_steps": 10355,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "75db0b2a77982c73eb2758e3e8142ed2c4308117ac3044844f96f1df8ded9395",
+        "worker_sha256": "5c52c1215faecef801c977968a9dd4f490711187ef40b52e025a0ea7f8d1f4d4"
+      },
+      "mining": {
+        "epoch": 5,
+        "hard_count": 5,
+        "database_frames": 16602,
+        "query_frames": 16568,
+        "direction": "radar query to lidar database",
+        "minimum_negative_distance_m": 12.000041007995605,
+        "cache_path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/r2l_mulran/cache/cross_negatives_epoch_5.npz",
+        "cache_sha256": "889db4598ce536d6e8cc5ba87483ba90b90dd5e1d82975b8c439d64016af56b0",
+        "seconds": 37.318800343000476
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 73.48,
+          "Recall@5": 87.9,
+          "Recall@10": 91.16,
+          "Recall@20": 94.35,
+          "Recall@1percent": 92.54,
+          "F1": 0.8580112896222318
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_5_sejong.log",
+        "completed_at": "2026-10-16T01:30:22.199404+08:00"
+      },
+      "benchmarks": {
+        "dcc": {
+          "metrics": {
+            "Recall@1": 53.72,
+            "Recall@5": 70.74,
+            "Recall@10": 78.72,
+            "Recall@20": 86.17,
+            "Recall@1percent": 53.72,
+            "F1": 0.7272727272727273
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_5_dcc.log",
+          "completed_at": "2026-10-16T01:32:47.619296+08:00"
+        },
+        "riverside": {
+          "metrics": {
+            "Recall@1": 53.77,
+            "Recall@5": 71.11,
+            "Recall@10": 80.28,
+            "Recall@20": 85.67,
+            "Recall@1percent": 84.22,
+            "F1": 0.7097560975609757
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_hardneg_2026-10-16_003626/epoch_5_riverside.log",
+          "completed_at": "2026-10-16T01:33:46.132560+08:00"
+        }
+      }
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "protocol_sha256": "df3ae59ea18160a7fb344b733fe4de82d78917286843c3de980f5d138eba4611",
+  "selection": {
+    "selected_epoch": 2,
+    "locked_at": "2026-10-16T01:30:22.200301+08:00",
+    "rule": "Maximum Sejong Recall@1, then F1, then earliest epoch; lock before benchmarks",
+    "benchmark_results_consulted_in_this_run": false,
+    "validation": {
+      "1": {
+        "Recall@1": 72.83,
+        "Recall@5": 86.52,
+        "Recall@10": 90.58,
+        "Recall@20": 92.54,
+        "Recall@1percent": 91.52,
+        "F1": 0.8523872098116513
+      },
+      "2": {
+        "Recall@1": 73.48,
+        "Recall@5": 88.12,
+        "Recall@10": 91.88,
+        "Recall@20": 93.33,
+        "Recall@1percent": 92.39,
+        "F1": 0.861098704778919
+      },
+      "3": {
+        "Recall@1": 72.68,
+        "Recall@5": 87.54,
+        "Recall@10": 91.88,
+        "Recall@20": 94.57,
+        "Recall@1percent": 92.68,
+        "F1": 0.8562472010747872
+      },
+      "4": {
+        "Recall@1": 72.83,
+        "Recall@5": 87.83,
+        "Recall@10": 91.59,
+        "Recall@20": 94.64,
+        "Recall@1percent": 92.39,
+        "F1": 0.853202846975089
+      },
+      "5": {
+        "Recall@1": 73.48,
+        "Recall@5": 87.9,
+        "Recall@10": 91.16,
+        "Recall@20": 94.35,
+        "Recall@1percent": 92.54,
+        "F1": 0.8580112896222318
+      }
+    }
+  },
+  "selection_sha256": "9a3ed26da69b8011eb2eb1fdcdcb110fff493062324a7b0b67aa88e64df8bc46",
+  "completed_at": "2026-10-16T01:33:46.133975+08:00"
+}

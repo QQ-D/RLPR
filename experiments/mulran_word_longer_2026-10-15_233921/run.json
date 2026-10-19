@@ -1,0 +1,280 @@
+{
+  "status": "COMPLETE",
+  "phase": "COMPLETE",
+  "started_at": "2026-10-15T23:39:21.526694+08:00",
+  "run_root": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921",
+  "epochs": {
+    "1": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/r2l_mulran/weights/1.pth.tar",
+      "checkpoint_sha256": "f7c2528b12209a71216da3603adc79663cfad4f07f7e60391b259cf00d8ff98c",
+      "loss": 1.6079664,
+      "seconds": 549.2371448570002,
+      "learning_rate_next": 4e-05,
+      "optimizer_steps": 2071,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "2c5899f979337dddca2464fab589cd31feba2b5e3ee2ae4cd14bd74232476ad5",
+        "worker_sha256": "d8777a4985869572d985fd4884c3c75095ee35aa2923a3434e1c5fe181ae9736"
+      },
+      "epoch1_control_max_abs_diff": 0.22689580917358398,
+      "epoch1_control_bitwise_identical": false,
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.75,
+          "Recall@5": 86.38,
+          "Recall@10": 90.07,
+          "Recall@20": 92.39,
+          "Recall@1percent": 91.3,
+          "F1": 0.8558913710030661
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_1_sejong.log",
+        "completed_at": "2026-10-15T23:49:19.353720+08:00"
+      },
+      "benchmarks": {
+        "dcc": {
+          "metrics": {
+            "Recall@1": 53.72,
+            "Recall@5": 69.15,
+            "Recall@10": 81.38,
+            "Recall@20": 87.23,
+            "Recall@1percent": 53.72,
+            "F1": 0.7335907335907335
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_1_dcc.log",
+          "completed_at": "2026-10-16T00:30:07.952415+08:00"
+        },
+        "riverside": {
+          "metrics": {
+            "Recall@1": 55.86,
+            "Recall@5": 72.68,
+            "Recall@10": 79.29,
+            "Recall@20": 86.25,
+            "Recall@1percent": 85.03,
+            "F1": 0.727063339731286
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_1_riverside.log",
+          "completed_at": "2026-10-16T00:31:06.800287+08:00"
+        }
+      }
+    },
+    "2": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/r2l_mulran/weights/2.pth.tar",
+      "checkpoint_sha256": "cf0861d85971e610a5ce6b0f0d548a2529e81a81a1430846d9cf480d608621ee",
+      "loss": 1.3649797,
+      "seconds": 564.3795992590003,
+      "learning_rate_next": 3.2000000000000005e-05,
+      "optimizer_steps": 4142,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "c15e6a4197e944b8e414af25228cd9b478e0f7c719af535508b630e95c82b47f",
+        "worker_sha256": "afcd2ff7a153fbc48cd2ffcb3a4fa1ebc72e1ade2e67035d35b80316bd1e65b7"
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.75,
+          "Recall@5": 87.97,
+          "Recall@10": 91.23,
+          "Recall@20": 93.7,
+          "Recall@1percent": 91.96,
+          "F1": 0.8526176858776947
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_2_sejong.log",
+        "completed_at": "2026-10-15T23:59:29.782541+08:00"
+      }
+    },
+    "3": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/r2l_mulran/weights/3.pth.tar",
+      "checkpoint_sha256": "1aa5043a3e6af6d4647443d5d74512ac75cf036639eee7849d196893f807c0f1",
+      "loss": 1.2823361,
+      "seconds": 565.3507853950005,
+      "learning_rate_next": 2.5600000000000006e-05,
+      "optimizer_steps": 6213,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "4c417152b916354904ff3704ef5f144540db530c08847c05d01a440c956ed450",
+        "worker_sha256": "56bb0f54870f445542705ddd5bbf4d748a1f27c6ab0ad34dc838e455cecc950e"
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.46,
+          "Recall@5": 87.25,
+          "Recall@10": 91.59,
+          "Recall@20": 94.42,
+          "Recall@1percent": 93.04,
+          "F1": 0.8528099910793934
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_3_sejong.log",
+        "completed_at": "2026-10-16T00:09:40.599833+08:00"
+      }
+    },
+    "4": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/r2l_mulran/weights/4.pth.tar",
+      "checkpoint_sha256": "3d89deb088a56c3374f9a85ea3baa2658afc46b8b7661e95894348928a625ebf",
+      "loss": 1.2326968,
+      "seconds": 563.2416489349998,
+      "learning_rate_next": 2.0480000000000007e-05,
+      "optimizer_steps": 8284,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "779d02c6b4657b8caa28ade55dbb51e48da879dca61242e8390feeb6b1dee9be",
+        "worker_sha256": "42bff94b75a50eee252aefd27574074fc14f167d4ac7874088c2a17b99e44a0e"
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 73.04,
+          "Recall@5": 87.83,
+          "Recall@10": 91.3,
+          "Recall@20": 94.71,
+          "Recall@1percent": 92.39,
+          "F1": 0.8492307692307692
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_4_sejong.log",
+        "completed_at": "2026-10-16T00:19:50.283821+08:00"
+      },
+      "benchmarks": {
+        "dcc": {
+          "metrics": {
+            "Recall@1": 53.19,
+            "Recall@5": 70.74,
+            "Recall@10": 78.19,
+            "Recall@20": 85.64,
+            "Recall@1percent": 53.19,
+            "F1": 0.7222222222222222
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_4_dcc.log",
+          "completed_at": "2026-10-16T00:31:16.053106+08:00"
+        },
+        "riverside": {
+          "metrics": {
+            "Recall@1": 52.96,
+            "Recall@5": 70.01,
+            "Recall@10": 78.89,
+            "Recall@20": 85.15,
+            "Recall@1percent": 83.7,
+            "F1": 0.7003231017770598
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_4_riverside.log",
+          "completed_at": "2026-10-16T00:32:15.588075+08:00"
+        }
+      }
+    },
+    "5": {
+      "checkpoint": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/r2l_mulran/weights/5.pth.tar",
+      "checkpoint_sha256": "22d230a4763c2f2b903a37054fc1ac3f11e9ee75dab220261ae5bcab55aa469b",
+      "loss": 1.2006087,
+      "seconds": 562.9814906430001,
+      "learning_rate_next": 1.6384000000000008e-05,
+      "optimizer_steps": 10355,
+      "radar_unchanged": true,
+      "student_changed_tensors": 87,
+      "sampling": {
+        "queries": 16568,
+        "iterations": 2071,
+        "sampler_sha256": "75db0b2a77982c73eb2758e3e8142ed2c4308117ac3044844f96f1df8ded9395",
+        "worker_sha256": "5c52c1215faecef801c977968a9dd4f490711187ef40b52e025a0ea7f8d1f4d4"
+      },
+      "validation": {
+        "metrics": {
+          "Recall@1": 72.39,
+          "Recall@5": 86.96,
+          "Recall@10": 91.09,
+          "Recall@20": 94.35,
+          "Recall@1percent": 92.03,
+          "F1": 0.8475637013857845
+        },
+        "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_5_sejong.log",
+        "completed_at": "2026-10-16T00:29:58.490755+08:00"
+      },
+      "benchmarks": {
+        "dcc": {
+          "metrics": {
+            "Recall@1": 52.66,
+            "Recall@5": 71.81,
+            "Recall@10": 78.72,
+            "Recall@20": 86.17,
+            "Recall@1percent": 52.66,
+            "F1": 0.7131782945736433
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_5_dcc.log",
+          "completed_at": "2026-10-16T00:32:24.850697+08:00"
+        },
+        "riverside": {
+          "metrics": {
+            "Recall@1": 53.07,
+            "Recall@5": 69.55,
+            "Recall@10": 78.25,
+            "Recall@20": 85.21,
+            "Recall@1percent": 83.87,
+            "F1": 0.7005473025801408
+          },
+          "log": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_word_longer_2026-10-15_233921/epoch_5_riverside.log",
+          "completed_at": "2026-10-16T00:33:22.782974+08:00"
+        }
+      }
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "protocol_sha256": "cbba3089167bf7da4e02e6d639e6aff83d7e938902d5001f39f736dbbd4c85c2",
+  "selection": {
+    "selected_epoch": 4,
+    "locked_at": "2026-10-16T00:29:58.491477+08:00",
+    "rule": "Maximum Sejong Recall@1, then F1, then earliest epoch; lock before benchmarks",
+    "benchmark_results_consulted_in_this_run": false,
+    "validation": {
+      "1": {
+        "Recall@1": 72.75,
+        "Recall@5": 86.38,
+        "Recall@10": 90.07,
+        "Recall@20": 92.39,
+        "Recall@1percent": 91.3,
+        "F1": 0.8558913710030661
+      },
+      "2": {
+        "Recall@1": 72.75,
+        "Recall@5": 87.97,
+        "Recall@10": 91.23,
+        "Recall@20": 93.7,
+        "Recall@1percent": 91.96,
+        "F1": 0.8526176858776947
+      },
+      "3": {
+        "Recall@1": 72.46,
+        "Recall@5": 87.25,
+        "Recall@10": 91.59,
+        "Recall@20": 94.42,
+        "Recall@1percent": 93.04,
+        "F1": 0.8528099910793934
+      },
+      "4": {
+        "Recall@1": 73.04,
+        "Recall@5": 87.83,
+        "Recall@10": 91.3,
+        "Recall@20": 94.71,
+        "Recall@1percent": 92.39,
+        "F1": 0.8492307692307692
+      },
+      "5": {
+        "Recall@1": 72.39,
+        "Recall@5": 86.96,
+        "Recall@10": 91.09,
+        "Recall@20": 94.35,
+        "Recall@1percent": 92.03,
+        "F1": 0.8475637013857845
+      }
+    }
+  },
+  "selection_sha256": "9618440d3dd7d4d47b5502168a6591ce2c0ed6f7eaf847e455464a20d804a7b6",
+  "completed_at": "2026-10-16T00:33:22.784179+08:00"
+}

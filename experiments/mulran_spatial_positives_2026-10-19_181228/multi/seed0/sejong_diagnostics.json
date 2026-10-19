@@ -1,0 +1,24 @@
+{
+  "best_threshold": {
+    "threshold": 2.932765589820014,
+    "tp": 1018,
+    "fp": 276,
+    "fn": 30,
+    "tn": 56,
+    "precision": 0.7867078825347759,
+    "recall": 0.9713740458015268,
+    "F1": 0.8693424423569599
+  },
+  "queries": 1380,
+  "database": 1505,
+  "valid_queries": 1380,
+  "correct_top1": 1048,
+  "wrong_top1": 332,
+  "wrong_top1_median_m": 104.49516296386719,
+  "wrong_top1_p90_m": 6221.210107421875,
+  "checkpoint": {
+    "path": "/media/rwj/ZX1 2TB/RLPR/runs/mulran_spatial_positives_2026-10-19_181228/multi/seed0/weights/1.pth.tar",
+    "sha256": "26d71a1f74ec152306b2a2f6c7119e645bafb6951d045261ba0f472ab857f14f"
+  },
+  "metric_definition": "Original conditional-recall max F1; wrong rejected top1 is TN, not FN"
+}

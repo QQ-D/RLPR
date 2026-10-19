@@ -1,0 +1,113 @@
+{
+  "selected": "tau_010",
+  "temperature": 0.1,
+  "rule": "Mean Sejong F1 across three seeds, then mean Recall@1, then temperature .07 on exact tie; no seed0 early screening or individual-seed selection",
+  "evidence": {
+    "tau_007": {
+      "0": {
+        "validation": {
+          "F1": 0.8684777921517896,
+          "Recall@1": 75.14492753623189,
+          "Recall@5": 88.47826086956522,
+          "Recall@10": 92.97101449275362,
+          "Recall@20": 96.23188405797102,
+          "Recall@1percent": 94.4927536231884
+        },
+        "checkpoint_sha256": "09d90d28f1d5cf444b030b2aadb5b66f3e12c156ed268e72df181c080de6ae86"
+      },
+      "1": {
+        "validation": {
+          "F1": 0.862913622690159,
+          "Recall@1": 74.92753623188406,
+          "Recall@5": 87.68115942028986,
+          "Recall@10": 92.46376811594203,
+          "Recall@20": 95.21739130434783,
+          "Recall@1percent": 93.76811594202898
+        },
+        "checkpoint_sha256": "69a4fed04a864e07f37c4eefffaeb0b93bcd3af14b65f2825909fedcf068b319"
+      },
+      "2": {
+        "validation": {
+          "F1": 0.8676731793960923,
+          "Recall@1": 75.07246376811594,
+          "Recall@5": 87.7536231884058,
+          "Recall@10": 92.3913043478261,
+          "Recall@20": 96.15942028985506,
+          "Recall@1percent": 93.76811594202898
+        },
+        "checkpoint_sha256": "95aae05d3059ba9bcd41f6af4fb1b2c5a254a3c5069a1e8ce9f7795617c0abc6"
+      }
+    },
+    "tau_003": {
+      "0": {
+        "validation": {
+          "F1": 0.8472412220702235,
+          "Recall@1": 72.2463768115942,
+          "Recall@5": 85.21739130434783,
+          "Recall@10": 90.8695652173913,
+          "Recall@20": 94.42028985507245,
+          "Recall@1percent": 92.53623188405797
+        },
+        "checkpoint_sha256": "3013a3e35f8f9395bc11c3bf24d3853babb9bd6232b0e2af8f11d9172a2fb3be"
+      },
+      "1": {
+        "validation": {
+          "F1": 0.8451612903225807,
+          "Recall@1": 71.66666666666667,
+          "Recall@5": 85.0,
+          "Recall@10": 90.07246376811594,
+          "Recall@20": 93.98550724637681,
+          "Recall@1percent": 91.66666666666666
+        },
+        "checkpoint_sha256": "e8d2ad1269adaa71b97563b98cd9cce40f2fe0edce1acb7227b2bd8251275078"
+      },
+      "2": {
+        "validation": {
+          "F1": 0.8401084010840109,
+          "Recall@1": 71.30434782608695,
+          "Recall@5": 85.28985507246377,
+          "Recall@10": 90.72463768115942,
+          "Recall@20": 94.6376811594203,
+          "Recall@1percent": 92.02898550724638
+        },
+        "checkpoint_sha256": "c1a3f40723c5f9a949a2f507913151627554ac61c92dbf595fb2cf7cd3c25ada"
+      }
+    },
+    "tau_010": {
+      "0": {
+        "validation": {
+          "F1": 0.8719753629564452,
+          "Recall@1": 75.65217391304347,
+          "Recall@5": 89.56521739130436,
+          "Recall@10": 93.33333333333333,
+          "Recall@20": 96.30434782608695,
+          "Recall@1percent": 94.6376811594203
+        },
+        "checkpoint_sha256": "ec828bcd30bf3097de6240fe4333c0da7503226ddb542481a60e545302d4f652"
+      },
+      "1": {
+        "validation": {
+          "F1": 0.8642495784148397,
+          "Recall@1": 75.21739130434783,
+          "Recall@5": 89.20289855072464,
+          "Recall@10": 93.18840579710145,
+          "Recall@20": 96.01449275362319,
+          "Recall@1percent": 94.20289855072464
+        },
+        "checkpoint_sha256": "7c5681ce451b9a0d2af3131b82fac384f73b9feb9352a7f7c1514f683f2f9627"
+      },
+      "2": {
+        "validation": {
+          "F1": 0.8730090400344382,
+          "Recall@1": 76.37681159420289,
+          "Recall@5": 88.55072463768116,
+          "Recall@10": 92.6086956521739,
+          "Recall@20": 96.44927536231884,
+          "Recall@1percent": 94.1304347826087
+        },
+        "checkpoint_sha256": "abe25048266a971ea2d3d4b8ba16e093a9a6c1341647f67181b5aceef1547cf4"
+      }
+    }
+  },
+  "locked_at": "2026-10-19T20:33:38.440941+08:00"
+}

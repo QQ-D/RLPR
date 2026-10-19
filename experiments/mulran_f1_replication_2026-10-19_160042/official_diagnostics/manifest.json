@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "51868acc02079672810a9a517c130980558705d74963e98f1023d0ca0e27e8dc",
+  "results": {
+    "sejong": {
+      ".json": "7d5ce6c94b5b07f24fca132dcdcf8f9be9cb6c9bd605c677c6ac65caebcd4d4d",
+      "_diagnostics.json": "a0d7d1f9d6a960aa56d196408cd9a45cfd2ed3b175cb841770f15f9c785145a9",
+      ".csv": "e05a0b9e363f3b5e8f2c0d318096e2fd6d576d894a4d88b6b59a7111c38ad487",
+      ".npz": "a565346004f9264be4a39da3e8fb32746f2fceb4575ab800ab98276e60851725"
+    },
+    "dcc": {
+      ".json": "4ebaa219af2e0734931f0fe9eefaaec7e3867fff40debefae98094be92a8a6f5",
+      "_diagnostics.json": "686df473f7a3a21f4a60f835c8465082b52bf3f1a5a0b18d4fc068b8d4df06eb",
+      ".csv": "900b6b5ab0798eeed4c1538679eb6220e4fbb3c37115e54fd9ddfd127cf0f9a3",
+      ".npz": "4edd9a40d647a4be0cbf486dbcdf7591fc790c63b512debba853d1dd408c4029"
+    },
+    "riverside": {
+      ".json": "a1e85d68d440f195c5611470be870cda50616063f7ece36022f100e22e6df5f6",
+      "_diagnostics.json": "055434812f16ccc016a31f34c6031bb78bd8f3d409641c193c916c968421b830",
+      ".csv": "fe4a7f2808c5f8ff08d26957b704a36ecdc8cd0c762225aa6cc7fca0a56ada52",
+      ".npz": "ba080f69a0283733288f47443f77e4a2d07fa3d744f53a28e105df8f03f3da99"
+    }
+  },
+  "finished_at": "2026-10-19T16:59:34.894646+08:00"
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 421611,
+  "log": "/media/rwj/ZX1 2TB/RLPR/runs/temperature_launch_2026-10-19_192213.log",
+  "started_at": "2026-10-19_192213",
+  "source_commit": "8c8bb597c4a88a2937e311bd045ecf89c3da6d1c",
+  "script": "/media/rwj/ZX1 2TB/RLPR/src_spectral/scripts/temperature_ablation.py",
+  "regression_tests": 112,
+  "review": "No material issues",
+  "smoke_test": "/media/rwj/ZX1 2TB/RLPR/runs/temperature_smoke_2026-10-19.json",
+  "report_builder_sha256": "74774cdf48ff89fc35e36a526d2e2ee0e59b992c9e87075237ecb345ce7872ca"
+}
